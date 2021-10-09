@@ -1,0 +1,147 @@
+<includeonly><div class="custom-cadre" style="
+{{#switch: {{{position|}}}
+| gauche | left = float: left; clear: left; {{#if: {{{margin|}}} | | margin: 0 1em 1em 0; }} max-width: 100%;
+| droite | right = float: right; clear: right; {{#if: {{{margin|}}} | | margin: 0 0 1em 1em; }} max-width: 100%;
+| centre | center = width: 100%; display: flex; justify-content: center;
+| {{{style|max-width: 100%;}}} 
+}}"><div style="position: relative; display: inline-block; z-index: 1;margin:2em; position: relative;box-shadow: 5px 5px 5px -5px #212326, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px #8eff41, inset 5px 5px 5px -5px #a6ffa3ba, 0 0 0 6px #222421, 0 0 5px 4px #090909, 0 0 3px 6px #1b1b1b, 0 0 0 8px #0000004f, 0 0 0 10px #99e36a, 0 0 0 12px #21261d6e, 0 0 8px 12px #baff8a78, 0 0 5px 24px #21232070, 0 0 0 24px black, -1px 0 0 24px #313131, 0 -1px 0 24px #313131, 1px 1px 5px 25px #222; width:{{{taille|unset}}}; max-width: calc(100% - 4em);"><div style="max-width: 100%;display: block;overflow: hidden;">{{#if:{{{taille|}}} 
+| {{#if:{{{link_image|}}} | [[Fichier:{{{image}}}|{{{taille}}}|link={{{link_image}}}]] | [[Fichier:{{{image}}}|{{{taille}}}]] }}
+| {{#if:{{{link_image|}}} | [[Fichier:{{{image}}}|link={{{link_image}}}]] | [[Fichier:{{{image}}}]] }}
+}}</div>
+{{#switch:{{{deco|}}} 
+| bas=<div style="position: absolute; bottom: -17px; right: -28px; z-index: 10;">[[Fichier:Deco necron angle bas.png]]</div><div style="position: absolute; bottom: -17px; left: -28px; z-index: 10;">[[Fichier:Deco necron angle bas.png]]</div> 
+| haut=<div style="position: absolute; top: -17px; right: -28px; z-index: 10;">[[Fichier:Deco necron angle.png]]</div><div style="position: absolute; top: -17px; left: -28px; z-index: 10;">[[Fichier:Deco necron angle.png]]</div> 
+| angles=<div style="position: absolute; bottom: -17px; right: -28px; z-index: 10;">[[Fichier:Deco necron angle bas.png]]</div><div style="position: absolute; bottom: -17px; left: -28px; z-index: 10;">[[Fichier:Deco necron angle bas.png]]</div><div style="position: absolute; top: -17px; right: -28px; z-index: 10;">[[Fichier:Deco necron angle.png]]</div><div style="position: absolute; top: -17px; left: -28px; z-index: 10;">[[Fichier:Deco necron angle.png]]</div> 
+}}
+<div style="position: relative; z-index:1; width:100%; text-align: center; box-shadow: 5px 5px 5px -5px #212326, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px #8eff41, inset 5px 5px 5px -5px #a6ffa3ba, 0 0 0 6px #222421, 0 0 5px 4px #090909, 0 0 3px 6px #1b1b1b, 0 0 0 8px #0000004f, 0 0 0 10px #99e36a, 0 0 0 12px #21261d6e;border-radius: 5px 5px 0 0;color: #94b789;text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;background: linear-gradient(90deg, #48593e, #191110); padding: 4px; box-sizing: border-box;background: linear-gradient(135deg, #000, #042417, #000, #000, #000, #042417, #000, #000, #000, #042417, #000);box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba,0 0 0 8px black, 0 0 5px 8px #000, 0 0 3px 8px #1b1b1b, 0 -9px #1f2623; {{#if: {{{sous_titre|{{{titre|}}}}}} | | display: none; }} max-width: 100%; width:{{#if: {{{taille|}}} | {{{taille|}}} | unset }};><span style="font-size: larger; {{#if: {{{titre|}}} | | display: none; }}">{{{titre}}}</span><div style="padding: 0 12px; {{#if: {{{sous_titre|}}} | | display: none; }}">{{{sous_titre}}}</div></div>
+</div></div></includeonly><noinclude>
+==Fonctionnalité==
+Permet d'afficher une image dans un cadre stylisé Nécron.
+
+==Paramètres==
+*'''image'''=fichier image
+*'''link_image'''=lien lors du clic que l'image
+*'''taille'''=taille de l'image ''(optionnel)''
+*'''titre'''=titre de l'image ''(optionnel)''
+*'''sous_titre'''=sous-titre de l'image ''(optionnel)''
+*'''deco'''=décoration particulière; valeurs possibles :
+** ''angles'' : décoration aux quatres coins du cadre
+** ''bas'' : décoration aux deux coins en bas du cadre
+** ''haut'' : décoration aux deux coins en haut du cadre
+*'''position''' = permet de gérer le positionnement en fonction de la valeur :
+** ''left'' ou ''gauche'' : positionnement flottant à gauche
+** ''right'' ou ''droite'': positionnement flottant à droite
+** ''center'' ou ''centre'': positionnement aligné au centre (il faut que '''taille''' soit défini pour cela)
+*'''style'''=customisation CSS ''(optionnel)''
+
+==Exemples==
+
+===Exemple A===
+
+'''Code :'''
+<pre>{{Cadre Necron
+|image=Perso ozkan.jpg
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Necron
+|image=Perso ozkan.jpg
+}}
+
+<br>
+<hr>
+
+===Exemple : titre et taille===
+
+'''Code :'''
+<pre>{{Cadre Necron
+|image=Perso ozkan.jpg
+|titre=Okzan
+|sous_titre=''Le Codificateur''
+|taille=300px
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Necron
+|image=Perso ozkan.jpg
+|taille=300px
+|titre=Okzan
+|sous_titre=''Le Codificateur''
+}}
+
+<br>
+<hr>
+
+===Exemple avec deco===
+
+'''Code :'''
+<pre>{{Cadre Necron
+|image=Perso ozkan.jpg
+|taille=300px
+|deco=angle
+|sous_titre=''Le Codificateur''
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Necron
+|image=Perso ozkan.jpg
+|taille=300px
+|deco=angles
+|sous_titre=''Le Codificateur''
+}}
+
+<br>
+<hr>
+
+===Exemple alignement à droite avec deco en bas===
+
+'''Code :'''
+<pre>{{Cadre Necron
+|deco=bas
+|image=Perso ozkan.jpg
+|taille=200px
+|position=right
+|titre=Okzan
+|taille_titre=50%
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Necron
+|deco=bas
+|image=Perso ozkan.jpg
+|taille=200px
+|position=right
+|titre=Okzan
+|taille_titre=50%
+}}
+
+<div style="clear: both;"></div>
+===Exemple alignement au centre avec deco en bas===
+
+'''Code :'''
+<pre>{{Cadre Necron
+|deco=bas
+|image=Perso ozkan.jpg
+|taille=200px
+|position=center
+|titre=Okzan
+|taille_titre=50%
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Necron
+|deco=bas
+|image=Perso ozkan.jpg
+|taille=200px
+|position=center
+|titre=Okzan
+|taille_titre=50%
+}}
+
+[[Catégorie:Modèles de mise en page|Nécron]]
+</noinclude>
