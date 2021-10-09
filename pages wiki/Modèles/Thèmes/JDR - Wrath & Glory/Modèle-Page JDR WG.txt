@@ -1,0 +1,15 @@
+<includeonly>{{Page Theme
+|menu-title=Wrath & Glory
+|menu-category=Wrath & Glory
+|menu-title-2=Jeux de Rôle
+|menu-2={{#categorytree:Jeux de Rôle|mode=pages}}
+|menu-2-style=normal
+}}
+{{#addbodyclass:theme-jdr-wg}}
+{{#css:
+
+}}</includeonly><noinclude>
+{{Page JDR WG}}
+{{travaux}}
+[[Catégorie:Modèles de mise en page|JDR WG]]
+</noinclude>
