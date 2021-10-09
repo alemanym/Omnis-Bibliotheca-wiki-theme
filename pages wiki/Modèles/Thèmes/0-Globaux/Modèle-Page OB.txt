@@ -1,0 +1,1574 @@
+<includeonly>{{#addbodyclass:OB}}
+{{#css:
+body::before, body::after {
+	content: none;
+}
+#column-one #p-search .pBody:hover {
+	width: 100% !important;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]) a {
+	padding: 0.1em 0.5em;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):last-of-type::after {
+	height: 290px;
+}
+body.OB div#globalWrapper {
+	z-index: 20;
+}
+body.OB div#globalWrapper,
+body.OB div#column-one,
+body.OB div#column-login {
+	font-size: 12.7px !important;
+}
+body.OB div#column-content {
+	position: relative;
+	pointer-events: none;
+	z-index: 11;
+}
+body.OB div#content {
+	overflow: clip;
+	background: #121313 !important;
+	box-shadow: 0 0 3px black, -6px 0 0 black !important;
+	pointer-events: all;
+	min-height: calc(100vh - 85px);
+	box-sizing: border-box;
+	margin: 6em 1em 0 11.4em;
+	margin-top: 6em;
+	padding-bottom: 20px !important;
+	box-sizing: border-box !important;
+	margin-top: 6em !important;
+}
+
+body.OB #bodyContent {
+	position: relative;
+}
+body.OB #mw-indicator-mw-helplink {
+	display: none;
+}
+body.OB #catlinks {
+	text-align: left;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black;
+	border-radius: 0;
+	border: none;
+	margin: 2em;
+	padding: 2em;
+	background-color: black !important;
+}
+body.OB h1,
+body.OB h2 {
+	border: none;
+	background: #0000004d;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%);
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black;
+	padding: 0.5em;
+}
+body.OB .mw-parser-output h3 {
+	background: linear-gradient(#121313 60%,#0000), linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) !important;
+	box-shadow: 0 4px 4px -4px black !important;
+	border-bottom: 1px solid black;
+}
+body.OB .mw-parser-output h4,
+body.OB .mw-parser-output h5,
+body.OB .mw-parser-output h6 {
+	box-shadow: none !important;
+}
+body.OB #mw-pages,
+body.OB #mw-subcategories {
+	margin-top: 2em;
+}
+@media not screen {
+	body.OB .no-print {
+		display: none !important;
+	}
+	#globalWrapper > :not(#column-content):not(#footer) {
+		display: none !important;
+	}
+}
+@media screen and (max-height: 750px) { 
+body.OB .explorer,
+body.OB .explorer-btn {
+	display: none;
+}
+}
+
+body.OB .explorer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	z-index: 1100;
+	border-radius: 50%;
+	user-select: none;
+}
+body.OB .explorer-btn {
+	position: absolute;
+	top: 29px;
+	left: 22px;
+	transform: translateX(0.5em);
+	font-size: 32px !important;
+	color: white;
+	text-shadow: 0 0 2px #30e2ff,0 0 3px #30e2ff,0 0 5px #30e2ff !important;
+	user-select: none;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) !important;
+	background-color: rgb(0, 0, 0) !important;
+	height: 70px;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body.OB .explorer-btn::after {
+	content: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 120%;
+	height: 120%;
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-mask: radial-gradient(transparent 50%, black 55%);
+	background: conic-gradient(black 0deg, transparent 52deg, transparent 69deg, black 72deg, transparent 124deg, transparent 142deg, black 144deg, transparent 196deg, transparent 214deg, black 216deg, transparent 268deg, transparent 286deg, black 289deg, transparent 320deg, transparent 358deg, black 100%);
+}
+body.OB .explorer-search {
+	display: none;
+}
+body.OB .explorer-pane {
+	box-sizing: border-box;
+	transition: 0.3s all ease-in-out;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100vh;
+	transform: translateX(-100%);
+	background: linear-gradient(90deg, transparent 16px, #00000070 22px, #242424 22px, transparent 23px, transparent calc(100% - 23px), #242424 calc(100% - 22px), #00000070 calc(100% - 22px), transparent calc(100% - 16px)), linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) #000 !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+	opacity: 0;
+	z-index: 10000;
+	background-position: left 75px, left top !important;
+	background-repeat: no-repeat !important;
+	background-size: 100% calc(100% - 220px), 100% 100% !important;
+	user-select: none;
+}
+body.OB .explorer:hover + .explorer-pane,
+body.OB .explorer-pane:hover {
+	transform: none;
+	opacity: 1;
+}
+body.OB .explorer-console-entry {
+	transform: translateZ(-1000px);
+	transition: 0s all ease-in-out;
+	opacity: 0;
+	position: relative;
+	top: -150px;
+}
+body.OB .explorer-pane:hover .explorer-console-entry:last-child {
+	transition: 1s all ease-in-out 0.5s, 2s transform ease 0.5s;
+}
+body.OB .explorer-pane:hover .explorer-console-entry {
+	transform: none;
+	opacity: 1;
+	top: 0px;
+	transition: 1s all ease-in-out, 2s transform ease;
+}
+body.OB .explorer-title {
+	margin: 2.4em;
+	padding: 0.5em 0;
+	text-align: center;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-style: italic;
+	letter-spacing: 2px;
+	background-image: linear-gradient(135deg, #bdbdbd33 0, #46424163 25%, #aaaaaa4f 40%, #26262691 55%, #7b7b7b91 75%, #22222291 85%), radial-gradient(#ffd990, #6f510b);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-shadow: 0px 2px 1px -2px grey, 0px 4px 0px -2px black;
+}
+.explorer-menu-item-desc-title ~ * {
+	user-select: text;
+}
+body.OB .explorer-menu-item {
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	letter-spacing: 4px;
+	color: white;
+	padding: 1em 0 1em 4px;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+	background-color: #000 !important;
+	background: radial-gradient(transparent 2px, #2c2f2e 3px, transparent 4px), radial-gradient(transparent 2px, #383b3b 3px, transparent 4px), linear-gradient(transparent 50%, #0000002e calc(50% + 1px), transparent calc(50% + 2px)),linear-gradient(transparent 50%, #0000002e calc(50% + 1px),transparent calc(50% + 2px)), linear-gradient(135deg, #717978 0, #414444 25%, #575b5b 40%, #232625 55%, #3c4240 75%, #1f2322 85%);
+	text-shadow: 0 0 2px #ff6130,0 0 3px #ff6130,0 0 5px #ff6130 !important;
+	background-size: 100px 100px, 100px 100px, 30px auto, 30px auto, auto;
+	background-repeat: no-repeat;
+	background-position: 118px 48%, calc(100% - 118px) 48%, right center, left center, center center;
+	margin: 0 0 1em 0;
+	position: relative;
+	right: 100%;
+	top: 200px;
+	transition: 1s right ease-in-out, 1s top ease-in-out;
+}
+body.OB .explorer-pane:hover .explorer-menu-item {
+	right: 0;
+	top: 0;
+	transition: 0.3s right ease, 1s top ease;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(2) {
+	transition: 0.3s right ease 0.1s, 1s top ease 0.1s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(3) {
+	transition: 0.3s right ease 0.2s, 1s top ease 0.2s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(4) {
+	transition: 0.3s right ease 0.3s, 1s top ease 0.3s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(5) {
+	transition: 0.3s right ease 0.4s, 1s top ease 0.4s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(6) {
+	transition: 0.3s right ease 0.5s, 1s top ease 0.5s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(7) {
+	transition: 0.3s right ease 0.6s, 1s top ease 0.6s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(8) {
+	transition: 0.3s right ease 0.7s, 1s top ease 0.7s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(9) {
+	transition: 0.3s right ease 0.8s, 1s top ease 0.8s;
+}
+body.OB .explorer-pane:hover .explorer-menu-item:nth-child(10) {
+	transition: 0.3s right ease 0.9s, 1s top ease 0.9s;
+}
+body.OB .explorer-menu-item:hover {
+	text-shadow: 0 0 2px #fff,0 0 3px #30e2ff,0 0 5px #30e2ff !important;
+	background-image: radial-gradient(transparent 2px, #6dc5e7 3px, transparent 4px), radial-gradient(transparent 2px, #6dc5e7 3px, transparent 4px), linear-gradient(transparent 50%, #6dc5e7 calc(50% + 1px), transparent calc(50% + 2px)),linear-gradient(transparent 50%, #6dc5e7 calc(50% + 1px),transparent calc(50% + 2px)), linear-gradient(135deg, #717978 0, #414444 25%, #575b5b 40%, #232625 55%, #3c4240 75%, #1f2322 85%);
+}
+body.OB .explorer-menu-item:hover::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% + 1em);
+	height: calc(100% + 2em);
+	content: '';
+	transform: translateY(-1em);
+}
+body.OB .explorer-menu-item:not(:hover) > * {
+	display: none;
+}
+body.OB .explorer-menu-item-desc {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: 1.5em;
+	font-family: inherit;
+	letter-spacing: 0;
+	transform: translateX(520px);
+	width: 250px;
+	background: linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) black;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black;
+	text-shadow: none;
+	color: #b7b4b4;
+	text-align: justify;
+}
+.explorer-menu-item-desc * {
+	overflow: visible !important;
+}
+.explorer-menu-item-desc a.img {
+	pointer-event: none;
+}
+.explorer-menu-item-desc img {
+	box-shadow: 0 0 5px black, 2px 2px 15px black;
+}
+.explorer-menu-item-desc .no-shadow img {
+	box-shadow: none;
+}
+body.OB .explorer-menu-item-desc .no-shadow {
+	height: 260px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body.OB .explorer-menu-item-desc-title {
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	letter-spacing: 4px;
+	color: white;
+	text-shadow: 0 0 2px #fff,0 0 3px #30e2ff,0 0 5px #30e2ff !important;
+	padding: 1em 0;
+	box-shadow: 0px 2px 1px -2px grey, 0px 4px 0px -2px black;
+	margin-bottom: 1em;
+}
+
+body.OB .explorer-menu-item-pane {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: 0.5em 1em 0.5em 2em;
+	text-align: left;
+	font-family: inherit;
+	font-weight: 10 !important;
+	font-size: 1em;
+	letter-spacing: 0;
+	background: linear-gradient(90.5deg, transparent 90%, #00000045), linear-gradient(0.5deg, transparent 90%, #0000003b), linear-gradient(135deg, #717978 10%, #414444 25%, #575b5b 40%, #232625 55%, #3c4240 75%, #1f2322 85%) #fff;
+	box-shadow: inset -15px 0 25px -5px #00f3ff70, inset 0 0 20px #34f5ff4a, inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, inset 25px 0 160px #558d8f !important;
+	display: none;
+	z-index: -1;
+	text-shadow: none;
+	background-size: 25px auto, auto 25px, auto;
+	transform: translateX(200px);
+	box-sizing: border-box;
+	width: 320px;
+	overflow: auto;
+}
+body.OB .explorer-menu-item-pane {
+	scrollbar-width: thin;
+	scrollbar-color: #434c4d #369296;
+}
+body.OB .explorer-menu-item-pane .explorer-menu-item-pane-title {
+	text-align: center;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-style: italic;
+	letter-spacing: 2px;
+	background: #d0ffff47;
+	color: #00000091;
+}
+body.OB .explorer-menu-item-pane::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.OB .explorer-menu-item-pane::-webkit-scrollbar-track {
+  background: #369296;
+}
+
+body.OB .explorer-menu-item-pane::-webkit-scrollbar-thumb {
+  background-color: #434c4d;
+  border-radius: 20px;
+  border: 3px solid #369296;
+}
+body.OB :hover > .explorer-menu-item-pane {
+	display: block;
+}
+body.OB .explorer-menu-item-pane a {
+	font-weight: lighter;
+	color: white !important;
+	opacity: 0.8;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	text-decoration: none;
+	display: block;
+	text-shadow: none !important;
+}
+body.OB .explorer-menu-item-pane a:hover {
+	opacity: 1;
+	text-shadow: 0 0 2px #ff6130,0 0 3px #ff6130,0 0 5px #ff6130 !important;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeEmptyBullet {
+	display: none !important;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeBullet {
+	position: relative;
+	margin-right: 0 !important;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeToggle.CategoryTreeToggleHandlerAttached {
+	color: transparent !important;
+	position: relative;
+	left: 0;
+	margin-right: 0.2em;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeToggle.CategoryTreeToggleHandlerAttached::after {
+	content: '◈';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-11px) translateY(-50%);
+	color: #8caeb0;
+	display: inline-block;
+	width: 14px;
+	font-size: 20px;
+}
+body.OB .explorer-menu-item-pane * {
+	text-shadow: none !important;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeToggle.CategoryTreeToggleHandlerAttached:hover::after {
+	color: white;
+	text-shadow: 0 0 2px #ff6130,0 0 3px #ff6130,0 0 5px #ff6130 !important;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeItem {
+	margin: 0.2em 0;
+	display: flex;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeItem:hover::before {
+	text-shadow: 0 0 2px #ff6130,0 0 3px #ff6130,0 0 5px #ff6130 !important;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeTag > .CategoryTreeSection {
+	margin-top: 1em;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeSection {
+	position: relative;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeChildren > .CategoryTreeSection::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 9px;
+	display: block;
+	/* background: #8caeb0; */
+	height: 1px;
+	width: 14px;
+	transform: translateX(-13px);
+	background: #b08c8c;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeChildren > .CategoryTreeSection::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0px;
+	display: block;
+	background: #b08c8c;
+	height: calc(100% + 6px);
+	width: 1px;
+	transform: translateX(-14px) translateY(-5px);
+}
+body.OB .explorer-menu-item-pane .CategoryTreeChildren > .CategoryTreeSection:last-child::after {
+	height: 15px;
+}
+body.OB .explorer-menu-item-pane .CategoryTreeNotice {
+	display: none;
+}
+body.OB .explorer-menu-item-pane li[data-mw-revid] > a:first-child, 
+body.OB .explorer-menu-item-pane li[data-mw-revid] > a:first-child * {
+	color: #ff9a9a !important;
+	pointer-events: none;
+	text-shadow: 0 0 5px black !important;
+}
+body.OB .explorer-menu-item-pane li[data-mw-revid] {
+    background: none !important;
+    max-width: 300px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    font-size: 0;
+    line-height: 0;
+    margin: 10px 0;
+}
+body.OB .explorer-menu-item-pane li[data-mw-revid] a {
+    text-overflow: ellipsis;
+    max-width: 300px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0.2em;
+    margin: 0;
+    background: none !important;
+}
+body.OB .explorer-menu-item-pane li[data-mw-revid] > :not(a.mw-newpages-pagename):not(a:first-child) {
+	display: none;
+}
+body.OB  .explorer-pane .menu-discord {
+	position: absolute;
+	bottom: 72px;
+	width: 100%;
+	background: #ffffff0f;
+}
+body.OB .explorer-pane .menu-discord:hover {
+	background: #ffffff05;
+}
+body.OB .explorer-pane .menu-discord a {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #717978a0, #414444a0, #575b5ba0, #232625a0, #3c4240a0, #1f2322a0) #2f2d2d;
+	padding: 0.5em 0 0.8em 0;
+	text-align: center;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-style: italic;
+	letter-spacing: 2px;
+	background-image: linear-gradient(135deg, #bdbdbd33 0, #46424163 25%, #aaaaaa4f 40%, #26262691 55%, #7b7b7b91 75%, #22222291 85%), radial-gradient(#ffd990, #6f510b);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: bold;
+	box-shadow: 0px -2px 1px -2px grey, 0px -4px 0px -2px black;
+}
+body.OB .explorer-pane .menu-discord a:hover {
+	color: white;
+}
+body.OB .explorer-pane .explorer-back-home {
+	border-bottom: 1px solid #414141;
+	background: linear-gradient(135deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322) !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 0 50px black !important;
+	position: relative;
+}
+body.OB .explorer-pane .explorer-back-home a {
+	color: #958669;
+	font-size: 12px;
+	height: 100%;
+	text-decoration: none;
+	display: flex;
+	padding: 0.5em 1em 0.5em 0;
+	margin: 1px;
+	border: 1px solid #00000052;
+	justify-content: center;
+}
+body.OB .explorer-pane .explorer-back-home a:hover {
+	background: #0000004f;
+	color: white;
+}
+body.OB .explorer-back-home a:first-child::before {
+	content: '↩ ';
+	font-weight: bold;
+	pointer-events: none;
+	width: 20px;
+	position: relative;
+}
+
+body.OB .mw-parser-output > ul:last-of-type {
+	box-shadow: 5px 5px 5px -5px #0000006e,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	background: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px),radial-gradient( rgba(128,186,200,0.4),rgba(20,24,28,0.76)),linear-gradient(135deg,#000,#042417,#000,#000,#000,#02150e,#000,#000,#000,#042417,#000);
+	background-size: auto 4px,100% 100%;
+	padding: 35px 30px 35px 60px;
+	box-sizing: border-box !important;
+	margin: 0 10px;
+	display: flex;
+	flex-flow: column;
+}
+body.OB .perspective-container {
+	text-align: center;
+	perspective: 1000px;
+	background: linear-gradient(#000, #00000061 60%, #000c11 100%), radial-gradient(#334c46, transparent);
+	position: relative;
+	width: 200%;
+	transform: translateX(-25%);
+	mask-image: linear-gradient(black calc(100% - 20px), transparent);
+	-webkit-mask: linear-gradient(black calc(100% - 20px), transparent);
+}
+body.OB .perspective-container.cards {
+	text-align: center;
+	perspective: 1000px;
+	background: linear-gradient(#000, #00000061 60%, #000c11 100%), radial-gradient(#334c46, transparent);
+	position: relative;
+	width: calc(100% + 4em);
+	transform: translateX(-2em);
+	mask-image: linear-gradient(black calc(100% - 20px), transparent);
+	-webkit-mask: linear-gradient(black calc(100% - 20px), transparent);
+}
+body.OB .perspective-container::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 200%;
+	height: 1500px;
+	background-image: linear-gradient(#0000006e , #181d1d3d 80%), linear-gradient(#75b9b96e 0px, transparent 4px, transparent calc(100% - 4px), #75b9b96e 100%), linear-gradient(90deg, #75b9b96e 0px, transparent 2px, transparent calc(100% - 2px), #75b9b96e 100%);
+	background-repeat: repeat;
+	background-size: auto, auto 80px, 80px auto;
+	background-position: center center;
+	transform: translateX(-25%) rotateX(88deg);
+	transform-origin: center bottom;
+	z-index: -1;
+	-webkit-mask-image: linear-gradient(transparent, black, transparent);
+	mask-image: linear-gradient(transparent, black, transparent);
+}
+body.OB .portrait-scifi-entry:not(:hover) .portrait-scifi-overlay-1 {
+	box-shadow: inset 0 -30px 50px 0 transparent, inset 0 0 50px transparent, inset 0 -100px 50px -50px transparent, 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #000, inset 25px 0 50px #ffffff5c, inset 5px 5px 2px -5px #ffffffba !important;
+}
+body.OB .portrait-scifi-entry:hover .portrait-scifi-overlay-1 {
+	transition: 0s background ease-in-out !important;
+}
+body.OB .portrait-scifi-entry.frame > .portrait-scifi-overlay-1 {
+	background: radial-gradient(transparent, transparent 70%, black), linear-gradient(90deg, black, transparent 10px, transparent calc(100% - 10px), black), linear-gradient(black, transparent 10px, transparent calc(100% - 10px), black);
+}
+body.OB .portrait-scifi-entry:hover .portrait-scifi-overlay-2 {
+	background-position: 0 110%, 0 10%!important;
+	transition: 0.7s all ease-in-out !important;
+}
+body.OB .portrait-scifi-avatar > .image {
+	overflow: hidden;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+body.OB .portrait-scifi-avatar.top > .image {
+	align-items: baseline;
+}
+body.OB .portrait-scifi-avatar.bottom > .image {
+	align-items: end;
+}
+body.OB .portrait-scifi-entry:not(:hover) > .portrait-scifi-name {
+	text-shadow: 0 0 3px transparent, 0 0 3px transparent, 0 0 3px transparent, 0 0 3px black, 0 0 5px transparent, 0 0 10px transparent !important;
+}
+
+body.OB .portrait-scifi-entry > .portrait-scifi-name {
+	background: linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) #131313 !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+}
+body.OB .portrait-scifi-logo {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px 0 10px 20px;
+	width: 100%;
+	text-align: center;
+	opacity: 0.7;
+	z-index: 20;
+	pointer-events: none;
+}
+body.OB .portrait-scifi-logo img {
+	background: radial-gradient(#000000ba, transparent 80%);
+}
+body.OB .portrait-scifi-entry > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 30px);
+	z-index: 100;
+	opacity: 0;
+	transform: translateY(-30px);
+	clip-path: polygon(0 0%, calc(100% - 20px) 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
+}
+
+body.OB .perso-card-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*** Carte Necron ***/
+body.OB .perso-card.necron {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 2em;
+	position: relative;
+	display: table;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	background: linear-gradient(135deg, #000, #042417, #000, #000, #000, #02150e, #000, #000, #000, #042417, #000), radial-gradient(#000 80%, #00f21a38) !important;
+	box-shadow: inset 0 0 20px #000, inset 25px 0 50px #04a26e26, inset 5px 5px 2px -5px #ffffffba, 1px 1px 5px #000, 1px 1px 3px #000 !important;
+}
+body.OB .perso-card::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 49px);
+	background: #f9f9f90d;
+}
+body.OB .perso-card.necron > .logo {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	background: none !important;
+	right: 0;
+	transform: translateY(-9px) translateX(19px);
+	opacity: 0.9;
+}
+body.OB .perso-card.necron .perso-card-title {
+	font-size: 16px;
+	color: #cacaca !important;
+	text-shadow: 0 0 5px #ffffff2e !important;
+	padding: 0.5em;
+	margin-bottom: 0.3em;
+	overflow: clip;
+	border-radius: 10px 5px 0 0;
+	box-shadow: 0 10px 10px -10px #61ca8f, 0 20px 20px -15px #b4ffbc;
+	position: relative;
+	z-index: 20;
+	height: 35px;
+	box-sizing: border-box;
+}
+body.OB .perso-card.necron .perso-card-title::after {
+	content: '';
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #4bfbb124, #45d7a02e, #0c31278c, #0c31278c, #000000f0), linear-gradient(#00000029, black);
+}
+body.OB .perso-card.necron .bg-title {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	overflow: clip;
+}
+body.OB .perso-card.necron .bg-title:last-child {
+	transform: translateX(-50%) translateY(-9px);
+	display: block;
+	z-index: 1;
+}
+body.OB .perso-card.necron .perso-card-title .label {
+	font-size: 16px;
+	color: #ffffff78 !important;
+	text-shadow: 0 0 5px #ffffff2e !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-40%);
+	z-index: 50;
+}
+body.OB .perso-card.necron .perso-card-description {
+	box-sizing: border-box;
+	padding: 0.5em 0.5em 1em 0.5em;
+	position: relative;
+	width: 220px;
+	flex: 1;
+	text-shadow: 0 0 40px #50ff00, 0 0 80px #50ff00, 0 0 25px #fff !important;
+	color: #fafff85e;
+}
+body.OB .perso-card.necron .perso-card-description a {
+	color: black !important;
+}
+body.OB .perso-card.necron .perso-card .portrait-scifi-entry{
+	scale: 0.95;
+}
+body.OB .perso-card.necron .perso-card .portrait-scifi-entry:hover {
+	scale: 1;
+}
+body.OB .perso-card.necron .perso-card:hover .perso-card-description, 
+body.OB .perso-card.necron .perso-card:hover .perso-card-description a {
+	color: #ffffffb0 !important;
+}
+body.OB .perso-card.necron .perso-card .status {
+	color: #a8a19a;
+}
+
+body.OB .custom-table-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5em 1.5em;
+	color: #cacaca;
+	font-style: italic;
+}
+body.OB .custom-table-header > div {
+	flex: 1;
+}
+body.OB .custom-table {
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+	padding: 0.5em;
+}
+body.OB .custom-table > div {
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+body.OB .custom-table > div > div {
+	flex: 1;
+}
+body.OB .custom-table > div > div:last-child {
+	min-width: 280px;
+	white-space: nowrap;
+}
+
+body.OB .responsive-flex {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+}
+
+body.OB .responsive-flex > * {
+	flex: 1;
+}
+body.OB .responsive-flex.spacing > * {
+	padding: 0 1em;
+}
+
+
+body.OB .sheet-wrapper {
+	position: relative;
+	clear: both;
+}
+body.OB .sheet-wrapper h2,
+body.OB .sheet-wrapper h3,
+body.OB .sheet-wrapper h4,
+body.OB .sheet-wrapper h5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(89px);
+	margin: 16px 0;
+	padding-left: 6em;
+	width: calc(100% - 127px);
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex-direction: row;
+	white-space: nowrap;
+	background: linear-gradient(#121313 60%,#0000), linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) !important;
+	box-shadow: 0 4px 4px -4px black !important;
+	border-bottom: 1px solid black;
+}
+body.OB .sheet-wrapper h2 > :first-child,
+body.OB .sheet-wrapper h3 > :first-child,
+body.OB .sheet-wrapper h4 > :first-child,
+body.OB .sheet-wrapper h5 > :first-child {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+body.OB .sheet-wrapper h2 > :last-child,
+body.OB .sheet-wrapper h3 > :last-child,
+body.OB .sheet-wrapper h4 > :last-child,
+body.OB .sheet-wrapper h5 > :last-child {
+	flex: 1;
+	display: block;
+}
+body.OB .sheet-content {
+	min-height: 220px;
+	display: flex;
+}
+body.OB .sheet-image {
+	min-width: 89px;
+}
+body.OB .sheet-desc {
+	position: relative;
+	margin-top: 45px;
+	padding: 1em 3em 1em 84px;
+	clip-path: polygon(0 0, calc(100% - 38px) 0, 100% 38px, 100% 100%, 38px 100%, 0 calc(100% - 38px));
+	box-sizing: border-box;
+	text-shadow: 0 0 5px black, 0 0 15px black;
+	display: block;
+	transition: 0s all ease-in-out;
+	background: radial-gradient(circle at 0 0, #000, #0000 200px), radial-gradient(at center 0, #2f2f2f, #0000 75%) #111;
+}
+body.OB .sheet-desc::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 150%;
+	height: 250%;
+	border-radius: 50%;
+	background: radial-gradient(#00000085, #00000087, #35353573, transparent 50%);
+	transform: translateX(-50%) translateY(50%);
+	pointer-events: none;
+	z-index: -1;
+}
+body.OB .sheet-desc::after {
+	content: '';
+	top: 0;
+	right: 0;
+	width: 250%;
+	height: 100%;
+	transform: translateX(50%) translateY(-50%);
+	pointer-events: none;
+	background: radial-gradient(#acacac21, transparent 50%);
+	position: absolute;
+	z-index: -1;
+}
+
+@media screen and (max-width: 1279px) {
+  body.OB div.thumb.tnone,
+  body.OB div.thumb.tright,
+  body.OB div.thumb.tleft {
+	float: unset !important;
+	display: table !important;
+	margin: 0 auto 2em auto !important;
+	max-width: 100%;
+	position: relative !important;
+  }
+  body.OB .thumbinner {
+	display: flex;
+	flex-flow: column;
+	max-width: 100% !important;
+	margin: 0 !important;
+	width: auto !important;
+  }
+  body.OB .thumb.tnone img, 
+  body.OB .thumb.tright img, 
+  body.OB .thumb.tleft img {
+	max-width: 100% !important;
+	display: block;
+	height: auto;
+	clear: both !important;
+  }
+  body.OB .thumbinner .thumbcaption {
+	position: absolute;
+	bottom: 0;
+  }
+  body.OB .mw-parser-output .floatleft a.image,
+  body.OB .mw-parser-output .floatright a.image {
+	display: none;
+  }
+  body.OB .mw-parser-output .center {
+	overflow: hidden;
+	clear: both !important;
+  }
+  body.OB .responsive-flex {
+	flex-direction: column;
+	clear: both;
+  }
+  body.OB .responsive-flex > * {
+	padding: 0 !important;
+  }
+  body.OB .mw-parser-output > .wikitable {
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	clear: both !important;
+  }
+  body.OB .custom-cadre > div {
+	width: unset !important;
+  }
+  body.OB .custom-cadre > div > div:first-child img {
+	max-width: 100%;
+	height: auto;
+  }
+  body.OB .custom-cadre,
+  body.OB .custom-citation {
+	display: flex; 
+	justify-content: center;
+	max-width: 100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+	float: unset !important;
+  }
+  body.OB .credo {
+	width: 100%;
+	float: unset !important;
+	display: block !important;
+	max-width: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	box-sizing: border-box;
+  }
+  body.OB h1,
+  body.OB h2,
+  body.OB h3,
+  body.OB h4,
+  body.OB h5,
+  body.OB .custom-cadre,
+  body.OB .custom-citation,
+  body.OB .credo {
+	clear: both !important;
+  }
+}
+
+div#content {
+	margin: 6em 1em 0 11.4em;
+}
+#p-cactions li {
+	background: none !important;
+	box-shadow: none !important;
+}
+body #p-cactions li a {
+	height: 40px !important;
+	border-radius: 0 !important;
+	clip-path: polygon(20px 0, calc(100% + 20px) 0, 100% 100%, 0 100%) !important;
+	padding: 0.5em 0.5em 0.5em 20px !important;
+	transition: all 0.3s ease-in-out;
+	box-shadow: none !important;
+	text-decoration: none !important;
+}
+#p-cactions li a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 20px;
+	height: 100%;
+}
+#p-cactions li a, #p-cactions li a::after {
+	transition: all 0.3s ease-in-out !important;
+	color: white !important;
+	background: linear-gradient(#121313, #540e10 1px, #1e0e0e) !important;
+}
+#p-cactions li a:hover, #p-cactions li a:hover::after {
+	z-index: 0;
+	text-decoration: none;
+	background: linear-gradient(#121313, #540e10 1px, #e3131361) !important;
+	transition: none;
+}
+#p-cactions li.selected a, #p-cactions li.selected a::after {
+	z-index: 3 !important;
+	background: linear-gradient(rgba(255,255,255,0.37), rgba(255,255,255,0.37)) !important;
+}
+
+
+
+div#footer {
+	position: relative;
+	right: 19px;
+	z-index: 1000;
+	transform: none;
+	width: calc(100% - 165px);
+	margin: 0;
+}
+div#footer {
+	position: relative;
+	right: 17px;
+	z-index: 0;
+	width: calc(100% - 165px);
+	margin: 0;
+	top: 0;
+}
+div#column-content {
+	margin-bottom: 0 !important;
+}
+div#content {
+	border-radius: 10px 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+#column-one > div#p-logo {
+	overflow: visible !important;
+}
+#column-one > div#p-logo a.mw-wiki-logo {
+	border-radius: 50%;
+}
+#column-one > div#p-logo a.mw-wiki-logo::before{
+	border-radius: 50%;
+}
+#column-one > div#p-logo a.mw-wiki-logo::after {
+	content: none;
+}
+#p-cactions::after {
+	content: 'Omnis-Bibliotheca';
+	position: absolute;
+	bottom: 100%;
+	left: 50px;
+	background: linear-gradient(116.5deg, #ddd 18px, #000000bd 20px, #490c0d, #000000bd);
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 36px 0 46px;
+	font-family: sans-serif;
+	font-style: italic;
+	letter-spacing: 5px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	clip-path: polygon(16px 0, 100% 0, calc(100% - 16px) 100%, 0 100%) !important;
+	font-size: 14px;
+}
+}
+#p-personal ul {
+	text-transform: lowercase;
+	display: flex;
+	flex-flow: row;
+	height: 31px;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 5px 15px;
+	box-sizing: border-box;
+	font-size: 100%;
+	align-items: center;
+	background: linear-gradient(135deg,transparent,transparent 10%,#000);
+	box-shadow: 0 5px 5px -6px black;
+	max-width: unset;
+	float: right;
+}
+#p-personal ul {
+	text-transform: lowercase;
+	display: flex;
+	flex-flow: row;
+	height: 31px;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 5px 15px;
+	box-sizing: border-box;
+	font-size: 100%;
+	align-items: center;
+	background: linear-gradient(135deg,transparent,transparent 10%,#000);
+	box-shadow: 0 5px 5px -6px black;
+	/* max-width: 700px; */
+	float: right;
+}
+
+
+div#column-one {
+	width: 146px;
+	margin-left: 0px;
+	margin-top: 130px;
+	position: fixed;
+	background: black !important;
+	box-shadow: 4px 0 4px #00000080,6px 0 #000,-4px 0 4px #00000080,-6px 0 #000;
+	padding: 0 !important;
+	z-index: 10;
+}
+
+#column-one > #p-logo {
+	top: 0;
+	left: 50%;
+	position: absolute;
+	z-index: 3;
+	width: 110px !important;
+	height: 110px !important;
+	border-radius: 50%;
+	margin: 0 !important;
+	transform: translateY(calc(-100% - 11px)) translateX(-50%);
+	box-shadow: 0 0 3px black,0 0 3px black,-5px -5px 5px -5px #989d9c,0 0 5px 0 #989d9c,0 0 0 6px black,0 0 15px 0 #484848;
+	overflow: hidden !important;
+	padding: 5px !important;
+	background: #0f0308 !important;
+	pointer-events: none;
+}
+
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]) {
+	border: none;
+	padding: 0.1em 0 0 0 !important;
+	float: none;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: visible;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]) a {
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none !important;
+	color: rgb(213, 236, 236);
+	text-shadow: 0 0 10px #ffffff70,0 0 5px #370000bd,0 0 25px #000000bd;
+	display: block;
+	padding: 0.25em 0.8em !important;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):hover .pBody {
+	box-shadow: inset 0 20px 20px -20px black, inset 0 0 20px #a6a6a6, inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727;
+}
+
+
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]) a {
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none !important;
+	color: rgb(213, 236, 236);
+	text-shadow: 0 0 10px #ffffff70,0 0 5px #370000bd,0 0 25px #000000bd;
+	display: block;
+	padding: 0.25em 0.8em !important;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):not([id="p-logo"]) h3 {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #808080 !important;
+	text-shadow: 0 0 5px #000, 0 0 2px #000;
+	box-shadow: inset 1px 1px #ffffff03, inset 0 0 0 1px #272727, 0 4px 3px black, inset 0 0 10px black !important;
+	background: linear-gradient(135deg, #717978a0, #414444a0, #575b5ba0, #232625a0, #3c4240a0, #1f2322a0) #2f2d2d;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):not([id="p-logo"]):hover h3 {
+	color: #fff !important;
+	text-shadow: 0 0 2px #30e2ff,0 0 3px #30e2ff,0 0 5px #30e2ff !important;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):not([id="p-logo"]) h3::before,
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):not([id="p-logo"]) h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 20px;
+	height: 1px;
+	background: #00000087;
+	box-shadow: 0 -1px 1px black;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):not([id="p-logo"]) h3::after {
+	left: unset;
+	right: 0;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]) .pBody {
+	font-size: 90%;
+	color: black;
+	border: none;
+	transition: 0.5s all ease-in-out;
+	box-shadow: inset 0 20px 20px -20px black, inset 0 0 20px #000, inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727;
+	background: linear-gradient(135deg, #717978a0, #414444a0, #575b5ba0, #232625a0, #3c4240a0, #1f2322a0) #3c9397;
+	padding: 0.5em 0 !important;
+}
+#p-search {
+	position: relative;
+	z-index: 3;
+	height: unset;
+}
+#column-one #p-search .pBody {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 0px;
+	padding: 12px !important;
+	z-index: 1;
+	box-sizing: border-box;
+	transition: 0.3s all ease-in-out;
+	box-shadow: inset 1px 1px #ffffff03, inset 0 0 0 1px #272727, 0 4px 3px black, inset 0 0 10px black !important;
+	background: linear-gradient(135deg, #717978a0, #414444a0, #575b5ba0, #232625a0, #3c4240a0, #1f2322a0, #717978a0, #414444a0, #575b5ba0, #232625a0, #3c4240a0, #1f2322a0) #2f2d2d !important;
+}
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):last-of-type::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 290px;
+	pointer-events: none;
+	/*background-image: url(/skins/MonoBook/images/mechanicus-OB-menu-bottom.png?9ab92);*/
+	background-repeat: no-repeat;
+	transform: translateY(100%);
+	background-position-x: right;
+	background-size: 130px;
+	background-position-y: -45px;
+	z-index: 1;
+	box-shadow: inset -25px 10px 25px #000000d6;
+	mask-image: linear-gradient(black 90%,transparent);
+	-webkit-mask-image: linear-gradient(black 90%,transparent);
+}
+
+#column-one > .portlet:not([id="p-cactions"]):not([id="p-personal"]):last-of-type::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	pointer-events: none;
+	background-image: radial-gradient(#ffc9c9,#ff0000cf,#ff00005e,#0000004d 40%,transparent 60%,transparent 90%);
+	background-repeat: no-repeat;
+	transform: translateX(-28px) translateY(99px);
+	background-color: #00000045;
+	border-radius: 50%;
+	opacity: 0;
+	z-index: 10;
+	transition: 1s all ease-in-out;
+}
+
+.carriere-pane-content {
+	background: linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) !important;
+	margin: 1.5em;
+	position: relative;
+	overflow: clip;
+	box-sizing: border-box;
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+.carriere-pane-content.imperium {
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 -30px 5px -5px #ffffff70, inset 0 -32px 0 #9f000061 !important;
+}
+.carriere-pane-content.ork {
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 -30px 5px -5px #ffffff70, inset 0 -32px 0 #283c24 !important;
+}
+.carriere-pane-content.aeldari {
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 -30px 5px -5px #ffffff70, inset 0 -32px 0 #093a4d !important;
+}
+.carriere-pane-content.other {
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 -30px 5px -5px #ffffff70, inset 0 -32px 0 #37373761 !important;
+}
+.carriere-pane-image {
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: inset 0 0 1px #ffffff38, inset 0 0 5px #000, inset 0 0 15px #000;
+	padding: 10px;
+	margin: 12px;
+	min-height: 256px;
+	box-sizing: border-box;
+}
+.carriere-pane-image .image {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.carriere-pane-image img {
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+.carriere-pane-image fit-vertical img {
+	min-height: 236px !important;
+}
+.carriere-pane-image fit-horizontal img {
+	min-height: 156px !important;
+}
+.carriere-pane-title {
+	text-align: center;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	transform: translateY(-5px);
+	color: #e3e3e3;
+	text-shadow: 0 0 5px black;
+	min-width: 140px;
+	box-shadow: inset 0 0 1px #ffffff38, inset 0 0 5px #000, inset 0 0 15px #000;
+	padding: 0.5em;
+	box-sizing: border-box;
+	width: 100%;
+	height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carriere-pane-label {
+	padding: 2px 0;
+	width: 100%;
+	margin-top: 4px;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	background: #191b1b;
+	color: #6f6f6f;
+	box-shadow: inset 1px 1px 0 #ffffff1a, inset -1px 2px 0 #0000003d;
+	height: 23px;
+	box-sizing: border-box;
+	background: #1c0404 !important;
+}
+.carriere-pane-infos {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	width: calc(100% - 30px);
+	pointer-events: none;
+}
+.carriere-pane-infos-handler {
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(69deg, #414141 9px, transparent 10px), linear-gradient(-69deg, #3e3a3a 9px, transparent 10px) #1c1c1c;
+	box-shadow: inset 0 1px 0 #ffffff17, inset 0 -1px 0px #000000ad, 0 2px 10px black;
+	clip-path: polygon(0 0, 100% 0, calc(100% - 9px) 100%, calc(100% - 9px) 200%, 9px 200%, 9px 100%);
+	height: 22px;
+	font-weight: bold;
+	pointer-events: all;
+	z-index: 1;
+	position: relative;
+}
+.imperium .carriere-pane-infos-handler {
+	background: linear-gradient(69deg, #414141 9px, transparent 10px), linear-gradient(-69deg, #3e3a3a 9px, transparent 10px) #1c0404;
+}
+.aeldari .carriere-pane-infos-handler {
+	background: linear-gradient(69deg, #414141 9px, transparent 10px), linear-gradient(-69deg, #3e3a3a 9px, transparent 10px) #04041c;
+}
+.ork .carriere-pane-infos-handler {
+	background: linear-gradient(69deg, #414141 9px, transparent 10px), linear-gradient(-69deg, #3e3a3a 9px, transparent 10px) #041c04;
+}
+.other .carriere-pane-infos-handler {
+	background: linear-gradient(69deg, #414141 9px, transparent 10px), linear-gradient(-69deg, #3e3a3a 9px, transparent 10px) #1c1c1c;
+}
+.carriere-pane-image:hover ~ .carriere-pane-infos *, .carriere-pane-infos:hover * {
+	opacity: 1;
+	pointer-events: all;
+}
+.carriere-pane-infos-data {
+	margin: auto;
+	width: 160px;
+	height: 244px;
+	background: radial-gradient(#454545, #1c0404);
+	padding: 0.5em;
+	box-sizing: border-box;
+	pointer-events: none;
+	text-align: left;
+	opacity: 0;
+	font-style: italic;
+	position: relative;
+	transform: translateY(-7px);
+	border-radius: 5px;
+}
+.carriere-pane-infos-data a {
+	font-style: normal;
+	font-weight: normal;
+}
+.imperium .carriere-pane-infos-data {
+	background: radial-gradient(#452e2e, #1c0404);
+}
+.ork .carriere-pane-infos-data {
+	background: radial-gradient(#2e452e, #041c04);
+}
+.aeldari .carriere-pane-infos-data {
+	background: radial-gradient(#2e2e45, #04041c);
+}
+.other .carriere-pane-infos-data {
+	background: radial-gradient(#454545, #1c1c1c);
+}
+
+#ob-logo {
+	position: fixed;
+	top: 0;
+	left: 192px;
+	border-radius: 50%;
+	overflow: hidden;
+	pointer-events: all;
+	transform: translateY(-25px);
+	height: 52px;
+	width: 52px;
+	clip-path: polygon(-50% 10px, 150% 10px, 150% 42px, -50% 42px);
+}
+.mw-category h3 {
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) !important;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+	font-size: 14px;
+	background-color: #202020 !important;
+}
+}}
+<div class="no-print explorer">
+<div class="explorer-btn">☰</div>
+</div>
+<div class="no-print explorer-pane">
+<div class="explorer-back-home">[[Accueil]]</div>
+<div class="explorer-title">O.B. Navigator</div>
+<div class="explorer-search">{{#tag:inputbox|type=search|placeholder=Rentrez votre recherche...}}</div>
+<div class="explorer-menu">
+<div class="explorer-menu-item">Univers<div class="explorer-menu-item-pane">
+{{#categorytree:Histoire|mode=pages|depth=0}}
+{{#categorytree:Chronologie Générale|mode=pages|depth=0}}
+{{#categorytree:Panthéon/Religions|mode=pages|depth=0}}
+{{#categorytree:Imperium|mode=pages|depth=0}}
+{{#categorytree:L'Immaterium|mode=pages|depth=0}}
+{{#categorytree:Chaos|mode=pages|depth=0}}
+{{#categorytree:Xenos|mode=pages|depth=0}}
+{{#categorytree:Planètes|mode=pages|depth=0}}
+{{#categorytree:Necromunda|mode=pages|depth=0}}
+</div><div class="explorer-menu-item-desc">
+[[Fichier:Menu-univers.jpg|center|186px]]
+<div class="explorer-menu-item-desc-title">Univers</div>
+''« …sinistre cauchemar d’un avenir lointain, où seule la guerre règne et où la galaxie est en flammes… » 
+
+''« Dans les ténèbres, l'aveugle est le meilleur des guides. En cet âge de démence, faites confiance au fou pour vous montrer la voie. » 
+</div></div>
+<div class="explorer-menu-item">Factions<div class="explorer-menu-item-pane">
+<div class="explorer-menu-item-pane-title">FACTIONS</div>
+{{#categorytree:Factions de l'Imperium|mode=pages|depth=2}}
+{{#categorytree:Factions du Chaos|mode=pages|depth=2}}
+{{#categorytree:Factions Xenos|mode=pages|depth=2}}
+<div class="explorer-menu-item-pane-title" style="margin-top: 1.5em;">SOUS-FACTIONS</div>
+{{#categorytree:Chapitres Space Marines Loyalistes|mode=pages|depth=0}}
+{{#categorytree:Maisons de Chevaliers|mode=pages|depth=0}}
+{{#categorytree:Chapitres Space Marines Renégats|mode=pages|depth=0}}
+{{#categorytree:Maisons de Chevaliers Renégates|mode=pages|depth=0}}
+</div><div class="explorer-menu-item-desc">
+[[Fichier:Menu-factions.jpg|center|186px]]
+<div class="explorer-menu-item-desc-title">Factions</div>
+
+''« Je ne me soucie pas de qui connaîtra la vérité, maintenant, demain, ou dans dix mille ans. La loyauté porte en elle sa propre récompense. »'' <strong>- Lion El’Jonson</strong>
+
+La galaxie gothique ravagée par la guerre du lointain futur grouille d’armées de l’Imperium, d’adorateurs des noirs dieux du Chaos et de peuples Xenos belliqueux, tous opposés dans le plus grand conflit que les étoiles elles-mêmes aient connu.</div></div>
+<div class="explorer-menu-item">Personnages<div class="explorer-menu-item-pane">
+{{#categorytree:Personnages de l'Univers de Warhammer 40k|mode=pages|depth=2}}
+</div><div class="explorer-menu-item-desc">
+[[Fichier:GabrielAngelos-min.jpg|x260px|center]]
+<div class="explorer-menu-item-desc-title">Personnages</div>
+
+''« L’univers est vaste et quoi qu’il advienne, nul ne se souviendra de vous… »''
+
+Les Héros et personnages illustres naissent des guerres et des tragédies, luttant et oeuvrant pour réaliser ou lutter contre leur destin, quand ce n'est celui d’un Monde entier ou de l'univers lui-même. 
+
+Vous trouverez ici une liste de quelques uns de ces personnages ayant laissé leur empreinte, aussi futile soit-elle, au milieu des conflits sans nombre du sombre univers de Warhammer 40.000.</div></div>
+<div class="explorer-menu-item">Batailles<div class="explorer-menu-item-pane">
+{{#categorytree:Batailles de la Galaxie|mode=pages|depth=2}}
+</div><div class="explorer-menu-item-desc">
+[[Fichier:Battle-img.jpg|186px|center]]
+<div class="explorer-menu-item-desc-title">Batailles</div>
+
+<div style="font-style: italic; text-align: justify;">
+« Dans l’obscurité, je serai la lumière.<br>
+Dans le doute, je garderai la foi.<br>
+Dans la rage, j'affinerai mon talent.<br>
+Dans la vengeance, je n'aurai nulle pitié.<br>
+Au cœur de la bataille, je n'aurai nulle peur.<br>
+Devant la mort, je n'aurai aucun regret... »<br>
+</div>
+:'''- Liturgie de Bataille des Blood Ravens'''
+
+</div></div>
+<div class="explorer-menu-item">Technologie<div class="explorer-menu-item-pane">
+{{#categorytree:Armement‎|mode=pages|depth=1}}
+{{#categorytree:Armures‎|mode=pages|depth=1}}
+{{#categorytree:Flottes de Guerre‎|mode=pages|depth=1}}
+{{#categorytree:Véhicules‎|mode=pages|depth=1}}
+{{#categorytree:Titans|mode=pages|depth=1}}
+</div><div class="explorer-menu-item-desc">
+[[Fichier:Menu-techno.jpg|186px|center]]
+<div class="explorer-menu-item-desc-title">Technologie</div>
+''« L’Omnimessie a rempli la galaxie de mystères afin que nous puissions les découvrir et pour nous rapprocher de Sa perfection. Les ignorer même en temps de guerre, est une hérésie. »
+:'''- Archimagos Belisarius Cawl.
+</div></div>
+<div class="explorer-menu-item">Jeux de Rôle<div class="explorer-menu-item-pane">
+{{#categorytree:Jeux de Rôle|mode=pages|depth=1}}
+{{#categorytree:Les Carrières|mode=pages|depth=1}}
+</div><div class="explorer-menu-item-desc">
+<div class="no-shadow">[[Fichier:Menu-jdr.jpg|center|186px]]</div>
+<div class="explorer-menu-item-desc-title">Jeux de Rôle</div>
+
+Liste des jeux de rôle papier connus mettant en scène l’univers de Warhammer 40.000, ainsi que les ''carrières'' (rôles) que des joueurs pourraient potentiellement interpréter en tant qu’Humain, Xenos ou Hérétique dans ce type de jeu.
+
+<div style="background: black; text-align: center; padding: 0.5em;>''Pages en construction''</div>
+</div></div>
+<div class="explorer-menu-item">Noosphère<div class="explorer-menu-item-pane">{{Special:PrefixIndex/Category:}}
+</div><div class="explorer-menu-item-desc">
+[[Fichier:Menu-noosphere.jpg|center|186px]]
+<div class="explorer-menu-item-desc-title">Noosphère</div>
+
+Lexique des différentes ''Catégories'' de page du wiki de l’'''''OMNIS BIBLIOTHECA'''''.</div></div>
+<div class="explorer-menu-item">Manufactorum<div class="explorer-menu-item-pane">{{Spécial:Nouvelles_pages}}</div><div class="explorer-menu-item-desc">
+[[Fichier:Menu-manufactorum.jpg|center|186px]]
+<div class="explorer-menu-item-desc-title">Manufactorum</div>
+
+Liste des dernières pages ajoutées par les bibliothécaires de l’'''''OMNIS BIBLIOTHECA'''''.</div></div>
+<div style="position: absolute; width: 100%; bottom: 110px;left: 0;font-family: 'courier new',monospace;text-align: center;font-size: 11px; white-space: nowrap; padding: 0 1em;box-sizing: border-box;color: #5b3937;perspective: 1500px;">
+<div class="explorer-console-entry" style="color: #18484a;">+ Données Noosphèriques +</div>
+<div class="explorer-console-entry" style="color: #604544;">+++ ACCÈS CONFIDENTIEL +++</div>
+</div>
+<div class="menu-discord">[https://discord.com/invite/m2hJh7N Discordiae]</div>
+<div style="position: absolute;bottom: 0;left: 0;width: 100%;text-align: center;box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 0 50px black, 0 -25px 25px -25px #000 !important;z-index: 1;background: linear-gradient(135deg, #444141 10%, #414444 25%, #2f3535 40%, #232625 55%, #3c4240 75%, #2f2d2d 85%) !important;padding: 1em;box-sizing: border-box;border-radius: 10px 10px 0 0;overflow: clip;border: 2px solid black;border-top-color: #0009;border-left-color: #221506;border-right-color: #000000c2;border-bottom: none;"><div style="margin: auto; border-radius: 50%;display: table;background: linear-gradient( transparent, black), radial-gradient(#02f3ffc2, #f000);box-shadow: 0 0 10px #7cf2f2;">[[Fichier:Discord-ob.png|50px|link=https://discord.com/invite/m2hJh7N]]</div>
+<div style="position: absolute;top: 0;left: 0;width: 60%;height: 100%;background: #f000; border-radius: 0 0 50% 0;transform: translateX(-50%) translateY(-10%);box-shadow: inset 0 0 10px black, 0 0 0 5px #252827;background: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px),radial-gradient( #481d1db3,rgba(28,20,20,0.76)),linear-gradient(135deg,#531714,#531714,#000,#531714,#000,#531714,#000);background-position-y: 0%, 0%, 0%;background-size: auto, auto, auto;background-size: auto 4px,100% 100%;"></div>
+<div style="position: absolute;top: 0;right: 0;width: 60%;height: 100%;background: #f000; border-radius: 0 0 0 50%;transform: translateX(50%) translateY(-10%);box-shadow: inset 0 0 10px black, 0 0 0 5px #181a19;background: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px),radial-gradient( #000000b3,rgba(28,20,20,0.76)),linear-gradient(135deg,#531714,#531714,#000,#531714,#000,#531714,#000);background-position-y: 0%, 0%, 0%;background-size: auto, auto, auto;background-size: auto 4px,100% 100%;"></div></div>
+</div></div></includeonly><noinclude>
+{{Page OB}}
+
+== Fonctionnalités ==
+
+*Affiche en haut à droite un menu standard pour naviguer dans les catégories principales du site.
+
+== Utilisation ==
+
+Modèle à insérer en tout début de page.
+
+'''Code :'''
+<pre>
+{{Page OB}}
+</pre>
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

@@ -1,0 +1,1131 @@
+{{Page Theme
+|menu-title=Modèles
+|menu-category=Modèles de mise en page
+}}{{#css:
+html {
+	--status-ok-color: #9ad892;
+	--status-ok-bg: #293e25;
+	--status-ok-bg-alt-1: #1d840140;
+	--status-ok-bg-alt-2: #658a5f;
+
+	--status-beta-color: #85c5cc;
+	--status-beta-bg: #24313d;
+	--status-beta-bg-alt-1: #01408440;
+	--status-beta-bg-alt-2: #5f868a;
+
+	--status-todo-color: #bbb;
+	--status-todo-bg: #272929;
+	--status-todo-bg-alt-1: #252727;
+	--status-todo-bg-alt-2: #888;
+}
+#model-new td:first-child {
+	width: 10%;
+}
+.decorated-table {
+	padding: 20px !important;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+	font-size: 14px;
+	background-color: #151515 !important;
+	border-radius: 5px !important;
+	margin-bottom: 2em;
+	color: rgb(224, 224, 224);
+	border-spacing: 5px 5px;
+	width: 100%;
+}
+.decorated-table > tbody > tr > td {
+	color: #929495;
+	position: relative;
+	overflow: visible;
+	padding: 6px 24px;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%);
+	border: 1px solid black;
+!important;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black ;
+	background-color: #000 !important;
+	font-size: 12px;
+	text-decoration: none;
+	overflow: hidden;
+}
+.decorated-table.themes > tbody > tr > td {
+	height: 140px !important;
+}
+.decorated-table > tbody > tr > th {
+	text-shadow: 1px 1px 5px #000 !important;
+	color: #e0e0e0 !important;
+	text-align: center;
+	font-family: sans-serif;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: inherit;
+}
+.decorated-table > tbody > tr > td:first-child {
+	font-size: 14px;
+	color: #e0e0e0 !important;
+	text-align: center;
+	white-space: nowrap;
+	background-color: var(--status-todo-bg-alt-1) !important;
+	box-shadow: inset 1px 1px #ffffff0f, inset 0 0 0 1px #ffffff0f, inset 10px 0 0 var(--status-todo-bg-alt-2), inset 15px 0 5px -5px black, 0 4px 10px black;
+}
+.decorated-table > tbody > tr > td:last-child {
+	width: 50%;
+}
+.decorated-table > tbody > tr.status-ok > td:first-child {
+	background-color: var(--status-ok-bg-alt-1) !important;
+	box-shadow: inset 1px 1px #ffffff0f, inset 0 0 0 1px #ffffff0f, inset 10px 0 0 var(--status-ok-bg-alt-2), inset 15px 0 5px -5px black, 0 4px 10px black !important;
+}
+.decorated-table > tbody > tr.status-beta > td:first-child {
+	background-color: var(--status-beta-bg-alt-1) !important;
+	box-shadow: inset 1px 1px #ffffff0f, inset 0 0 0 1px #ffffff0f, inset 10px 0 0 var(--status-beta-bg-alt-2), inset 15px 0 5px -5px black, 0 4px 10px black !important;
+}
+.decorated-table > tbody > tr.status-ok > td:first-child::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: 'Complet';
+	padding: 2px 5px;
+	transform: translateX(-16px) translateY(62px) rotate(-45deg);
+	text-align: center;
+	width: 100px;
+	transform-origin: left top;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%);
+	background-color: rgba(0, 0, 0, 0);
+	background-color: #410201;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 0 2px black !important;
+}
+.decorated-table > tbody > tr.status-beta > td:first-child::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: 'Partiel';
+	padding: 2px 5px;
+	transform: translateX(-16px) translateY(62px) rotate(-45deg);
+	text-align: center;
+	width: 100px;
+	transform-origin: left top;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%);
+	background-color: rgba(0, 0, 0, 0);
+	background-color: #3c3c3c;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 0 2px black !important;
+}
+.decorated-table > tbody > tr ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.decorated-table > tbody > tr li {
+	padding-left: 1em;
+	text-indent: -1em;
+	white-space: nowrap;
+}
+.decorated-table > tbody > tr li.ok {
+	color: #abf0a1;
+}
+.decorated-table > tbody > tr li.nok {
+	color: #f0caa1;
+}
+.decorated-table > tbody > tr li::before {
+	content: "◈";
+	padding-right: 5px;
+}
+.decorated-table > tbody > tr > td:nth-child(2) li:not(.ok)::before {
+	color: black;
+	text-shadow: 1px 0 1px black, -1px 0 1px black, 0 1px 1px black, 0 -1px 1px black;
+}
+.decorated-table > tbody > tr > td:nth-child(2) li.ok::before {
+	color: #32e318;
+	text-shadow: 1px 0 1px white, -1px 0 1px white, 0 1px 1px white, 0 -1px 1px white;
+}
+.decorated-table > tbody > tr > td:nth-child(2) li.nok::before {
+	color: #ffbb73;
+	text-shadow: 1px 0 1px white, -1px 0 1px white, 0 1px 1px white, 0 -1px 1px white;
+}
+.decorated-table > tbody > tr li.ok:before {
+	color: #abf0a1;
+}
+.themes-wrap {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+.themes-wrap > * {
+	margin: 5px 8px;
+	background: var(--status-todo-bg);
+	padding: 0 10px;
+	border-radius: 5px;
+	color: var(--status-todo-color);
+	text-shadow: 1px 1px 5px #000 !important;
+}
+.themes-wrap > .status-ok {
+	background: var(--status-ok-bg);
+	color: var(--status-ok-color);
+}
+.themes-wrap > .status-beta {
+	background: var(--status-beta-bg);
+	color: var(--status-beta-color);
+}
+
+.status-ok {
+	background: var(--status-ok-bg);
+	color: var(--status-ok-color);
+	padding: 5px 10px 6px 10px;
+	border-radius: 5px;
+}
+.status-ok > p {
+	margin : 0;
+	padding: 0;
+}
+.status-ok > p > a,
+.status-ok > a {
+	color: var(--status-ok-color);
+	font-weight: normal;
+}
+.status-beta > p {
+	margin : 0;
+	padding: 0;
+}
+.status-beta {
+	background: var(--status-beta-bg);
+	color: var(--status-beta-color);
+	padding: 5px 10px 6px 10px;
+	border-radius: 5px;
+}
+.status-beta > p > a,
+.status-beta > a {
+	color: var(--status-beta-color);
+	font-weight: normal;
+}
+.status-todo > p {
+	margin : 0;
+	padding: 0;
+}
+.status-todo,
+.themes-wrap p {
+	background: var(--status-todo -bg);
+	color: var(--status-todo-color);
+	border-radius: 5px;
+}
+.status-todo > p > a,
+.status-todo > a,
+.themes-wrap a {
+	color: var(--status-todo-color);
+	font-weight: normal;
+}
+.decorated-table > tbody > tr > td:first-child a {
+	text-shadow: 1px 1px 5px #000 !important;
+	color: #e0e0e0 !important;
+	font-weight: normal;
+}
+}}
+
+Page listant les Modèles pour vous aider à la mise en page du wiki.
+
+== Les Thèmes de Page ==
+
+Vous trouverez ci-dessous, les détails du travail sur le design thématique des pages de l'OB.
+
+
+=== Perspectives ===
+
+Le travail sur les thèmes a pour objectif de créer un design personnalisé à chaque page associée à une faction spécifique.
+
+Dans un premier temps, sera réalisé pour chaque thème :
+<div>
+* Une bannière en haut de page encadrant le titre de page
+* La décoration des marges latérales
+* Personnalisation graphique du menu en haut de page
+</div>
+
+Plus tard ou occasionnellement, seront réalisés les encadrés des images sous-titrés, la personnalisation des titres des paragraphes et éventuellement un background de page spécifique.
+
+
+=== Dernières mises à jours ===
+
+<table id="model-new" class="decorated-table"><tr><td>
+1 septembre 2021
+</td><td>
+Finalisation du thème <span class="status-ok">[[Nécron]]</span>
+</td></tr><tr><td>
+16 septembre 2021
+</td><td>
+Création du thème <span class="status-beta">[[Chevalier Gris|Astartes - Chevaliers Gris]]</span>
+</td></tr><tr><td>
+14 septembre 2021
+</td><td>
+Création du thème <span class="status-beta">[[Deathwatch|Astartes - Deathwatch]]</span>
+</td></tr><tr><td>
+9 août 2021
+</td><td>
+Création du thème <span class="status-ok">[[Asuryani]]</span>
+</td></tr><tr><td>
+28 juillet 2021
+</td><td>
+Mise en place d'une mise en page standard pour les futurs thèmes (cf. [[Modèle:Page Theme]]).
+</td></tr><tr><td>
+15 juillet 2021
+</td><td>
+Création du thème <span class="status-beta">[[Necromunda]]</span>
+</td></tr><tr><td>
+juin 2021
+</td><td>
+Création du thème <span class="status-beta">[[Blood Angels|Astartes - Blood Angels]]</span>
+</td></tr><tr><td>
+juin  2021
+</td><td>
+Création du thème <span class="status-beta">[[Dark Angels|Astartes - Dark Angels]]</span>
+</td></tr><tr><td>
+juin  2021
+</td><td>
+Création du thème <span class="status-beta">[[Ork]]</span>
+</td></tr><tr><td>
+mai 2021
+</td><td>
+Création du thème <span class="status-beta">[[Tyranide]]</span>
+</td></tr><tr><td>
+mai 2021
+</td><td>
+Création du thème <span class="status-ok">[[Nécron]]</span>
+</td></tr></table>
+
+=== Liste des Thèmes de Page ===
+<div class="themes-wrap"><div>
+[[Adepta Sororitas]]
+</div><div>
+[[Adeptus Astartes]]
+</div><div>
+[[Adeptus Custodes]]
+</div><div>
+[[Adeptus Mechanicus]]
+</div><div>
+[[Adeptus Ministorum]]
+</div><div>
+[[Adeptus Titanicus]]
+</div><div>
+[[Arlequin]]
+</div><div class="status-beta">
+[[Blood Angels|Astartes - Blood Angels]]
+</div><div class="status-beta">
+[[Dark Angels|Astartes - Dark Angels]]
+</div><div class="status-beta">
+[[Deathwatch|Astartes - Deathwatch]]
+</div><div class="status-beta">
+[[Chevalier Gris|Astartes - Chevaliers Gris]]
+</div><div>
+[[Astra Militarum]]
+</div><div class="status-ok">
+[[Asuryani]]
+</div><div>
+[[Chevalier du Chaos]]
+</div><div>
+[[Chevalier Impérial]]
+</div><div>
+[[Démon]]
+</div><div>
+[[Drukhari]]
+</div><div>
+[[Inquisition]]
+</div><div class="status-ok">
+[[Deathwatch JDR|JDR Deathwatch]]
+</div><div class="status-ok">
+[[Wrath & Glory|JDR Wrath & Glory]]
+</div><div>
+[[Etendue de Jéricho]]
+</div><div>
+[[Militarum Tempestus]]
+</div><div class="status-beta">
+[[Necromunda]]
+</div><div class="status-ok">
+[[Nécron]]
+</div><div>
+[[Officio Assassinorum]]
+</div><div class="status-beta">
+[[Ork]]
+</div><div>
+[[Secte Génovore]]
+</div><div>
+[[Soeur du Silence]]
+</div><div>
+[[Space Marine du Chaos|Space Marines du Chaos]]
+</div><div>
+[[T'au]]
+</div><div>
+[[Titan du Chaos]]
+</div><div class="status-beta">
+[[Tyranide]]
+</div><div>
+[[Ynnari]]
+</div></div>
+
+<div><span style="color: #7db176;">Thèmes complets</span> (4) - <span style="color: #6ca0a7;">Thèmes incomplets</span> (7) - <span>Thèmes à faire</span> (22+)
+
+
+''N.B: Certains thèmes optionnels non-développés comme ceux de certains chapitres Space Marines ou les sous-thèmes des dieux du chaos ne sont pas listés ici.''
+
+=== Suivi du Développement des Thèmes ===
+
+Suivi de la refonte graphique du site.
+
+<table class="decorated-table themes">
+<tr>
+<th>Thème</th>
+<th>Status</th>
+<th>Modèles</th>
+<th>Notes</th>
+</tr>
+<tr>
+<td>[[Adepta Sororitas]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Adepta Sororitas]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Adeptus Astartes]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Adeptus Astartes]]</li>
+<li class="todo">[[Modèle:Citation Adepta Sororitas]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Adeptus Custodes]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Adeptus Custodes]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Adeptus Mechanicus]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li class="nok">Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Adeptus Mechanicus]]</li>
+<li>[[Modèle:Cadre Mechanicus]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Adeptus Ministorum]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Adeptus Ministorum]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Adeptus Titanicus]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Adeptus Titanicus]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Arlequin]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Arlequins]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-beta">
+<td>[[Blood Angels|Astartes - Blood Angels]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li class="ok">Bannière de page</li>
+<li class="ok">Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Astartes Blood Angel]]</li>
+<li>[[Modèle:Carte Perso Astartes Blood Angel]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-beta">
+<td>[[Dark Angels|Astartes - Dark Angels]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li class="ok">Bannière de page</li>
+<li class="ok">Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Astartes Dark Angel]]</li>
+<li>[[Modèle:Carte Perso Astartes Dark Angel]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-beta">
+<td>[[Deathwatch|Astartes - Deathwatch]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li class="ok">Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Deathwatch]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-beta">
+<td>[[Chevalier Gris|Astartes - Chevaliers Gris]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li class="ok">Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Chevaliers Gris]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Astra Militarum]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Astra Militarum]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-ok">
+<td>[[Asuryani]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li class="ok">Bannière de page</li>
+<li class="ok">Titres de paragraphe stylisés</li>
+<li class="ok">Citations stylisés</li>
+<li class="ok">Cadre d'image stylisés</li>
+<li class="ok">Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Asuryanis]]</li>
+<li>[[Modèle:Citation Asuryani]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Chevalier du Chaos]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Chevaliers du Chaos]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Chevalier Impérial]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Chevaliers Impériaux]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Démon]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="nok">Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li class="nok">Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Démons]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Drukhari]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Drukharis]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Inquisition]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Inquisition]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-ok">
+<td>[[Deathwatch JDR|JDR Deathwatch]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page JDR Deathwatch]]</li>
+<li>[[Modèle:Citation JDR Deathwatch]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-ok">
+<td>[[Wrath & Glory|JDR Wrath & Glory]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page JDR WG]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Etendue de Jéricho]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Jéricho]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Militarum Tempestus]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Militarum Tempestus]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-beta">
+<td>[[Necromunda]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li class="ok">Bannière de page</li>
+<li class="ok">Titres de paragraphe stylisés</li>
+<li class="ok">Citations stylisés</li>
+<li class="ok">Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Necromunda]]</li>
+<li>[[Modèle:Citation Necromunda]]</li>
+<li>[[Modèle:Citation Necromunda 2]]</li>
+<li>[[Modèle:Cadre Necromunda]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-ok">
+<td>[[Nécron]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li class="ok">Bannière de page</li>
+<li class="ok">Titres de paragraphe stylisés</li>
+<li class="ok">Citations stylisés</li>
+<li class="ok">Cadre d'image stylisés</li>
+<li class="ok">Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Necron]]</li>
+<li>[[Modèle:Cadre Necron]]</li>
+<li>[[Modèle:Carte Perso Necron]]</li>
+<li>[[Modèle:Citation Necron]]</li>
+<li>[[Modèle:Inner Page Necron]]</li>
+</ul></td>
+<td>
+Il faut ajouter une bannière en haut des pages
+</td>
+</tr>
+<tr>
+<td>[[Officio Assassinorum]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Officio Assassinorum]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-beta">
+<td>[[Ork]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="nok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li class="nok">Citations stylisés</li>
+<li class="nok">Titres de paragraphe stylisés</li>
+<li class="nok">Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Ork]]</li>
+<li>[[Modèle:Citation Ork]]</li>
+<li>[[Modèle:Image Ork]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Secte Génovore]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Sectes Génovores]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Soeur du Silence]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Soeurs du Silence]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Space Marines du Chaos]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Space Marines du Chaos]]</li>
+</ul></td>
+<td>
+Il faut réfléchir à l'application de sous-thème en fonction de chaque dieu du chaos.
+</td>
+</tr>
+<tr>
+<td>[[T'au]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Tau]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr>
+<td>[[Titan du Chaos]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Titans du Chaos]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+<tr class="status-beta">
+<td>[[Tyranide]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li class="ok">Style de page global</li>
+<li class="ok">Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li class="ok">Titres de paragraphe stylisés</li>
+<li class="ok">Citations stylisés</li>
+<li class="ok">Cadre d'image stylisés</li>
+<li class="ok">Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page_Tyranide]]</li>
+<li>[[Modèle:Cadre Tyranide]]</li>
+<li>[[Modèle:Citation Tyranide]]</li>
+<li>[[Modèle:Titre Tyranide]]</li>
+</ul></td>
+<td>
+Il faut ajouter une bannière en haut des pages
+</td>
+</tr>
+<tr>
+<td>[[Ynnari]]</td>
+<td class="devs-status"><ul>
+<li class="ok">Menu de navigation</li>
+<li>Style de page global</li>
+<li>Style du menu de navigation</li>
+<li>Bannière de page</li>
+<li>Titres de paragraphe stylisés</li>
+<li>Citations stylisés</li>
+<li>Cadre d'image stylisés</li>
+<li>Cadre d'image automatisés</li>
+</ul></td>
+<td><ul>
+<li>[[Modèle:Page Ynnari]]</li>
+</ul></td>
+<td>-</td>
+</tr>
+</table>
+
+
+<hr>
+
+== Liste des Modèles Génériques ==
+
+<table class="decorated-table">
+<tr>
+<th>Modèle</th>
+<th>Description</th>
+<th>Exemple de rendu</th>
+</tr>
+<tr><td>
+[[Modèle:Cadre Carrière Imperium]]
+</td><td>
+Modèle de création de fiche de carrière JDR.
+</td><td>
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|ApothicaireDeathwatch.jpg|
+Résumé de la carrière...
+|label=Deathwatch
+}}
+</td></tr><tr><td>
+[[Modèle:Citation]]
+</td><td>
+Modèle pour styliser les citations.
+</td><td>
+{{Citation
+|background-image=parchemin-clair
+|couleur_bordure=#2b3c3c
+|texte=« J’ai entendu parler du retour du Roi Silencieux. Ces rumeurs sont indignes d’un véritable souverain. Ramper dans les ténèbres, manipuler des marionnettes - aucun roi n’agit de la sorte. Et si ces fables sont vraies, il apprendra vite que son temps est révolu. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</td></tr><tr><td>
+[[Modèle:Copyright]]
+</td><td>
+Modèle à mettre dans la description des images copyrightées Games Workshop.
+</td><td>
+{{Modèle:Copyright}}
+</td></tr><tr><td>
+[[Modèle:Couleur]]
+</td><td>
+Modèle pour récupérer une couleur en fonction de son nom citadelle.
+</td><td>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|blazing orange}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">blazing orange</div></div>
+</td></tr><tr><td>
+[[Modèle:Credo]]
+</td><td>
+Modèle de génération aléatoire de Citation du Credo impériale dans un panel stylisé.
+</td><td>
+{{Credo}}
+</td></tr><tr><td>
+[[Modèle:Homonymie]]
+</td><td>
+Modèle pour afficher un panel visant à lister des différents articles partageant le même nom ou la même expression. 
+</td><td>
+{{Homonymie}} 
+</td></tr><tr><td>
+[[Modèle:ImageSFX]]
+</td><td>
+Modèle permettant d'effecter des transformation sur une image.
+</td><td>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|arrondis=50%
+}}
+</td></tr><tr><td>
+[[Modèle:Logo]]
+</td><td>
+Modèle pour afficher un symbol de chapitre space marine.
+</td><td>
+<div style="display: flex; flex-direction: column; padding: 10px;">
+<div style="padding: 5px 10px;text-align: center;">'''dark angels :'''</div>
+<div>[[Fichier:{{logo|dark angels}}|center]]</div>
+<div style="padding: 5px 10px;text-align: center;">''{{logo|dark angels}}''</div>
+</div>
+</td></tr><tr><td>
+[[Modèle:Moniteur]]
+</td><td>
+Modèle pour afficher un écran stylisé avec effet 3D.
+</td><td>
+{{Moniteur
+|image=OmnisBibliotheca.jpg
+|taille_image=360px
+|titre=Dernières Nouvelles
+}}
+</td></tr><tr><td>
+[[Modèle:Note JDR]]
+</td><td>
+Modèle pour afficher un panneau de note concernant le JDR.
+</td><td>
+{{Note JDR | Hello world}}
+</td></tr><tr><td>
+[[Modèle:Page OB]]
+</td><td>
+Modèle de stylisation d'une page standard de l'Omnis Biblotheca (stylisation du menu de gauche et de l'aspect global du site). Tout les modèles de style de page  son basés sur ce thème générique.
+</td><td>
+-
+</td></tr><tr><td>
+[[Modèle:Page Theme]]
+</td><td>
+Modèle de stylisation d'une page avec un menu contextuel en haut de page. Beaucoup de modèle de page à Thème sont basés sur ce Modèle.
+</td><td>
+Cf. page actuelle
+</td></tr><tr><td>
+[[Modèle:Portrait Hexa]]
+</td><td>
+Modèle pour afficher un protrait en hexagone.
+</td><td>
+{{Portrait Hexa
+|dimension=180
+|image=Mathias portrait.jpg
+|name=Mathias
+|title=Capitaine
+|link=[[Mathias]]
+|border_color=#151024
+}}
+</td></tr><tr><td>
+[[Modèle:Portrait SciFi]]
+</td><td>
+Modèle d'affichage d'une image dans un style d'écran moniteur avec effet de survol souris.
+</td><td>
+{{Portrait SciFi
+|image=Mathias portrait.jpg
+}}
+</td></tr><tr><td>
+[[Modèle:Portrait SciFi style]]
+</td><td>
+Modèle servant à factoriser la déclaration de règles CSS utilisées par le modèle '''Portrait SciFi'''.
+</td><td>
+non-graphique
+</td></tr><tr><td>
+[[Modèle:Terminal]]
+</td><td>
+Modèle d'affichage d'un écran de terminal avec des effets parasites.
+</td><td>
+{{Terminal
+|caret=on
+|taille=550px
+|titre=Dernières Nouvelles
+|texte= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit condimentum libero, sed mollis orci ultricies ac. Aenean hendrerit lacus sit amet dictum aliquet. Morbi posuere posuere ullamcorper. Proin auctor semper pellentesque. Vestibulum varius auctor dignissim. Mauris non pulvinar libero, id fermentum neque. Donec nisi ante, tempor fringilla fermentum sed, accumsan et ipsum. In sollicitudin tellus id finibus ultrices.
+
+Vestibulum a nibh in enim facilisis maximus. Praesent quam ante, finibus sollicitudin suscipit ac, euismod id purus. Sed scelerisque magna in leo tempor, et egestas nunc mattis. Quisque non bibendum ante. Praesent auctor et sapien eu pulvinar. Sed ut rhoncus massa, et dignissim arcu. Sed et nisi et nisl cursus sollicitudin. Nulla orci lectus, tincidunt quis sodales sed, tristique nec mauris. Morbi maximus accumsan leo, eu fringilla erat. Fusce convallis erat in dui condimentum euismod. Vivamus aliquet finibus mi, id aliquam nisl luctus sit amet. Maecenas vel mi ut eros bibendum congue in et mi. Donec bibendum malesuada gravida. Etiam quis magna eget velit consectetur iaculis. Donec diam arcu, eleifend non ante nec, facilisis tempus ante.
+
+Pellentesque scelerisque mi at elit interdum finibus. Etiam consectetur nunc vel volutpat varius. Nulla tincidunt ultrices bibendum. Integer ut tortor ac ipsum tincidunt mattis. Quisque a sapien eleifend urna sagittis aliquam. Nullam in leo urna. Etiam dictum laoreet elit nec rhoncus. Nunc aliquam nibh nec feugiat feugiat. Aliquam erat volutpat. Cras vitae odio eu eros auctor volutpat et a nibh. Suspendisse viverra suscipit eros sit amet auctor. Quisque sagittis nibh id leo imperdiet, ut dapibus velit ullamcorper. Suspendisse tempus dictum quam, nec feugiat tortor scelerisque quis. Vivamus ultrices in dui eget bibendum. 
+}}
+</td></tr><tr><td>
+[[Modèle:Tome]]
+</td><td>
+Modèle pour afficher un livre ouvrable.
+</td><td>
+{{Tome
+|titre=Hello
+|sous-titre=Nova Majoris
+|right-page=blablabla...
+|left-page=Hello Mars
+}}
+</td></tr><tr><td>
+[[Modèle:Travaux]]
+</td><td>
+Modèle pour indiquer qu'une page est en cours de construction.
+</td><td>
+{{travaux}}
+</td></tr><tr><td>
+[[Modèle:Voir homonyme]]
+</td><td>
+Modèle permettant d'aller vers une page de recherche par homonymie.
+</td><td>
+{{Voir homonyme|homonyme=Titre de la page d'homonymie}}
+</td></tr><tr><td>
+[[Modèle:Citation OB]]
+</td><td>
+Modèle pour styliser de manière standard une citation dans l'Omnis Bibliotheca.
+</td><td>
+{{Citation OB
+|background=linear-gradient(135deg, rgba(33, 71, 130, 0.4), rgba(68, 26, 26, 0.76))
+|taille=800px
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</td></tr>
+</table>
