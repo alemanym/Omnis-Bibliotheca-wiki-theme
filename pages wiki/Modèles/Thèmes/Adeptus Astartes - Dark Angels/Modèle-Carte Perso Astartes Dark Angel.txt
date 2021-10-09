@@ -1,0 +1,50 @@
+<includeonly><div class="perso-card">
+<div class="logo">[[Fichier:Symbol-da.png]]</div>
+<div class="perso-card-title">[[Fichier:Deco-aile-or.png]]{{{nom|}}}[[Fichier:Deco-aile-or.png]]</div>
+{{Portait SciFi |largeur=180px |hauteur=300px |margin=0.5em 0 0 0 |hauteur_titre=35px
+|link={{{link|}}}
+|image={{{image|}}}
+|taille_image={{{taille_image|x300px}}}
+|hexcolor=#9ec897
+|decalage_image_horizontal={{{decalage_image_horizontal|}}}
+|decalage_image_vertical={{{decalage_image_vertical|}}}
+}}
+<div class="perso-card-description">
+{{{description|}}}
+</div></div></includeonly><noinclude>
+{{Page Astartes Dark Angel}}
+
+'''Code :'''
+
+<pre>
+{{Carte Perso Astartes Dark Angel
+|nom=Lion El’Jonson
+|link=[[Lion El'Jonson]]
+|image=LeLion.jpg
+|taille_image=x400px
+|hexcolor=#9ec897
+|decalage_image_horizontal=-10px
+|decalage_image_vertical=30px
+|description=Primarque<br /> 
+des [[Dark Angels]]'''
+}}
+</pre>
+
+
+'''Rendu :'''
+
+{{Carte Perso Astartes Dark Angel
+|nom=Lion El’Jonson
+|link=[[Lion El'Jonson]]
+|image=LeLion.jpg
+|taille_image=x400px
+|hexcolor=#9ec897
+|decalage_image_horizontal=-10px
+|decalage_image_vertical=30px
+|description=Primarque<br /> 
+des [[Dark Angels]]'''
+}}
+
+
+[[Catégorie:Modèles de mise en page|Astartes Dark Angels]]
+</noinclude>

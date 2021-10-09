@@ -1,0 +1,750 @@
+<includeonly>{{Page OB}}
+{{#switch: {{{menu|}}}
+| none = __NOTOC__
+| normal = 
+| top | = <div id="custom-page-top" class="no-print">
+<div id="page-menu-top">
+<div class="top-menu-item">
+<div class="top-menu-title">PAGE : Sommaire</div>
+__TOC__
+</div>
+<div class="top-menu-item">
+<div class="top-menu-title">CHAPITRE : Dark Angels</div>
+<div class="top-menu-pane"><div>{{#categorytree:Dark Angels|mode=pages}}</div></div>
+</div>
+<div class="top-menu-item">
+<div class="top-menu-title">FACTION : Adeptus Astartes</div>
+<div class="top-menu-pane"><div>{{#categorytree:Adeptus Astartes|mode=pages}}</div></div>
+</div>
+<div class="top-menu-item">
+<div class="top-menu-title">FACTIONS DE L'UNIVERS</div>
+<div class="top-menu-pane factions-menu"><div>{{#categorytree:Factions|mode=categories|depth=2|hideroot=on}}</div></div>
+</div>
+</div>
+</div>
+}}
+{{#addbodyclass:theme-dark-angels}}
+{{#css:
+
+@media only screen {
+body.OB.theme-dark-angels div#content {
+	z-index: -1;
+	box-shadow: inset 0 5px 5px -5px white, inset 0 150px 80px -80px #04370c6e, 0 0 4px 1px black, 0 0 3px #443c3d,0 0 3px black, -16px 0 0 -10px #000 !important;
+	padding: 1em 5.5em;
+	min-height: 720px;
+	background: linear-gradient(135deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322) #000 !important;
+	background-size: auto 66px !important;
+	background-repeat: no-repeat !important;
+}
+body.OB.theme-dark-angels #bodyContent {
+	padding-top: 3em;
+}
+body.OB.theme-dark-angels .mw-parser-output {
+	padding: 0 4em;
+}
+
+/*******************************/
+/** Menu custom de navigation **/
+/*******************************/
+body.theme-dark-angels table.faction {
+	background: linear-gradient(135deg, #000, #042417, #000, #000, #000, #02150e, #000, #000, #000, #042417, #000);
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba,0 0 0 10px black, 0 0 5px 10px #000, 0 0 3px 10px #1b1b1b;
+	margin: 10px 10px;
+	position: relative;
+	padding: 20px;
+	color: #94b789;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-family: 'courier new',monospace;
+}
+body.theme-dark-angels #custom-page-top {
+	position: sticky;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	margin-bottom: 20px;
+	user-select: none;
+	height: 0;
+	margin: 0;
+}
+body.theme-dark-angels #page-menu-top {
+	top: 0;
+	left: 0;
+	height: 31px;
+	z-index: 1000;
+	width: calc(100% + 6em);
+	border-radius: 5px;
+	display: flex;
+	position: relative;
+	transform: translateX(-3em) translateY(-41px);
+	box-shadow: 0 -6px 6px -0px #000c, 0 -6px 0 #770101, 0 -14px 6px -6px black, inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 0 50px black !important;
+	box-sizing: border-box;
+	background: linear-gradient(135deg, #444141 10%, #414444 25%, #2f3535 40%, #232625 55%, #3c4240 75%, #2f2d2d 85%) !important;
+	justify-content: center;
+	background: linear-gradient(135deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322) !important;
+}
+body.theme-dark-angels #page-menu-top .top-menu-item {
+	display: flex;
+	justify-content: center;
+	padding: 0 26px;
+	align-items: center;
+	position: relative;
+	box-shadow: 0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #00000075,inset 0 0 0 1px #000,inset 15px 15px 25px -15px black;
+	background: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px),radial-gradient( #2b412f,rgba(28,20,20,0.76)),linear-gradient(135deg,#064004,#064004,#000,#064004,#000,#064004,#000);
+	flex: 1;
+	max-width: 190px;
+}
+body.theme-dark-angels #page-menu-top .top-menu-item:hover {
+	background: #00000070;
+	box-shadow: inset 0 0 10px black;
+}
+body.theme-dark-angels #page-menu-top .top-menu-item:first-child::before {
+	content: '☰';
+	font-size: 20px;
+	padding: 0 8px 2px 0;
+	color: #000000b5;
+}
+body.theme-dark-angels #page-menu-top .top-menu-title {
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+	background: linear-gradient(135deg, #956f49a0, #eed087a0, #c39465a0, #ab7b49a0, #6d4b2ca0, #a47f56a0, #9a704aa0, #eed395a0, #70553ca0, #956f49a0, #eed087a0, #c39465a0, #ab7b49a0, #6d4b2ca0, #a47f56a0) #4a4a4a !important;
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	color: transparent !important;
+}
+/*********************/
+/** Menu + Sommaire **/
+/*********************/
+body.theme-dark-angels #page-menu-top #toc,
+body.theme-dark-angels #page-menu-top .top-menu-pane {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(calc(100% - 1px));
+	display: block;
+	z-index: 1000;
+	margin: 0;
+	padding: 0.5em 2em;
+	border-radius: 0;
+	border: none;
+	background: linear-gradient(to right, #110e0e, #212222);
+	background-color: black !important;
+	background-attachment: local;
+	box-shadow: inset 0 0 0 1px #272727,5px 5px 5px -5px #000,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	max-height: 400px;
+	overflow-y: auto;
+	opacity: 1;
+}
+body.theme-dark-angels #page-menu-top :not(:hover) > #toc,
+body.theme-dark-angels #page-menu-top :not(:hover) > .top-menu-pane {
+    display: none;
+}
+body.theme-dark-angels #toc .toctoggle,
+body.theme-dark-angels #toc .toctitle,
+body.theme-dark-angels #toc .toclevel-3,
+body.theme-dark-angels #toc .toclevel-4,
+body.theme-dark-angels #toc .toclevel-5 {
+    display: none;
+}
+body.theme-dark-angels .CategoryTreeItem {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+body.theme-dark-angels .CategoryTreeChildren {
+	margin-left: 1.25em;
+}
+body.theme-dark-angels .CategoryTreeBullet {
+	margin-right: 5px;
+}
+body.theme-dark-angels .toctext,
+body.theme-dark-angels .CategoryTreeLabel,
+body.theme-dark-angels .CategoryTreeToggle {
+	color: #a6a6a6 !important;
+	text-shadow: none;
+}
+body.theme-dark-angels .factions-menu .CategoryTreeBullet,
+body.theme-dark-angels .CategoryTreeEmptyBullet {
+	display: none !important;
+}
+body.theme-dark-angels .factions-menu .CategoryTreeTag > .CategoryTreeSection {
+	box-shadow: 0 1px 1px -1px white;
+	padding: 5px 5px 10px 0;
+}
+body.theme-dark-angels .factions-menu .CategoryTreeTag > .CategoryTreeSection:last-child {
+	box-shadow: none;
+}
+body.theme-dark-angels .factions-menu .CategoryTreeTag > .CategoryTreeSection > .CategoryTreeItem a {
+	color: #d0d0d0 !important;
+	pointer-events: none;
+	cursor: default;
+	font-weight: initial;
+	font-size: 110%;
+	margin-bottom: 5px;
+}
+body.theme-dark-angels .tocnumber {
+	color: #f2fff4d6;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-weight: initial;
+}
+body.OB.theme-dark-angels .thumbcaption {
+	box-shadow: 0 -10px 10px -10px black, inset 0 0 0 1px #272727,5px 5px 5px -5px #000,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	background: #1f4037;
+	background: -webkit-linear-gradient(to right, #090909, #1f4037);
+	background: linear-gradient(to right, #090909, #1f4037);
+	position: relative;
+}
+body.OB.theme-dark-angels div.thumbinner {
+	background-color: #131111 !important;
+	border: 1px solid #000 !important;
+	box-shadow: 0 0 10px #392412, 0 0 0 10px #000;
+	background: linear-gradient(135deg, #444141 10%, #414444 25%, #2f3535 40%, #232625 55%, #3c4240 75%, #2f2d2d 85%) !important;
+}
+
+/***********************/
+/** Decoration themee **/
+/***********************/
+body.OB.theme-dark-angels .deco-top-1 {
+	position: absolute;
+	height: 25px;
+	top: 0;
+	left: 0;
+	transform: translateY(43px) translateX(13px);
+	opacity: 0.8;
+	z-index: 50;
+	box-shadow: 0 10px 20px -10px #1400ff;
+}
+body.OB.theme-dark-angels .deco-top-2 {
+	position: absolute;
+	height: 25px;
+	top: 0;
+	right: 0;
+	transform: scale(-1, 1) translateY(43px) translateX(13px);
+	opacity: 0.8;
+	z-index: 50;
+	box-shadow: 0 10px 10px -10px #1400ff;
+}
+body.OB.theme-dark-angels .deco-top-3 {
+	position: absolute;
+	top: 43px;
+	left: 50%;
+	width: calc(100% - 612px);
+	text-align: center;
+	transform: translateX(-50%);
+	height: 43px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: radial-gradient(at top, #000000, transparent) !important; */
+	box-shadow: inset 0 5px 20px #00000047, inset 1px -2px 1px #ffffff1f, inset 0 -10px 10px -5px #000, inset 0 -5px #415b55, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 0 50px black !important;
+	border-radius: 0 0 5px 5px;
+	overflow: hidden;
+	z-index: 30;
+	background: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px),radial-gradient( rgba(0, 0, 0, 0.4),rgba(20,24,28,0.76)),linear-gradient(135deg,#000,#042417,#000,#000,#000,#02150e,#000,#000,#000,#042417,#000);
+	/* background-size: auto, auto, auto; */
+	background-size: auto 4px,100% 100%;
+}
+body.OB.theme-dark-angels .deco-top-3 .image:first-child {
+	position: absolute;
+	left: 0;
+	transform: translateX(-50%);
+	top: 0;
+	opacity: 0.4;
+}
+body.OB.theme-dark-angels .deco-top-3 .image:last-child {
+	position: absolute;
+	right: 0;
+	transform: translateX(50%);
+	top: 0;
+	opacity: 0.4;
+}
+body.OB.theme-dark-angels .deco-top-4 {
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+	left: 130px;
+	transform: translateX(-50px);
+	opacity: 0.4;
+}
+body.OB.theme-dark-angels .deco-top-4::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 120px 0 50px -50px #000000d9;
+}
+body.OB.theme-dark-angels .deco-top-5 {
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+	right: 130px;
+	transform: translateX(50px) scale(-1, 1);
+	opacity: 0.5;
+}
+body.OB.theme-dark-angels .deco-top-5::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 120px 0 50px -50px #000000d9;
+}
+body.OB.theme-dark-angels .deco-top-6 {
+	position: relative;
+	height: 0;
+	width: 100%;
+	z-index: 40;
+}
+body.OB.theme-dark-angels .deco-top-6 > :first-child {
+	position: absolute;
+	right: 238px;
+	top: 0;
+	transform: translateY(-17px);
+	opacity: 0.8;
+}
+body.OB.theme-dark-angels .deco-top-6 > :last-child {
+	position: absolute;
+	left: 238px;
+	top: 0;
+	transform: translateY(-17px) scale(-1, 1);
+	opacity: 0.8;
+}
+body.OB.theme-dark-angels .deco-top-7 {
+	position: relative;
+	height: 0;
+	width: 100%;
+}
+body.OB.theme-dark-angels .deco-top-7 > :first-child {
+	position: absolute;
+	left: 0;
+	top: 24px;
+	transform: translateY(-17px) translateX(-48px) scale(-1, 1);
+	z-index: 10;
+	mask-image: linear-gradient(270deg,black, transparent);
+	-webkit-mask-image: linear-gradient(270deg,black, transparent);
+}
+body.OB.theme-dark-angels .deco-top-7 > :last-child {
+	position: absolute;
+	right: 0;
+	top: 24px;
+	transform: translateY(-17px) translateX(48px);
+	z-index: 10;
+	mask-image: linear-gradient(270deg,black, transparent);
+	-webkit-mask-image: linear-gradient(270deg,black, transparent);
+}
+body.OB.theme-dark-angels .deco-top-7 > ::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(at 40% 38%, black, transparent 20%);
+}
+body.OB.theme-dark-angels .deco-top-8 {
+	position: relative;
+	height: 0;
+	width: 100%;
+	z-index: 35;
+}
+body.OB.theme-dark-angels .deco-top-8 > :first-child {
+	position: absolute;
+	right: 300px;
+	top: 0;
+	transform: translateY(-17px);
+	opacity: 0.8;
+}
+body.OB.theme-dark-angels .deco-top-8 > :last-child {
+	position: absolute;
+	left: 300px;
+	top: 0;
+	transform: translateY(-17px) scale(-1, 1);
+	opacity: 0.8;
+}
+body.OB.theme-dark-angels .deco-top-9 {
+	position: absolute;
+	top: 41px;
+	left: 50%;
+	z-index: 60;
+	transform: translateX(-50%);
+	opacity: 0.9;
+}
+body.OB.theme-dark-angels .deco-top-10 {
+	position: relative;
+	height: 0;
+	width: 100%;
+	z-index: 45;
+}
+body.OB.theme-dark-angels .deco-top-10 > :first-child {
+	position: absolute;
+	right: 46px;
+	top: 14px;
+}
+body.OB.theme-dark-angels .deco-top-10 > :last-child {
+	position: absolute;
+	left: 46px;
+	top: 14px;
+	transform: scale(-1, 1);
+}
+body.OB.theme-dark-angels .deco-top-right {
+	position: sticky;
+	top: 70px;
+	right: 0;
+	transform: translateX(140px) translateY(230px);
+	z-index: 1013;
+	height: 0;
+	width: 100%;
+}
+body.OB.theme-dark-angels .deco-top-right .image {
+	-webkit-mask: linear-gradient(black 80%, transparent, transparent);
+	mask: linear-gradient(black 80%, transparent, transparent);
+	display: table;
+	position: absolute;
+	right: 0;
+}
+
+body.OB.theme-dark-angels .deco-top-right-2 {
+	position: sticky;
+	top: 72px;
+	right: 0;
+	transform: translateX(121px) translateY(46px);
+	z-index: 1010;
+	height: 0;
+	width: 100%;
+	text-align: right;
+}
+body.OB.theme-dark-angels .deco-top-right-3 {
+	position: sticky;
+	top: 72px;
+	right: 0;
+	transform: translateX(152px) translateY(38px);
+	z-index: 1012;
+	height: 0;
+	width: 100%;
+	text-align: right;
+	opacity: 0.8;
+}
+body.OB.theme-dark-angels .deco-top-right-3 > .image {
+	position: absolute;
+	right: 0;
+}
+body.OB.theme-dark-angels .deco-top-right-4 {
+	transform: translateX(122px) translateY(-73px);
+	z-index: 1013;
+	position: sticky;
+	top: 72px;
+	right: 0;
+	height: 0;
+	width: 100%;
+	text-align: right;
+}
+body.OB.theme-dark-angels .deco-top-right-4::after {
+	content: '';
+	top: 0;
+	right: 0;
+	width: 150px;
+	height: 117px;
+	box-shadow: inset -20px 20px 20px -20px #000000c9, inset -20px 20px 50px -10px #000000c9;
+	z-index: 10;
+	position: absolute;
+}
+body.OB.theme-dark-angels .deco-top-left {
+	position: sticky;
+	top: 72px;
+	left: 0;
+	transform: translateY(230px) translateX(-5px) scale(-1, 1);
+	z-index: 1013;
+	height: 0;
+	width: 0;
+	display: flex;
+}
+body.OB.theme-dark-angels .deco-top-left .image {
+	-webkit-mask: linear-gradient(black 80%, transparent, transparent);
+	mask: linear-gradient(black 80%, transparent, transparent);
+	display: table;
+	position: absolute;
+	left: 0;
+}
+
+body.OB.theme-dark-angels .deco-top-left-2 {
+	position: sticky;
+	top: 72px;
+	left: 0;
+	transform: translateX(-121px) translateY(80px);
+	z-index: 1010;
+	height: 0;
+}
+body.OB.theme-dark-angels .deco-top-left-3 {
+	position: sticky;
+	top: 72px;
+	left: 0;
+	z-index: 1020;
+	display: flex;
+	height: 0;
+	transform: translateY(86px);
+}
+body.OB.theme-dark-angels .deco-top-left-3 > .image {
+	transform: translateX(-118px) translateY(-155px);
+	position: relative;
+	transform-origin: center top;
+	display: flex;
+	perspective: 1500px;
+}
+body.OB.theme-dark-angels .deco-top-left-3 .image::after {
+	content: '';
+	position: absolute;
+	top: 90px;
+	left: 9px;
+	width: 74px;
+	height: 118px;
+	box-shadow: inset 10px -10px 10px black, 0px 0px 5px black, 0px 0 5px black;
+	transform: rotateY(15deg) translateZ(10px);
+	transform-origin: center top;
+	z-index: 10;
+}
+body.OB.theme-dark-angels .deco-top-left-3 > .image > img {
+	transform: rotateY(15deg);
+	position: relative;
+	transform-origin: center top;
+	box-shadow: -10px 0 10px -10px #fff, -3px 0 3px 0 #b5bac2, -10px 0 #313839, 10px 0 10px #00000091, 0px 20px 20px #000000d4, -10px 0 #bec8c9;
+	display: table;
+}
+body.OB.theme-dark-angels .deco-top-middle {
+	position: relative;
+	top: 45px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-63px);
+	z-index: 20;
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+body.OB.theme-dark-angels .deco-top-middle > .image {
+	border-bottom: 2px solid #600b17;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+	padding-left: 22px;
+}
+body.OB.theme-dark-angels .deco-top-middle > .image > img {
+	mask-image: radial-gradient(at top, black, transparent 70%);
+	-webkit-mask-image: radial-gradient(at top, black, transparent 70%);
+}
+body.OB.theme-dark-angels .deco-top-middle-2 {
+	position: sticky;
+	top: 51px;
+	right: 0;
+	z-index: 1020;
+	height: 1px;
+	/* right: 0; */
+}
+body.OB.theme-dark-angels .deco-top-middle-2 > .image {
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateY(-63px);
+}
+body.OB.theme-dark-angels #firstHeading {
+	overflow: visible;
+	padding: 40px 10px 0 10px;
+	text-shadow: 1px 1px 5px #000;
+	margin: 0;
+	transform: translateY(56px);
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	height: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	box-shadow: none !important;
+	background: none !important;
+	z-index: 110;
+}
+body.OB.theme-dark-angels .previewnote {
+	position: absolute;
+	padding: 20px 50px;
+	width: 100%;
+	box-sizing: border-box;
+	top: 185px;
+	z-index: 100;
+}
+body.OB.theme-dark-angels .previewnote + * .deco-top-middle {
+	margin-bottom: 5em;
+}
+body.OB.theme-dark-angels #editform {
+	margin: 0 5em;
+}
+.mw-category-generated {
+	margin: 0 5em;
+}
+body.OB.theme-dark-angels #catlinks {
+	background: linear-gradient(135deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322) #000 !important;
+	box-shadow: inset 0 2px 2px -2px white, inset 0 150px 80px -80px #04370c6e, 0 0 4px 1px black, 0 0 3px #443c3d,0 0 3px black, -16px 0 0 -10px #000 !important;
+	border: none;
+	padding: 8px 24px;
+	opacity: 0.9;
+	margin: 1em 4em;
+}
+body.OB.theme-dark-angels .mw-redirectedfrom {
+	position: absolute;
+	top: 212px;
+	left: 48px;
+	background: #000000c2;
+	z-index: 200;
+	padding: 0.5em;
+	border-radius: 5px;
+}
+
+body.OB.theme-dark-angels .perso-card {
+	box-sizing: border-box;
+	background: radial-gradient(#101311 60%, #154221) !important;
+	padding: 0;
+	box-shadow: inset 1px 1px #ff911d08,inset 0 0 0 1px #202020, 0 4px 10px black, inset 0 0 50px black, inset 0 0 0 4px #dfc99c, inset 0 0 0 6px black, inset 0 0 0 8px #918563, inset 0 0 5px 8px black !important;
+	margin: 2em;
+	position: relative;
+	display: table;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+}
+body.OB.theme-dark-angels .perso-card::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 49px);
+	background: #f9f9f90d;
+}
+body.OB.theme-dark-angels .perso-card > .logo {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	background: none !important;
+	right: 0;
+	transform: translateY(-9px) translateX(19px);
+	opacity: 0.9;
+}
+body.OB.theme-dark-angels .perso-card-title {
+	font-size: 16px;
+	color: #cacaca !important;
+	text-shadow: 0 0 5px #ffffff2e !important;
+	padding: 0.5em;
+	background: linear-gradient(135deg,#717978 10%,#474848 25%,#575b5b 40%,#404241 55%,#444847 75%,#272b2a 85%) !important;
+	box-shadow: inset 1px 1px 0 #ffffff24, inset -10px 20px 30px -10px black, inset -1px -1px 0 #ffffff1c, 0 10px 10px -10px black, inset 0 0 4px black, 0 5px 5px -5px black, 0 5px 0 #480909, 0 5px 5px #000;
+	margin-bottom: 0.3em;
+}
+body.OB.theme-dark-angels .perso-card-title > .image:first-child {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-5px) translateX(-5px);
+}
+body.OB.theme-dark-angels .perso-card-title > .image:first-child::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 10px 10px 20px -10px black;
+	content: '';
+}
+body.OB.theme-dark-angels .perso-card-title > .image:last-child {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(-5px) translateX(5px) scale(-1, 1);
+}
+body.OB.theme-dark-angels .perso-card-title > .image:last-child::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	box-shadow: inset 10px 10px 20px -10px black;
+}
+body.OB.theme-dark-angels .perso-card-description {
+	/* box-shadow: inset 0 8px 5px black, inset 0 5px 0 gray, inset -10px 20px 30px -10px black, 0 -1px 0 #202020, inset 0 -20px 20px -20px #00000069 !important; */
+	box-sizing: border-box;
+	/* background: linear-gradient(135deg, #444141a0 10%, #414444a0 25%, #2f3535a0 40%, #232625a0 55%, #3c4240a0 75%, #2f2d2da0 85%) black !important; */
+	padding: 1em;
+	position: relative;
+	/* margin-top: 1.5em; */
+	width: 220px;
+	flex: 1;
+	color: #000;
+	text-shadow: 0 0 40px #96ff5d, 0 0 80px #d3ff9e, 0 0 25px #fff !important;
+}
+body.OB.theme-dark-angels .perso-card-description a {
+	color: black !important;
+}
+body.OB.theme-dark-angels .perso-card .portrait-scifi-entry{
+	scale: 0.95;
+}
+body.OB.theme-dark-angels .perso-card .portrait-scifi-entry:hover {
+	scale: 1;
+}
+body.OB.theme-dark-angels .perso-card:hover .perso-card-description, 
+body.OB.theme-dark-angels .perso-card:hover .perso-card-description a {
+	color: #ffffffb0 !important;
+}
+
+}
+}}
+<div class="no-print deco-top-1">[[Fichier:Deco-dark-angel-10.png]]</div>
+<div class="no-print deco-top-2">[[Fichier:Deco-dark-angel-10.png]]</div>
+<div class="no-print deco-top-3">[[Fichier:Aquila.png|x42px]][[Fichier:Aquila.png|x42px]]</div>
+<div class="no-print deco-top-6">[[Fichier:Deco-dark-angel-13.png]][[Fichier:Deco-dark-angel-13.png]]</div>
+<div class="no-print deco-top-7">[[Fichier:Deco-dark-angel-17.jpg]][[Fichier:Deco-dark-angel-17.jpg]]</div>
+<div class="no-print deco-top-8">[[Fichier:Deco-dark-angel-15.png|30px]][[Fichier:Deco-dark-angel-15.png|30px]]</div>
+<div class="no-print deco-top-9">[[Fichier:Deco-dark-angel-16.png]]</div>
+<div class="no-print deco-top-10">[[Fichier:Deco-dark-angel-18.png]][[Fichier:Deco-dark-angel-18.png]]</div>
+<div class="no-print deco-top-right">[[Fichier:Deco-dark-angel-03.png]]</div>
+<div class="no-print deco-top-right-2">[[Fichier:Deco-dark-angel-01.png]]</div>
+<div class="no-print deco-top-right-3">[[Fichier:Deco-dark-angel-19.png|130px]]</div>
+<div class="no-print deco-top-right-4">[[Fichier:Deco-dark-angel-09.png]]</div>
+<div class="no-print deco-top-left">[[Fichier:Deco-dark-angel-03.png]]</div>
+<div class="no-print deco-top-left-2">[[Fichier:Deco-dark-angel-01.png]]</div>
+<div class="no-print deco-top-left-3">[[Fichier:Deco-dark-angel-07.jpg|100px]]</div>
+<div class="no-print deco-top-middle"><div class="deco-top-4">[[Fichier:Deco-dark-angel-11.png]]</div>[[Fichier:Deco-dark-angel-05.jpg]]<div class="deco-top-5">[[Fichier:Deco-dark-angel-11.png]]</div></div>
+
+</includeonly><noinclude>
+{{Page Astartes Dark Angel}}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+[[Catégorie:Modèles de mise en page|Astartes Dark Angels]]
+</noinclude>
