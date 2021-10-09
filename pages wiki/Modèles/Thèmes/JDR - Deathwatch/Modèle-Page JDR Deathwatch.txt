@@ -1,0 +1,15 @@
+<includeonly>{{Page Theme
+|menu-title=Deathwatch JDR
+|menu-category=Deathwatch JDR
+|menu-title-2=Jeux de Rôle
+|menu-2={{#categorytree:Jeux de Rôle|mode=pages}}
+|menu-2-style=normal
+}}
+{{#addbodyclass:theme-jdr-dw}}
+{{#css:
+
+}}</includeonly><noinclude>
+{{Page JDR Deathwatch}}
+{{travaux}}
+[[Catégorie:Modèles de mise en page|JDR DW]]
+</noinclude>

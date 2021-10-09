@@ -1,0 +1,48 @@
+<includeonly><div style="padding: 1.5em;background: linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) !important;box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;background-color: #000 !important;display: flex;position: relative;overflow: clip; width: {{{taille|}}};"><div style="background: #00000061;padding: 1em;flex: 1;color: grey;">{{#if:
+{{{titre|}}} 
+| <div style="color: white;text-align: center;font-size: 12px;font-family: sans-serif;letter-spacing: 2px;font-weight: bold;margin-bottom: 0.5em;">{{{titre|}}}</div>}}{{#if:
+{{{texte|}}} 
+| <div style="color: grey;">{{{texte|}}}</div>}}{{#if:
+{{{signature|}}} 
+| <div style="padding-left: 20px;color: #bfbfbf;display: inline-block;margin: 0.5em 0 0 0;">{{{signature|}}}</div>}}</div></div></includeonly><noinclude>
+==Fonctionnalité==
+
+Permet d'afficher un cadre spécifique pour le [[Jeux de Rôle]] 40.000 [[Deathwatch JDR|DEATHWATCH]] contenant une citation et éventuellement un titre et une signature .
+
+==Paramètres==
+
+===Paramètres obligatoires: ===
+
+*'''texte''' = contenu textuel principal
+
+===Paramètres optionnels: ===
+
+*'''taille''' = taille du cadre de citation
+*'''signature''' = Signature de la citation
+*'''titre''' = Titre en haut de la citation
+
+==Exemples==
+
+'''Code :'''
+<pre>
+{{Citation JDR Deathwatch
+|titre=DEATHWATCH
+|texte=''Vous êtes un [[Space Marine]], l’un des guerriers suprêmes de l’[[Imperium]]. Modifié génétiquement et amélioré grâce à des implants pour devenir le soldat ultime, vous êtes bien plus fort, résistant et mortel que n’importe quel autre être humain. Vous avez été sélectionné pour rejoindre une fraternité d’élite de chasseurs de [[Xenos]] connue sous le nom de [[Deathwatch]].
+
+''En tant que Space Marine de la Deathwatch, votre devoir est de débusquer les ruines Xenos de [[Monde en Quarantaine|Mondes Interdits]], vous aventurer au-delà des lignes ennemies pour remplir des missions que nul autre ne peut accomplir, et vous confronter aux dangers les plus terribles de la galaxie… Autant de défis que seuls les Space Marines peuvent relever.''
+|signature=- Jeux de Rôle Warhammer 40.000 : DEATHWATCH. 
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation JDR Deathwatch
+|titre=DEATHWATCH
+|texte=''Vous êtes un [[Space Marine]], l’un des guerriers suprêmes de l’[[Imperium]]. Modifié génétiquement et amélioré grâce à des implants pour devenir le soldat ultime, vous êtes bien plus fort, résistant et mortel que n’importe quel autre être humain. Vous avez été sélectionné pour rejoindre une fraternité d’élite de chasseurs de [[Xenos]] connue sous le nom de [[Deathwatch]].
+
+''En tant que Space Marine de la Deathwatch, votre devoir est de débusquer les ruines Xenos de [[Monde en Quarantaine|Mondes Interdits]], vous aventurer au-delà des lignes ennemies pour remplir des missions que nul autre ne peut accomplir, et vous confronter aux dangers les plus terribles de la galaxie… Autant de défis que seuls les Space Marines peuvent relever.''
+|signature=- Jeux de Rôle Warhammer 40.000 : DEATHWATCH. 
+}}
+
+
+[[Catégorie:Modèles de mise en page|JDR DW]]
+</noinclude>
