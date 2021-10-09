@@ -1,0 +1,366 @@
+<includeonly>{{Page OB}}
+{{#switch: {{{menu|}}}
+| none = __NOTOC__
+| normal = 
+| top | = <div id="custom-page-top" class="no-print">
+<div id="page-menu-top">
+<div class="top-menu-item">
+<div class="top-menu-title">PAGE : Sommaire</div>
+__TOC__
+</div>
+<div class="top-menu-item">
+<div class="top-menu-title">FACTION : Les Orks</div>
+<div class="top-menu-pane"><div>{{#categorytree:Orks|mode=pages}}</div></div>
+</div>
+<div class="top-menu-item">
+<div class="top-menu-title">FACTIONS DE L'UNIVERS</div>
+<div class="top-menu-pane factions-menu"><div>{{#categorytree:Factions|mode=categories|depth=2|hideroot=on}}</div></div>
+</div>
+</div>
+</div>
+}}
+{{#addbodyclass:theme-ork}}
+{{#css:
+
+@media only screen {
+body.OB.theme-ork div#content {
+	background: linear-gradient(135deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322), linear-gradient(to right, #331f0d, #665643 19px, #3a3737 20px, #1e1919 20px, #ff8300a1 30px, #2b2928 35px, black, #021313, black 90%, #240b0b calc(100% - 35px), #ff8300a1 calc(100% - 30px), #221f1f calc(100% - 20px), #3a3737 calc(100% - 20px), #513f2c calc(100% - 19px), #1a1511), #e4ece3 !important;
+	z-index: -1;
+	background-size: auto 68px, auto !important;
+	background-repeat: no-repeat, repeat !important;
+	box-shadow: inset 0 5px 5px -5px white, inset 0 150px 80px -80px #ff00006e, 0 0 4px 1px black, 0 0 3px #443c3d,0 0 3px black, -16px 0 0 -10px #000 !important;
+	padding: 1em 5.5em;
+	min-height: 400px;
+	overflow: clip !important;
+	position: relative !important;
+	box-sizing: border-box !important;
+	overflow: hidden !important;
+}
+body.OB.theme-ork div#content::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	pointer-events: none;
+	background: linear-gradient(265deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625);
+	transform: rotate(45deg) translateY(70px);
+	box-shadow: inset 0 2px 0 #0000002b, inset 0 0 15px #dbdbdbb0, inset 0 0 25px #390000, 0 0 12px #040404, 0 0 0 12px #551f1f;
+}
+body.OB.theme-ork div#content::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	pointer-events: none;
+	background: linear-gradient(265deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625);
+	transform: rotate(-45deg) translateY(70px);
+	box-shadow: inset 0 2px 0 #0000002b, inset 0 0 15px #dbdbdbb0, inset 0 0 25px #390000, 0 0 12px #040404, 0 0 0 12px #551f1f;
+}
+body.OB.theme-ork #bodyContent {
+	padding-top: 3em;
+}
+body.OB.theme-ork div#content .deco-top-left {
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 10;
+	transform: translateX(-80px) translateY(-46px);
+	z-index: 10;
+}
+body.OB.theme-ork div#content .deco-top-left-2 {
+	top: 110px;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	transform: translateX(-113px) translateY(-127px);
+	z-index: 12;
+	background: radial-gradient(60% 50%, #000, transparent 80%, transparent );
+}
+body.OB.theme-ork div#content .deco-top-left-3 {
+	top: 110px;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	transform: translateX(-49px) translateY(-46px) scale(0.5);
+	z-index: 12;
+	background: radial-gradient(60% 50%, #000, transparent 80%, transparent );
+	opacity: 0.3;
+}
+body.OB.theme-ork div#content .deco-top-right {
+	top: 0;
+	right: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 10;
+	transform: translateX(81px) translateY(-23px);
+	z-index: 10;
+}
+body.OB.theme-ork div#content .deco-top-right-2 {
+	top: 0;
+	right: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 10;
+	transform: translateX(144px) translateY(-63px);
+	z-index: 12;
+	background: radial-gradient(60% 50%, #000, transparent 80%, transparent );
+}
+body.OB.theme-ork div#content .deco-top-right-3 {
+	top: 0;
+	right: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 10;
+	transform: translateX(81px) translateY(-23px) rotate(-22deg);
+	z-index: 11;
+}
+
+body.OB.theme-ork div#content .deco-top-middle {
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	transform: translateX(-5.5em) translateY(14px);
+	z-index: 5;
+	box-shadow: 0 12px 12px -10px black;
+	display: flex;
+	width: calc(100% + 11em);
+}
+body.OB.theme-ork div#content .deco-top-middle img {
+	height: 26px;
+	width: auto;
+}
+
+
+body.OB.theme-ork div#content .deco-top-middle-2 {
+	top: 0;
+	right: 0;
+	pointer-events: none;
+	position: absolute;
+	transform: translateX(0px) translateY(-61px);
+	z-index: 5;
+	scale: 0.7;
+	opacity: 0.8;
+}
+body.theme-ork #content h1#firstHeading {
+	overflow: visible;
+	padding: 5px 10px;
+	text-shadow: 1px 1px 5px #000;
+	border: 1px solid #171717;
+	box-shadow: inset 0 0 0 1px #272727,5px 5px 5px -5px #000,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	background: #1f4037;
+	background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+	background: linear-gradient(to right, #99f2c8, #1f4037);
+	border-radius: 0;
+	color: #ccbeac !important;
+	margin: 0 2em;
+	padding: 5px 40px;
+}
+body.theme-ork #content h1,
+body.theme-ork #content h2,
+body.theme-ork #content h3,
+body.theme-ork #content h4,
+body.theme-ork #content h5,
+body.theme-ork #content h6 {
+	background: none;
+	color: #496a5b !important;
+	padding: 5px 10px;
+	text-shadow: 1px 1px 5px #000;
+	box-shadow: none;
+	border-bottom: 4px solid #601717;
+}
+body.theme-ork #catlinks {
+	box-shadow: inset 0 0 2px 1px #272727,5px 5px 5px -5px #000,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	background: #1f4037;
+	background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+	background: linear-gradient(135deg,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322,#717978,#414444,#575b5b,#232625,#3c4240,#1f2322);
+	border-radius: 0;
+	border: none;
+}
+body.theme-ork .subtitle {
+	max-width: 100%;
+	overflow: hidden !important;
+	position: relative;
+	height: 24px;
+	transform: translateY(-7px);
+	box-sizing: border-box;
+	-webkit-mask: linear-gradient(0deg,black, transparent);
+	z-index: 2;
+	display: flex;
+}
+/*******************************/
+/** Menu custom de navigation **/
+/*******************************/
+body.theme-ork table.faction {
+	background: linear-gradient(135deg, #000, #042417, #000, #000, #000, #02150e, #000, #000, #000, #042417, #000);
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba,0 0 0 10px black, 0 0 5px 10px #000, 0 0 3px 10px #1b1b1b;
+	margin: 10px 10px;
+	position: relative;
+	padding: 20px;
+	color: #94b789;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-family: 'courier new',monospace;
+}
+body.theme-ork #custom-page-top {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	margin-bottom: 20px;
+	user-select: none;
+}
+body.theme-ork #page-menu-top {
+	top: 0;
+	left: 0;
+	height: 31px;
+	z-index: 1000;
+	box-shadow: inset 10px 10px 20px -10px #000, inset 25px 0 25px -25px #8d4141, inset 5px 5px 2px -5px #ff0000ba, 0 0 3px #443c3d, 0 0 3px black, 0 -15px 15px black;
+	background: linear-gradient(135deg,#64524c,#4a3131,#594139,#512b32,#7b4b46,#3c1305,#4f3026,#4f3117,#64524c,#4a3131,#594139,#512b32,#7b4b46,#3c1305,#4f3026,#4f3117), linear-gradient(135deg, #fb4b4b3b, #d7454524, #ff5b5b17, #ff5b5b17, transparent), linear-gradient(#00000029, black);
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	position: relative;
+	background-color: black;
+}
+body.theme-ork #page-menu-top .top-menu-item {
+	display: flex;
+	justify-content: center;
+	padding: 0 26px;
+	align-items: center;
+	box-shadow: 2px 0 1px #0000006b;
+	position: relative;
+}
+body.theme-ork #page-menu-top .top-menu-item:hover {
+	background: #00000070;
+	box-shadow: inset 0 0 10px black;
+}
+body.theme-ork #page-menu-top .top-menu-item:first-child::before {
+	content: '☰';
+	font-size: 20px;
+	padding: 0 8px 2px 0;
+	color: #000000b5;
+}
+body.theme-ork #page-menu-top .top-menu-title {
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+	-webkit-background-clip: text;
+	color: #8800001c !important;
+	text-shadow: 0 0 0px #ccbeac, 0 0 3px #000, 0 0 3px #000;
+}
+/*********************/
+/** Menu + Sommaire **/
+/*********************/
+body.theme-ork #page-menu-top #toc,
+body.theme-ork #page-menu-top .top-menu-pane {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(calc(100% - 1px));
+	display: block;
+	z-index: 1000;
+	margin: 0;
+	padding: 0.5em 2em;
+	border-radius: 0;
+	border: none;
+	background: linear-gradient(to right, #110e0e, #212222);
+	background-color: black !important;
+	background-attachment: local;
+	box-shadow: inset 0 0 0 1px #272727,5px 5px 5px -5px #000,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	max-height: 400px;
+	overflow-y: auto;
+	opacity: 1;
+}
+body.theme-ork #page-menu-top :not(:hover) > #toc,
+body.theme-ork #page-menu-top :not(:hover) > .top-menu-pane {
+    display: none;
+}
+body.theme-ork #toc .toctoggle,
+body.theme-ork #toc .toctitle,
+body.theme-ork #toc .toclevel-3,
+body.theme-ork #toc .toclevel-4,
+body.theme-ork #toc .toclevel-5 {
+    display: none;
+}
+body.theme-ork .CategoryTreeItem {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+body.theme-ork .CategoryTreeChildren {
+	margin-left: 1.25em;
+}
+body.theme-ork .CategoryTreeBullet {
+	margin-right: 5px;
+}
+body.theme-ork .toctext,
+body.theme-ork .CategoryTreeLabel,
+body.theme-ork .CategoryTreeToggle {
+	color: #a6a6a6 !important;
+	text-shadow: none;
+}
+body.theme-ork .factions-menu .CategoryTreeBullet,
+body.theme-ork .CategoryTreeEmptyBullet {
+	display: none !important;
+}
+body.theme-ork .factions-menu .CategoryTreeTag > .CategoryTreeSection {
+	box-shadow: 0 1px 1px -1px white;
+	padding: 5px 5px 10px 0;
+}
+body.theme-ork .factions-menu .CategoryTreeTag > .CategoryTreeSection:last-child {
+	box-shadow: none;
+}
+body.theme-ork .factions-menu .CategoryTreeTag > .CategoryTreeSection > .CategoryTreeItem a {
+	color: #d0d0d0 !important;
+	pointer-events: none;
+	cursor: default;
+	font-weight: initial;
+	font-size: 110%;
+	margin-bottom: 5px;
+}
+body.theme-ork .tocnumber {
+	color: #f2fff4d6;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-weight: initial;
+}
+body.OB.theme-ork .thumbcaption {
+	box-shadow: 0 -10px 10px -10px black, inset 0 0 0 1px #272727,5px 5px 5px -5px #000,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	background: #1f4037;
+	background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+	background: linear-gradient(to right, #99f2c8, #1f4037);
+	position: relative;
+}
+body.OB.theme-ork div.thumbinner {
+	background-color: #131111 !important;
+	border: 1px solid #000 !important;
+	box-shadow: 0 0 10px #392412, 0 0 0 10px #000;
+	/* border-radius: 3px; */
+	background: repeating-linear-gradient(135deg, #282828, black 20px, #82312d 20px, #840000 40px);
+}
+
+}
+}}
+<div class="no-print deco-top-left">[[Fichier:Deco-ork-1.png]]</div>
+<div class="no-print" style="position: sticky;top: 18px;left: 0;height: 0;z-index: 20;">
+<div class="no-print deco-top-left-2">[[Fichier:Deco-ork-7.png]]</div>
+</div>
+<div class="no-print deco-top-left-3">[[Fichier:Deco-ork-11.png]]</div>
+<div class="no-print deco-top-right">[[Fichier:Deco-ork-2.png]]</div>
+<div class="no-print" style="position: sticky;top: 0;right: 0;height: 0;z-index: 2000;">
+<div class="no-print deco-top-right-2">[[Fichier:Deco-ork-5.png]]</div>
+</div>
+<div class="no-print deco-top-right-3">[[Fichier:Deco-ork-8.png]]</div>
+<div class="no-print deco-top-middle">[[Fichier:Deco-ork-3.jpg]][[Fichier:Deco-ork-3.jpg]]</div>
+<div class="no-print deco-top-middle-2">[[Fichier:Deco-ork-9.png]][[Fichier:Deco-ork-10.png]][[Fichier:Deco-ork-11.png]]</div>
+</includeonly><noinclude>
+{{Page Ork}}
+[[Catégorie:Modèles de mise en page|Ork]]
+</noinclude>

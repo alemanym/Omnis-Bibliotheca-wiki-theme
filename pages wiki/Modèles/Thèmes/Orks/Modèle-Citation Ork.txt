@@ -1,0 +1,29 @@
+<includeonly>{{Citation
+|taille=100%
+|background-image=parchemin
+|background=radial-gradient(transparent, rgba(157, 95, 49, 0.65))
+|couleur_bordure=#365346
+|couleur_liseret=#0000006e
+|texte={{{texte|}}}
+|signature={{{signature|}}}
+|css_signature="color: #d0cecd;text-shadow: 0 0 5px #590303;"
+}}</includeonly><noinclude>
+{{Page Ork}}
+{{travaux}}
+[[Catégorie:Modèles de mise en page|Ork]]
+
+== Exemple ==
+
+'''Code:'''
+<pre>
+{{Citation Ork
+|texte=WAAAAAAAAAAAAAAAGH !!!
+|signature=- Ze Boyz}}
+</pre>
+
+'''Rendu:'''
+{{Citation Ork
+|texte=WAAAAAAAAAAAAAAAGH !!!
+|signature=- Ze Boyz}}
+
+</noinclude>

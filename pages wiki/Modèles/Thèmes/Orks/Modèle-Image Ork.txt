@@ -1,0 +1,126 @@
+<includeonly><div class="custom-cadre" style=
+{{#switch: {{{position|}}}
+| gauche | left = "float: left; clear: left; {{#if: {{{margin|}}} | | margin: 0 1em 1em 0; }} max-width: 100%;"
+| droite | right = "float: right; clear: right; {{#if: {{{margin|}}} | | margin: 0 0 1em 1em; }} max-width: 100%;"
+| centre | center = "width: 100%;text-align: center;"
+| {{{style|"max-width: 100%;"}}} 
+}}><div style="position: relative; display: inline-block; z-index: 1;margin:2em; position: relative; width:{{{taille|unset}}}; max-width: calc(100% - 4em);"><div style="max-width: 100%;display: block;overflow: hidden;">{{#if:{{{taille|}}} 
+| {{#if:{{{link_image|}}} | [[Fichier:{{{image}}}|{{{taille}}}|link={{{link_image}}}]] | [[Fichier:{{{image}}}|{{{taille}}}]] }}
+| {{#if:{{{link_image|}}} | [[Fichier:{{{image}}}|link={{{link_image}}}]] | [[Fichier:{{{image}}}]] }}
+}}</div>
+{{#switch:{{{deco|}}} 
+| bas=<div style="position: absolute; bottom: 0; right: 0; z-index: 10;transform: translateX(18px) translateY(11px) scale(-1, 1);">[[Fichier:Deco-ork-12.png|80px]]</div> 
+| haut=<div style="position: absolute; top: 0; left: 0; z-index: 10;transform: translateX(-16px) translateY(-18px) scale(-1, 1);">[[Fichier:Deco-ork-13.png|110px]]</div>
+| angles=<div style="position: absolute; bottom: 0; right: 0; z-index: 10;transform: translateX(18px) translateY(11px) scale(-1, 1);">[[Fichier:Deco-ork-12.png|80px]]</div><div style="position: absolute; top: 0; left: 0; z-index: 10;transform: translateX(-16px) translateY(-18px) scale(-1, 1);">[[Fichier:Deco-ork-13.png|110px]]</div>
+}}<div style="position: absolute; top: 0; left: 0; z-index: -1;width: calc(100% + 10px);height: calc(100% + 10px);transform: translateX(-5px) translateY(-5px);border: 1px solid #000 !important;box-shadow: 0 0 10px #392412, 0 0 0 10px #000;background: repeating-linear-gradient(135deg, #282828, black 20px, #82312d 20px, #840000 40px) #131111;"></div>
+<div style="position: relative; z-index:1; width:100%; text-align: center; border-radius: 5px 5px 0 0;color: #cfc9b5;text-shadow: 1px 1px 5px #000; padding: 4px; box-sizing: border-box;box-shadow: 0 -10px 10px -10px black, inset 0 0 0 1px #272727,5px 5px 5px -5px #000,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;background: #1f4037;background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);background: linear-gradient(to right, #54866e, #1f4037);position: relative; {{#if: {{{sous_titre|{{{titre|}}}}}} | | display: none; }}><span style="font-size: larger; {{#if: {{{titre|}}} | | display: none; }}">{{{titre}}}</span><div style="padding: 0 12px; font-size: 11px; {{#if: {{{sous_titre|}}} | | display: none; }}">{{{sous_titre}}}</div></div>
+</div></div></includeonly><noinclude>
+{{Page Ork}}
+{{travaux}}
+
+==Fonctionnalité==
+Permet d'afficher une image dans un cadre stylisé Nécron.
+
+==Paramètres==
+*'''image'''=fichier image
+*'''link_image'''=lien lors du clic que l'image
+*'''taille'''=taille de l'image ''(optionnel)''
+*'''titre'''=titre de l'image ''(optionnel)''
+*'''sous_titre'''=sous-titre de l'image ''(optionnel)''
+*'''deco'''=décoration particulière; valeurs possibles :
+** ''angles'' : décoration aux quatres coins du cadre
+** ''bas'' : décoration aux deux coins en bas du cadre
+** ''haut'' : décoration aux deux coins en haut du cadre
+*'''position''' = permet de gérer le positionnement en fonction de la valeur :
+** ''left'' ou ''gauche'' : positionnement flottant à gauche
+** ''right'' ou ''droite'': positionnement flottant à droite
+** ''center'' ou ''centre'': positionnement aligné au centre (il faut que '''taille''' soit défini pour cela)
+*'''style'''=customisation CSS ''(optionnel)''
+
+==Exemples==
+
+===Exemple A===
+
+'''Code :'''
+<pre>{{Image Ork
+|image=BoyOrk.jpg
+}}
+</pre>
+
+'''Rendu :'''
+{{Image Ork
+|image=BoyOrk.jpg
+}}
+
+<br>
+<hr>
+
+===Exemple : titre et taille===
+
+'''Code :'''
+<pre>{{Image Ork
+|image=BoyOrk.jpg
+|titre=Boyz Orks
+|sous_titre=''Allez les gars !''
+|taille=300px
+}}
+</pre>
+
+'''Rendu :'''
+{{Image Ork
+|image=BoyOrk.jpg
+|taille=300px
+|titre=Boyz Orks
+|sous_titre=''Allez les gars !''
+}}
+
+<br>
+<hr>
+
+===Exemple avec deco===
+
+'''Code :'''
+<pre>{{Image Ork
+|image=BoyOrk.jpg
+|taille=300px
+|deco=angle
+|sous_titre=Boyz Orks
+}}
+</pre>
+
+'''Rendu :'''
+{{Image Ork
+|image=BoyOrk.jpg
+|taille=300px
+|deco=angles
+|sous_titre=Boyz Orks
+}}
+
+<br>
+<hr>
+
+===Exemple alignement à droite avec deco en bas===
+
+'''Code :'''
+<pre>{{Image Ork
+|deco=bas
+|image=BoyOrk.jpg
+|taille=200px
+|position=right
+|titre=Boyz Orks
+|taille_titre=50%
+}}
+</pre>
+
+'''Rendu :'''
+{{Image Ork
+|deco=bas
+|image=BoyOrk.jpg
+|taille=200px
+|position=right
+|titre=Boyz Orks
+|taille_titre=50%
+}}
+
+[[Catégorie:Modèles de mise en page|Ork]]
+</noinclude>
