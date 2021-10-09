@@ -1,0 +1,609 @@
+<includeonly>{{Page Theme
+|menu-title=FACTION : Asuryanis
+|menu-category=Asuryanis
+|menu-title-2=FACTIONS DE L'UNIVERS
+|menu-2={{#categorytree:Factions|mode=categories|depth=2|hideroot=on}}
+|include_top=<div class="banner-add">[[Fichier:Banner-add.png]]</div>
+<div class="banner-add">[[Fichier:Banner-add.png]]</div>
+<div class="banner-back-left">[[Fichier:Asuryani.jpg|500px]][[Fichier:AvatarDeKhaine.jpg|500px]]</div>
+<div class="banner">[[Fichier:BannerAsuryanis.jpg]][[Fichier:Vortex.gif]]</div>
+<div class="banner-back-right">[[Fichier:EldradUlthran.jpg|450px]][[Fichier:Banshee-banner.jpg]]</div>
+<div class="banner-add">[[Fichier:Banner-add.png]]</div>
+<div class="banner-add">[[Fichier:Banner-add.png]]</div>
+}}
+{{#css:
+
+body.OB.theme.theme-asuryanis div#content {
+	background: radial-gradient(white, transparent), linear-gradient(135deg,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec) #000 !important;
+	box-shadow: inset 0 0 5px #fff, inset 0 0 30px #71919c, inset 0 0 30px #71919c, 0 0 4px 1px black, 0 0 3px #443c3d, 0 0 3px black, -16px 0 0 -10px #000 !important;
+}
+body.OB.theme.theme-asuryanis div#content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 66px;
+	background: linear-gradient(135deg,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec,#d8dfe1,#e2ecec,#e6f0f0,#d9dbdc,#dadfde,#e4eaec);
+}
+
+
+body.OB.theme.theme-asuryanis #mw-content-text {
+	border-radius: 0 0 20px 20px;
+	background: #040e11;
+	background: linear-gradient(90deg, #090a0f, #1b2735, #090a0f);
+}
+body.OB.theme.theme-asuryanis #page-menu-top {
+	background: radial-gradient(#184293, transparent), linear-gradient(135deg,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd) #000 !important;
+	box-shadow: 0 -5px 5px #f7fafa, inset 0 5px 5px #f6f9f9, inset 0 10px 10px #a1b3c7, inset 1px 1px #ffffff1f, inset 0 0 0 1px #97adc2, 0 4px 10px #66848c, inset 0 0 50px #bdcfcf !important;
+	border-radius: 0 0 10px 10px;
+}
+body.OB.theme.theme-asuryanis #page-menu-top .top-menu-item {
+	box-shadow: unset;
+	background: none;
+}
+body.OB.theme.theme-asuryanis #page-menu-top .top-menu-title {
+	color: #00465c !important;
+	text-shadow: 0 0 10px white;
+}
+body.theme.theme-asuryanis #page-menu-top #toc,
+body.theme.theme-asuryanis #page-menu-top .top-menu-pane {
+	background: linear-gradient(#ffffff82, transparent), radial-gradient(#dce2e2, transparent), linear-gradient(135deg,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd) #000 !important;
+	box-shadow: 0 4px 4px -2px #66848c, inset 0 -10px 15px -5px #3c8b9d73, inset 0 5px #3c9d941f, inset 0 10px 15px -5px #3c8b9d73, inset 0 0 50px #bdcfcf !important;
+}
+body.theme.theme-asuryanis #custom-page-top .toctext, 
+body.theme.theme-asuryanis #custom-page-top .CategoryTreeLabel, 
+body.theme.theme-asuryanis #custom-page-top .CategoryTreeToggle {
+	color: #00465c !important;
+	text-shadow: none;
+}
+body.theme.theme-asuryanis .factions-menu .CategoryTreeTag > .CategoryTreeSection > .CategoryTreeItem a {
+	color: #00465c !important;
+	pointer-events: none;
+	cursor: default;
+	font-weight: initial;
+	font-size: 110%;
+	margin-bottom: 5px;
+}
+body.OB.theme.theme-asuryanis #catlinks {
+	background: radial-gradient(white, transparent), linear-gradient(135deg,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd) #000 !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #97adc2, 0 4px 10px #66848c, inset 0 0 50px #bdcfcf !important;
+	text-shadow: 0 0 3px white;
+}
+body.OB.theme.theme-asuryanis #catlinks a {
+	color: #00465c;
+	text-shadow: 0 0 3px white;
+}
+body.OB.theme .thumbcaption {
+	position: relative;
+	box-shadow: 5px 5px 5px -5px #0000006e,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	background: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px),radial-gradient( rgb(40, 106, 117),rgba(20,24,28,0.76)),linear-gradient(135deg,#000,#042417,#000,#000,#000,#021415,#000,#000,#000,#042124,#000);
+	background-size: auto, auto, auto;
+	background-size: auto 4px,100% 100%;
+	color: #bed4d7;
+	text-shadow: 0 0 5px black;
+}
+body.OB.theme.theme-asuryanis #firstHeading {
+	color: #006868 !important;
+	text-shadow: 0 0 5px white, 0 0 15px #60888a;
+	display: flex;
+	align-items: center;
+	line-height: 51px;
+	width: unset;
+	left: 50%;
+	transform: translateX(-50%) translateY(56px);
+	padding: 0 2em;
+	background: linear-gradient(#ffffff82, transparent), radial-gradient(#dce2e2, transparent), linear-gradient(135deg,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd,#d8dfe1,#e2ecec,#e6f0f0,#dcd9da,#dadfde,#e0dcdd) #000 !important;
+	box-shadow: 0 0 80px rgba(118, 255, 242, 0.5), 0 10px 10px -10px black, 0 20px 20px -20px black, 0 30px 30px -30px black, inset 0 -10px 15px -5px #3c8b9d73, inset 0 5px #3c9d941f, inset 0 10px 15px -5px #3c8b9d73, inset 0 0 50px #bdcfcf !important;
+	height: 135px;
+	border: 2px solid rgba(153, 249, 240, 0.34);
+}
+body.OB.theme.theme-asuryanis h1,
+body.OB.theme.theme-asuryanis h2 {
+	border: none;
+	padding: 0.5em;
+	border-radius: 0;
+	color: #ccd7db !important;
+	background: #0000008f;
+	border-bottom: 1px solid #6171713d;
+	box-shadow: 0 10px 10px -10px black, 0 20px 20px -20px black, 0 30px 30px -30px black;
+	border-top: 1px solid #6171713d;
+}
+body.OB.theme.theme-asuryanis #mw-content-text h3 {
+	text-shadow: 1px 1px 3px #00686844;
+	color: #006868 !important;
+	background: none !important;
+	box-shadow: 0 4px 4px -4px #006868 !important;
+	border-bottom: 1px solid #006868;
+}
+body.OB.theme.theme-asuryanis .tocnumber {
+	text-shadow: none;
+	font-weight: initial;
+	color: #5091a6;
+}
+body.OB.theme.theme-asuryanis h4 {
+	color: #006868 !important;
+	background: none;
+}
+
+
+body.OB.theme.theme-asuryanis .deco-top-middle {
+	width: unset;
+	position: sticky;
+	margin: 0px 100px;
+	left: unset;
+	transform: translateY(-17px);
+	top: -85px;
+	max-width: 100%;
+	display: inline-grid;
+}
+body.OB.theme.theme-asuryanis .banner {
+	overflow: hidden;
+	border-radius: 0 0 15px 15px;
+	box-shadow: 0 5px 15px -5px #89b6c4 !important;
+	max-height: 123px;
+	position: relative;
+	z-index: 10;
+}
+body.OB.theme.theme-asuryanis .banner > a {
+	position: relative;
+	display: flex;
+	align-items: end;
+}
+body.OB.theme.theme-asuryanis .banner > a:nth-child(2) {
+	position: absolute !important;
+	top: 18px;
+	left: 0;
+	width: 100%;
+	opacity: 0.4;
+}
+body.OB.theme.theme-asuryanis .banner > a:nth-child(2) img {
+	width: 100%;
+}
+body.OB.theme.theme-asuryanis .banner-add::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	transform: translateX(50%) translateY(50%);
+	background: radial-gradient(transparent 62%, #e4ecec8a 68%, transparent 74%);
+	clip-path: polygon(0 0, 50% 0, 30% 30%, 0 50%);
+}
+body.OB.theme.theme-asuryanis .banner-add:not(:first-child):not(:last-child)::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	transform: translateX(50%) translateY(50%);
+	background: radial-gradient(transparent 62%, #6f8b996e 68%, transparent 74%);
+	clip-path: polygon(0 0, 50% 0, 30% 30%, 0 50%);
+}
+body.OB.theme.theme-asuryanis .banner-add:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(-100%) scaleX(-1);
+}
+body.OB.theme.theme-asuryanis .banner-add:nth-child(2) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 20;
+	transform: rotate(-90deg) translateX(19px) translateY(-4px);
+	overflow: hidden;
+	border-radius: 12px 0 0 10px;
+}
+body.OB.theme.theme-asuryanis .banner-add:nth-last-child(2) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 20;
+	transform: rotate(-90deg) translateX(19px) translateY(4px) scaleY(-1);
+	overflow: hidden;
+	border-radius: 12px 0 0 10px;
+}
+body.OB.theme.theme-asuryanis .banner-add:last-child {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(100%);
+}
+
+
+
+@keyframes animBannerImgLeft {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  50%,100% {
+    opacity: 0;
+    right: 80%;
+  }
+}
+body.OB.theme.theme-asuryanis .banner-back-left {
+	position: absolute;
+	z-index: 11;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 50%;
+	-webkit-mask: linear-gradient( transparent 20px, #00000087 30px, #000000ed, #00000075 calc(100% - 30px), #00000057 calc(100% - 20px));
+	mask: linear-gradient( transparent 20px, #00000087 30px, #000000ed, #00000075 calc(100% - 30px), #00000057 calc(100% - 20px));
+}
+body.OB.theme.theme-asuryanis .banner-back-left > .image {
+	position: absolute;
+	height: 123px;
+	width: 100%;
+	overflow: hidden;
+}
+body.OB.theme.theme-asuryanis .banner-back-left > .image img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(-11%) scale(-1, 1);
+	-webkit-mask: linear-gradient(90deg, #0000, black 20%, black 80%, transparent);
+	mask: linear-gradient(90deg, #0000, black 20%, black 80%, transparent);
+	animation: animBannerImgLeft 50s linear infinite;
+}
+body.OB.theme.theme-asuryanis .banner-back-left > .image:nth-child(2) img {
+	top: 0;
+	transform: translateY(-25%);
+	animation: animBannerImgLeft 50s linear infinite 25s;
+	opacity: 0;
+}
+
+
+@keyframes animBannerImgRight {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  50%,100% {
+    opacity: 0;
+    left: 80%;
+  }
+}
+body.OB.theme.theme-asuryanis .banner-back-right {
+	position: absolute;
+	z-index: 11;
+	height: 100%;
+	top: 0;
+	right: 0;
+	width: 50%;
+	-webkit-mask: linear-gradient( transparent 20px, #00000087 30px, #000000ed, #00000075 calc(100% - 30px), #00000057 calc(100% - 20px));
+	mask: linear-gradient( transparent 20px, #00000087 30px, #000000ed, #00000075 calc(100% - 30px), #00000057 calc(100% - 20px));
+}
+body.OB.theme.theme-asuryanis .banner-back-right > .image {
+	position: absolute;
+	height: 123px;
+	width: 100%;
+	overflow: hidden;
+}
+body.OB.theme.theme-asuryanis .banner-back-right > .image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-31%) translateX(9px);
+	-webkit-mask: linear-gradient(90deg, #0000, black 20%, black 80%, transparent);
+	mask: linear-gradient(90deg, #0000, black 20%, black 80%, transparent);
+	animation: animBannerImgRight 50s linear infinite;
+}
+body.OB.theme.theme-asuryanis .banner-back-right > .image:nth-child(2) img {
+	opacity: 0;
+	top: 50%;
+	transform: translateY(-25%) scale(-1, 1);
+	animation: animBannerImgRight 50s linear infinite 25s ;
+}
+
+
+.top-left-corner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(-69%) translateY(-34%);
+	z-index: 1020;
+}
+.top-right-corner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(69%) translateY(-34%);
+	z-index: 1020;
+}
+
+
+body.OB.theme.theme-asuryanis .deco-side-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateX(calc(-100% + 20px));
+	z-index: 200;
+	width: 200px;
+}
+body.OB.theme.theme-asuryanis .deco-side-left img {
+	position: relative;
+	transform: rotate(90deg) translateY(-100%);
+	-webkit-mask: linear-gradient(black, black, transparent);
+	mask: linear-gradient(90deg, black, black, transparent);
+	transform-origin: 0 0;
+}
+body.OB.theme.theme-asuryanis .deco-side-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(calc(100% + 20px)) translateY(-10%);
+	z-index: 200;
+	width: 200px;
+	overflow: hidden;
+	-webkit-mask: linear-gradient(-85deg, black, black 85%, transparent);
+	mask: linear-gradient(-85deg, black, black 85%, transparent);
+}
+body.OB.theme.theme-asuryanis .deco-side-right img {
+	position: relative;
+	transform: translateX(-14%);
+}
+
+body.OB.theme.theme-asuryanis .no-print.deco-top-side-left {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: 1020;
+}
+body.OB.theme.theme-asuryanis .no-print.deco-top-side-right {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	z-index: 1020;
+}
+
+
+.deco-side-back-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateX(calc(-100% - 52px)) translateY(-45px);
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	width: 70px;
+	text-align: right;
+}
+.deco-side-back-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(calc(100% + 52px)) translateY(-45px) scaleX(-1);
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	width: 70px;
+	text-align: right;
+}
+
+body.OB.theme.theme-asuryanis .asuryani-pane-1 {
+	padding: 1em;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px -5px #0000006e,inset 0 0 50px #000,0 0 3px #443c3d,0 0 3px black,inset 25px 0 50px #ffffff4d,inset 5px 5px 2px -5px #ffffffba;
+	background: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px),radial-gradient( rgb(40, 106, 117),rgba(20,24,28,0.76)),linear-gradient(135deg,#000,#042417,#000,#000,#000,#021415,#000,#000,#000,#042124,#000);
+	background-size: auto 4px,100% 100%;color: #bed4d7;text-shadow: 0 0 5px black;
+	color: #bed4d7;
+	text-shadow: 0 0 5px black;
+	border: none !important;
+	max-width: 100%;
+}
+body.OB.theme.theme-asuryanis .asuryani-pane-2 {
+	background: #9dbdc226;
+	padding: 1em;
+	border-radius: 20px;
+	box-shadow: 0 4px 4px -2px #66848c;
+	max-width: 100%;
+}
+
+
+
+
+body.OB.theme.theme-asuryanis .stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 66px 1030px #FFF , 68px 847px #FFF , 31px 1602px #FFF , 51px 1486px #FFF , 27px 1900px #FFF , 24px 298px #FFF , 9px 870px #FFF , 2px 125px #FFF , 65px 1744px #FFF , 40px 1303px #FFF , 35px 997px #FFF , 11px 1174px #FFF , 24px 1334px #FFF , 11px 673px #FFF , 45px 240px #FFF , 6px 129px #FFF , 60px 389px #FFF , 9px 503px #FFF , 47px 1733px #FFF , 50px 256px #FFF , 39px 215px #FFF , 66px 1296px #FFF , 18px 1225px #FFF , 43px 1719px #FFF , 25px 1535px #FFF , 11px 1652px #FFF , 26px 519px #FFF , 42px 1270px #FFF , 34px 1064px #FFF , 33px 1282px #FFF , 22px 380px #FFF , 25px 1777px #FFF , 58px 682px #FFF , 27px 34px #FFF , 29px 1723px #FFF , 44px 264px #FFF , 54px 1052px #FFF , 17px 1993px #FFF , 37px 589px #FFF , 33px 263px #FFF , 55px 328px #FFF , 1px 1415px #FFF , 16px 1693px #FFF , 67px 1426px #FFF , 59px 812px #FFF , 3px 1428px #FFF , 36px 439px #FFF , 42px 90px #FFF , 27px 353px #FFF , 35px 229px #FFF , 8px 737px #FFF , 62px 376px #FFF , 11px 881px #FFF , 9px 1831px #FFF , 49px 562px #FFF , 25px 1102px #FFF , 21px 1689px #FFF , 35px 647px #FFF , 29px 795px #FFF , 17px 1008px #FFF , 53px 1306px #FFF , 29px 437px #FFF , 17px 229px #FFF , 37px 635px #FFF , 59px 1353px #FFF , 14px 1881px #FFF , 3px 986px #FFF , 45px 1893px #FFF , 64px 1444px #FFF , 45px 1214px #FFF;
+  animation: animStar 50s linear infinite;
+}
+body.OB.theme.theme-asuryanis .stars:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 66px 1030px #FFF , 68px 847px #FFF , 31px 1602px #FFF , 51px 1486px #FFF , 27px 1900px #FFF , 24px 298px #FFF , 9px 870px #FFF , 2px 125px #FFF , 65px 1744px #FFF , 40px 1303px #FFF , 35px 997px #FFF , 11px 1174px #FFF , 24px 1334px #FFF , 11px 673px #FFF , 45px 240px #FFF , 6px 129px #FFF , 60px 389px #FFF , 9px 503px #FFF , 47px 1733px #FFF , 50px 256px #FFF , 39px 215px #FFF , 66px 1296px #FFF , 18px 1225px #FFF , 43px 1719px #FFF , 25px 1535px #FFF , 11px 1652px #FFF , 26px 519px #FFF , 42px 1270px #FFF , 34px 1064px #FFF , 33px 1282px #FFF , 22px 380px #FFF , 25px 1777px #FFF , 58px 682px #FFF , 27px 34px #FFF , 29px 1723px #FFF , 44px 264px #FFF , 54px 1052px #FFF , 17px 1993px #FFF , 37px 589px #FFF , 33px 263px #FFF , 55px 328px #FFF , 1px 1415px #FFF , 16px 1693px #FFF , 67px 1426px #FFF , 59px 812px #FFF , 3px 1428px #FFF , 36px 439px #FFF , 42px 90px #FFF , 27px 353px #FFF , 35px 229px #FFF , 8px 737px #FFF , 62px 376px #FFF , 11px 881px #FFF , 9px 1831px #FFF , 49px 562px #FFF , 25px 1102px #FFF , 21px 1689px #FFF , 35px 647px #FFF , 29px 795px #FFF , 17px 1008px #FFF , 53px 1306px #FFF , 29px 437px #FFF , 17px 229px #FFF , 37px 635px #FFF , 59px 1353px #FFF , 14px 1881px #FFF , 3px 986px #FFF , 45px 1893px #FFF , 64px 1444px #FFF , 45px 1214px #FFF;
+}
+
+body.OB.theme.theme-asuryanis .stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 55px 1063px #FFF , 15px 1002px #FFF , 16px 121px #FFF , 34px 1984px #FFF , 19px 1420px #FFF , 46px 1210px #FFF , 16px 840px #FFF , 36px 104px #FFF , 61px 333px #FFF , 29px 18px #FFF , 44px 807px #FFF , 2px 1664px #FFF , 45px 1158px #FFF , 59px 666px #FFF , 22px 1731px #FFF , 39px 480px #FFF , 35px 1133px #FFF , 44px 789px #FFF , 41px 451px #FFF , 69px 499px #FFF;
+  animation: animStar 100s linear infinite;
+}
+body.OB.theme.theme-asuryanis .stars2:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 55px 1063px #FFF , 15px 1002px #FFF , 16px 121px #FFF , 34px 1984px #FFF , 19px 1420px #FFF , 46px 1210px #FFF , 16px 840px #FFF , 36px 104px #FFF , 61px 333px #FFF , 29px 18px #FFF , 44px 807px #FFF , 2px 1664px #FFF , 45px 1158px #FFF , 59px 666px #FFF , 22px 1731px #FFF , 39px 480px #FFF , 35px 1133px #FFF , 44px 789px #FFF , 41px 451px #FFF , 69px 499px #FFF;
+}
+
+body.OB.theme.theme-asuryanis .stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 14px 1885px #FFF , 15px 221px #FFF , 9px 218px #FFF , 63px 769px #FFF , 10px 503px #FFF , 57px 1393px #FFF , 31px 1994px #FFF , 33px 1597px #FFF , 33px 896px #FFF , 59px 1120px #FFF;
+  animation: animStar 150s linear infinite;
+}
+body.OB.theme.theme-asuryanis .stars3:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 14px 1885px #FFF , 15px 221px #FFF , 9px 218px #FFF , 63px 769px #FFF , 10px 503px #FFF , 57px 1393px #FFF , 31px 1994px #FFF , 33px 1597px #FFF , 33px 896px #FFF , 59px 1120px #FFF;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+body.OB.theme.theme-asuryanis .portrait-scifi-name {
+	background: linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;
+}
+
+body.OB.theme.theme-asuryanis .previewnote + * .deco-top-middle {
+	margin-bottom: 8em !important;
+}
+body.OB.theme.theme-asuryanis .page-subtitle {
+	color: transparent;
+	white-space: nowrap;
+	text-shadow: 0 0 10px #000;
+	font-size: 150%;
+	font-weight: initial;
+	letter-spacing: 2px;
+	display: block;
+	text-align: center;
+	margin-bottom: 2em;
+	background: linear-gradient(#cbf2ef, #cacaca, #0d6f67);
+	-webkit-background-clip: text;
+}
+body.OB.theme.theme-asuryanis .craftworld-symbols {
+	position: absolute;
+	top: 0;
+	right: 12px;
+	width: calc(100% - 13px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: calc(100vh - 160px);
+}
+body.OB.theme.theme-asuryanis .craftworld-light img {
+	height: auto;
+	position: relative;
+	opacity: 0;
+}
+body.OB.theme.theme-asuryanis .craftworld-light:nth-child(1) img {
+	animation: lightToggle 35s linear infinite 20s;
+	transform: translateY(-100%);
+}
+body.OB.theme.theme-asuryanis .craftworld-light:nth-child(2) img {
+	animation: lightToggle 35s linear infinite 5s;
+	transform: translateY(-100%);
+}
+body.OB.theme.theme-asuryanis .craftworld-light:nth-child(3) img {
+	animation: lightToggle 40s linear infinite 10s;
+	transform: translateY(-100%);
+}
+body.OB.theme.theme-asuryanis .craftworld-light:nth-child(4) img {
+	animation: lightToggle 45s linear infinite 15s;
+	transform: translateY(-100%);
+}
+body.OB.theme.theme-asuryanis .craftworld-light:nth-child(5) img {
+	animation: lightToggle 50s linear infinite 10s;
+	transform: translateY(-100%);
+}
+body.OB.theme.theme-asuryanis .craftworld-light:nth-child(6) img {
+	animation: lightToggle 50s linear infinite 25s;
+	transform: translateY(-100%);
+}
+@keyframes lightToggle {
+0%, 5%{
+	opacity: 0;
+}
+20%{
+	opacity: 1;
+}
+30%, 100%{
+	opacity: 0;
+	transform: translateY(0);
+}
+}
+
+}}
+{{#addbodyclass:theme-asuryanis}}
+<div style="
+position: sticky;
+right: 0;
+top: 250px;
+transform: translateY(-250px);
+z-index: 1010;
+pointer-events: none;">
+<div class="no-print deco-side-back-left">
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="craftworld-symbols">
+<div class="craftworld-light">[[Fichier:Astre-ulthwe.png]]</div>
+<div class="craftworld-light">[[Fichier:Astre-iyanden.png]]</div>
+<div class="craftworld-light">[[Fichier:Astre-saim-hann.png]]</div>
+<div class="craftworld-light">[[Fichier:Astre-mymeara.png]]</div>
+<div class="craftworld-light">[[Fichier:Astre-alaitoc.png]]</div>
+<div class="craftworld-light">[[Fichier:Astre-biel-tan.png]]</div>
+</div>
+[[Fichier:AsuryanisSide.jpg]]</div>
+<div class="no-print deco-side-back-right">
+<div class="stars"></div>
+<div class="stars2"></div>
+[[Fichier:AsuryanisSide.jpg]]</div>
+<div class="no-print deco-side-right">[[Fichier:Decor1Asuryani.png]]</div>
+</div>
+<div></div>
+<div class="no-print deco-top-side-left">
+<div class="medaille">[[Fichier:Medaille-asuryani-1.png]]</div>
+</div>
+<div class="no-print deco-top-side-right">
+<div class="medaille">[[Fichier:Medaille-asuryani-2.png]]</div>
+</div>
+</includeonly><noinclude>
+{{Page Asuryanis}}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+[[Catégorie:Modèles de mise en page|Asuryanis]]
