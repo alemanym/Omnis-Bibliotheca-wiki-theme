@@ -1,0 +1,99 @@
+<noinclude>{{Page OB}}</noinclude><includeonly>{{Citation
+|position={{{position|}}} 
+|margin={{{margin|}}}
+|taille={{{taille|}}}
+|clip=polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
+|background=linear-gradient(135deg, #3c3134, #2f0820, #24041d, #1a0217, #200b1e, #290d20, #270f23, #1c101c, #240a1e, #240719, #221b1d)
+|taille_bordure=2px
+|couleur_bordure=#433d49
+|couleur_liseret=rgba(255,255,255,0.1)
+|css_additionnel_liseret=box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);padding: 10px 16px; clip-path: polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
+|texte={{{texte|texte manquant...}}}
+|titre={{{titre|}}}
+|signature={{{signature|}}}
+|css_texte="color: rgb(201, 193, 202);text-shadow: 0 0 3px black, 0 0 3px black, 0 0 25px #c9c1ca, 0 0 40px #fff;"
+|css_titre="font-size: medium; text-align: center; margin-bottom: 8px; color: #fff0f5; text-shadow: 0 0 3px black, 0 0 3px black, 0 0 25px #c9c1ca, 0 0 40px #fff;"
+|css_signature="color: #b38896;"
+|image={{{image|}}}
+|taille_image={{{taille_image|}}}
+|ombre_image={{{ombre_image|}}}
+|css_image={{{css_image|}}}
+}}</includeonly><noinclude>
+==Fonctionnalité==
+
+Permet d'afficher un cadre stylisé '''Tyranide''' contenant une citation et éventuellement un titre, une signature et une image.
+Il est possible d'y ajouter une image et une signature.
+
+Ce modèle se base sur le [[Modèle:Citation]].
+
+==Paramètres==
+
+===Paramètres obligatoires: ===
+
+*'''texte''' = contenu textuel principal
+
+===Paramètres optionnels: ===
+
+*'''type''' = type de citation avec cadre (valeur: cadre) ou sans cadre (valeur: simple) ; valeur par défaut : cadre
+
+*'''taille''' = taille du cadre de citation
+*'''position''' = position du cadre; valeur possibles : right , left
+*'''margin''' = définie des marges autour du cadre de la même maniètre que la synthaxe CSS de 'margin'
+
+
+*'''signature''' = Signature de la citation
+*'''titre''' = titre de l'image
+
+
+*'''image''' = Fichier image
+*'''taille_image''' = Taille de l'image
+*'''css_image''' = Style CSS pour l'image
+
+==Exemples==
+
+===Exemple ===
+
+'''Code :'''
+<pre>
+{{Citation Tyranide
+|titre=Titre
+|texte=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet dictum metus, sed elementum odio pretium eu. Nulla euismod arcu ac augue iaculis posuere. Nullam condimentum neque et leo rhoncus varius. Nullam bibendum quam maximus enim fringilla rhoncus. Nam non consequat lorem, eu suscipit sem. Maecenas in lectus consequat, tempus augue ac, dignissim eros. Suspendisse potenti. Cras finibus urna et lectus sagittis, nec mattis diam fermentum. Mauris bibendum augue sed turpis suscipit, eu condimentum magna maximus. Integer bibendum pellentesque turpis. 
+|signature=- signature de la citation
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation Tyranide
+|titre=Titre
+|texte=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet dictum metus, sed elementum odio pretium eu. Nulla euismod arcu ac augue iaculis posuere. Nullam condimentum neque et leo rhoncus varius. Nullam bibendum quam maximus enim fringilla rhoncus. Nam non consequat lorem, eu suscipit sem. Maecenas in lectus consequat, tempus augue ac, dignissim eros. Suspendisse potenti. Cras finibus urna et lectus sagittis, nec mattis diam fermentum. Mauris bibendum augue sed turpis suscipit, eu condimentum magna maximus. Integer bibendum pellentesque turpis. 
+|signature=- signature de la citation
+}}
+
+<br>
+<hr>
+
+===Exemple de positionnement===
+
+'''Code :'''
+<pre>
+{{Citation Tyranide
+|taille= 600px
+|position=right
+|titre=Titre
+|texte=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet dictum metus, sed elementum odio pretium eu. Nulla euismod arcu ac augue iaculis posuere. Nullam condimentum neque et leo rhoncus varius. Nullam bibendum quam maximus enim fringilla rhoncus. Nam non consequat lorem, eu suscipit sem. Maecenas in lectus consequat, tempus augue ac, dignissim eros. Suspendisse potenti. Cras finibus urna et lectus sagittis, nec mattis diam fermentum. Mauris bibendum augue sed turpis suscipit, eu condimentum magna maximus. Integer bibendum pellentesque turpis. 
+|signature=- signature de la citation
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation Tyranide
+|taille= 600px
+|position=right
+|titre=Titre
+|texte=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet dictum metus, sed elementum odio pretium eu. Nulla euismod arcu ac augue iaculis posuere. Nullam condimentum neque et leo rhoncus varius. Nullam bibendum quam maximus enim fringilla rhoncus. Nam non consequat lorem, eu suscipit sem. Maecenas in lectus consequat, tempus augue ac, dignissim eros. Suspendisse potenti. Cras finibus urna et lectus sagittis, nec mattis diam fermentum. Mauris bibendum augue sed turpis suscipit, eu condimentum magna maximus. Integer bibendum pellentesque turpis. 
+|signature=- signature de la citation
+}}
+
+
+[[Catégorie:Modèles de mise en page|Tyranide]]
+</noinclude>

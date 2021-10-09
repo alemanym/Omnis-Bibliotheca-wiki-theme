@@ -1,0 +1,99 @@
+<includeonly><includeonly>{{Page Theme
+|menu-title=FACTION : Les Tyranides
+|menu-category=Tyranides
+|menu-title-2=FACTIONS DE L'UNIVERS
+|menu-2={{#categorytree:Factions|mode=categories|depth=2|hideroot=on}}
+|include_top=
+}}{{#addbodyclass:tyranide}}
+{{#css:/themes/tyranide/tyranide.css}}
+{{#css:
+body.tyranide .center > .thumb {
+	clear: both;
+	padding: 2em;
+}
+body.tyranide .thumbinner {
+	position: relative;
+	box-shadow: 5px 5px 5px -5px #212326, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px #ff4176, inset 5px 5px 5px -5px #ffa3e8ba, 0 0 0 6px #232124, 0 0 5px 4px #090909, 0 0 3px 6px #1b1b1b, 0 4px 6px 4px black, 0 0 0 8px #0000004f, 0 0 0 10px #bf9cb0, 0 0 0 12px #251d266e, 0 0 8px 12px #ff8ac178 !important;
+	border: none !important;
+	overflow: visible !important;
+	padding: 0 !important;
+}
+body.tyranide #firstHeading, body.tyranide #content h1, body.tyranide #content h2, body.tyranide #content h3, body.tyranide #content h4, body.tyranide #content h5 {
+	color: #bfb0af !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #fd77fbba, 0 0 10px #ec77fd7a;
+	border-bottom: 1px solid #44313b;
+	display: block;
+	box-shadow: inset 1px 1px #2b1b2b, inset 0 0 0 1px #171317, 0 4px 10px black, inset 0 0 50px black !important;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background: #1E0F27;
+	background: -webkit-linear-gradient(to right, #642C51, #3F2043, #1E0F27);
+	background: linear-gradient(to right, #642C51, #3F2043, #1E0F27);
+}
+body.tyranide #p-cactions li {
+	background: none !important;
+	box-shadow: none !important;
+}
+body.tyranide #p-cactions li a, #p-cactions li a::after {
+	background: linear-gradient(#00000075, #e3131361) !important;
+	transition: all 0.3s ease-in-out;
+	color: white !important;
+}
+body.tyranide #p-cactions li.selected a, body.tyranide #p-cactions li.selected a::after {
+	z-index: 3 !important;
+	background: rgba(255,255,255,0.37) !important;
+}
+body.tyranide #p-cactions li a:hover, body.tyranide #p-cactions li a:hover::after {
+	z-index: 0;
+	text-decoration: none;
+	background: #e3131361 !important;
+	transition: none;
+}
+body.tyranide #page-menu-top .top-menu-item {
+	display: flex;
+	justify-content: center;
+	padding: 0 26px;
+	align-items: center;
+	box-shadow: 2px 0 1px #0000006b;
+	position: relative;
+	background: none;
+}
+body.OB.theme.tyranide #firstHeading {
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(#4f4c4c 40%, #7b4777 50%, white 55%) !important;
+	background-clip: text !important;
+	color: transparent !important;
+}
+}}</includeonly><noinclude>
+{{Page Tyranide}}
+
+{{travaux}}
+
+== Fonctionnalités ==
+
+*Applique un style graphique spécifique "Nécron" sur la page.
+*Crée un menu du haut facilitant la consultation des pages Tyranides
+*Ajoute un menu de navigation latéral en utilisant le [[:Modèle:Page OB]]
+
+
+== Utilisation ==
+
+Pour l'intégrer il suffit d'ajouter le bout de code suivant '''tout au début''' de la page :
+
+<pre>
+{{Page Tyranide}}
+</pre>
+
+Il est possible de jouer sur les paramètres ci-dessous.
+
+=== Paramètres ===
+
+*'''menu''' : permet de contrôler l'affichage du menu. Valeurs possibles :
+**''Top'' : Un menu s'affiche en haut, avec le sommaire
+**''normal'' : Le menu du haut ne s'affiche pas, mais le sommaire s'affiche normalement sur la page.
+**''none'' : Ni le menu, ni le sommaire ne s'affiche sur la page.
+
+
+[[Catégorie:Modèles de mise en page|Tyranide]]
+</noinclude>
