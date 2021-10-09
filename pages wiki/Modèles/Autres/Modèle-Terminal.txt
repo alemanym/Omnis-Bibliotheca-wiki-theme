@@ -1,0 +1,356 @@
+<includeonly>{{#css:
+.animation-root:not(:hover) .animation,
+.animation-root:not(:hover) .animation *,
+.animation-root:not(:hover) .animation *::before,
+.animation-root:not(:hover) .animation *::after{
+	animation-play-state: paused !important;
+}
+.terminal {
+	padding: 1.5em;
+	border-radius: 15px;
+	background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) !important;
+	box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black;
+	background-color: #000 !important;
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+	display: table;
+	box-sizing: border-box;;
+}
+.terminal-inner {
+	padding: 3em;
+	max-height: calc(100% - 6em);
+	overflow: hidden;
+	border-radius: 15px;
+	color: #dcf4e1ba;
+	text-shadow: 0 0 2px #d7ffc078, 0 0 4px #a7fd774f;
+	background-image: linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 3px), linear-gradient(-135deg, #000, #042417, #000, #000, #02150e, #000, #000, #042417, #000);
+	background-size: auto 3px, auto auto;
+	position: relative;
+}
+.terminal-inner::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 10px #000, inset 0 0 20px #000, inset 0 0 20px #000, inset 0 0 20px #000, inset 0 -60px 60px -60px #000, inset -2.5em 3em 3em -3em #ccffb9, inset -2em 2em 6em -4em #95ffb0, 1px 1px 0 #0000004f, 0 0 1px 1px #ffffff21;
+	pointer-events: none;
+}
+.terminal-inner a {
+	text-shadow: none;
+}
+.terminal-inner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 25%;
+	pointer-events: none;
+	transform: translateY(-100%);
+	background: linear-gradient(transparent, #abfbdd24 95%, transparent);
+	animation: line-screening 8s linear infinite;
+}
+@-webkit-keyframes line-screening {
+  0% {top: 0; transform: translateY(-100%);}
+  50%, 100% {top: 100%; transform: translateY(0);}
+}
+@keyframes line-screening {
+  0% {top: 0; transform: translateY(-100%);}
+  50%, 100% {top: 100%; transform: translateY(0);}
+}
+.terminal-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	pointer-events: none;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	animation: noising 6s steps(6, end) infinite;
+}
+@-webkit-keyframes noising  {
+  0% {transform: translateY(0);}
+  20% {transform: translateY(-250px);}
+  40% {transform: translateY(-50px);}
+  60% {transform: translateY(-200px);}
+  80% {transform: translateY(-100px);}
+  100% {transform: translateY(-150px);}
+}
+@keyframes noising  {
+  0% {transform: translateY(0);}
+  20% {transform: translateY(-250px);}
+  40% {transform: translateY(-50px);}
+  60% {transform: translateY(-200px);}
+  80% {transform: translateY(-100px);}
+  100% {transform: translateY(-150px);}
+}
+.terminal-bg a {
+	width: 50%;
+}
+.terminal-bg a:first-child {
+	transform: scale(-1, 1);
+}
+.terminal-bg a img {
+	width: 100%;
+}
+.terminal-frame > :nth-child(1) img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+}
+.terminal-frame > :nth-child(2) img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+.terminal-frame > :nth-child(3) img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.terminal-frame > :nth-child(4) img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+.terminal-frame > :nth-child(5) {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.terminal-frame > :nth-child(6) {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.terminal-frame > :nth-child(7) {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	z-index: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.terminal-frame > :nth-child(8) {
+	overflow: hidden;
+	position: absolute;
+	top: calc(100% - 94px);
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.terminal-frame > :nth-child(6) img,
+.terminal-frame > :nth-child(7) img {
+	height: 100%;
+}
+.terminal-glow {
+	right: 15%;
+	top: 10%;
+	position: absolute;
+	width: 30%;
+	height: 35%;
+	transition: 3s all ease-in-out;
+	background: radial-gradient(#cdffec, #a9fbdc91, transparent 70%);
+	z-index: 200;
+	border-radius: 50%;
+	opacity: 0.4;
+}.terminal-glow-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 170%;
+	height: 250px;
+	z-index: 20;
+	transform: translateX(-50%) translateY(-50%);
+	clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+	pointer-events: none;
+	-webkit-mask: linear-gradient(transparent, black 2em);
+	mask: linear-gradient(transparent, black 2em);
+}
+.terminal-glow-2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient( #00000054, #c2fff442, transparent 70%);
+	z-index: 20;
+	pointer-events: none;
+	-webkit-mask: linear-gradient(transparent, black 2em);
+	mask: linear-gradient(transparent, black 2em);
+}
+.caret {
+	animation: caret-toggle 1.3s steps(1, end) infinite;
+	margin-left: 5px;
+	font-size: larger;
+}
+@-webkit-keyframes caret-toggle {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+}
+@keyframes caret-toggle {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+}
+}}
+<div class="terminal animation" style="
+{{#switch: {{{position|}}} 
+| gauche | left = float: left; clear: left; {{#if: {{{margin|}}} | | margin: 0 2em 2em 0; }} 
+| droite | right = float: right; clear: right; {{#if: {{{margin|}}} | | margin: 0 0 2em 2em; }}
+| centre | center = margin-left: auto; margin-right: auto;
+}}
+{{#if: {{{largeur|{{{taille|}}}}}} 
+| width:{{{largeur|{{{taille|}}}}}}; 
+| {{#ifeq: {{{theme|}}} | necromunda | width:630px;}}
+}}
+{{#ifeq: {{{frame|}}} | off | padding: 0;}}
+{{#switch: {{{theme|}}} 
+| necromunda = margin-bottom:5em; padding: 2em;
+| OB = margin-bottom:2em; box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, 30px 50px 50px -60px #ffffff70 !important;
+}}
+{{#if: {{{margin|}}} | margin:{{{margin|}}};}}
+{{#if: {{{hauteur|}}} | height:{{{hauteur|}}};}}
+">{{#switch: {{{theme|}}}
+| necromunda=<div class="terminal-frame">[[Fichier:Necromunda-terminal-angle-1.png]][[Fichier:Necromunda-terminal-angle-2.png]][[Fichier:Necromunda-terminal-angle-3.png]][[Fichier:Necromunda-terminal-angle-4.png]][[Fichier:Necromunda-terminal-top.jpg]][[Fichier:Necromunda-terminal-left.jpg]][[Fichier:Necromunda-terminal-right.jpg]][[Fichier:Necromunda-terminal-bottom.png]]</div>
+|OB=<div style="position: absolute;z-index: 50;top: 0;left: 0;height: 100%;width: 100%;pointer-events: none;perspective: 500px;background: linear-gradient(90deg, transparent, #00d9ff26); overflow: visible; border-radius: 15px;"></div>
+}}<div class="terminal-inner" style="{{#switch: {{{theme|}}} 
+| necromunda = padding-bottom: 6em;
+}}{{#if: {{{padding|}}} | padding:{{{padding|}}};}}"><div class="terminal-glow"></div><div class="terminal-glow-2"></div><div class="terminal-bg">[[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]][[Fichier:Img-noise-300x300.png]]</div>
+{{#if: {{{titre|}}} |<div style="text-align: center; text-transform: capitalize; font-size: larger; margin-bottom: 1.5em;">{{{titre|}}}</div>}}
+{{{texte}}}{{#ifeq: {{{caret|}}} | on |<span class="caret">▋</span>}}
+</div></div>
+</includeonly><noinclude>
+{{Page OB}}
+Modèle de création d'un Terminal.
+
+==Tests==
+
+'''Code :'''
+
+<pre>
+{{Terminal
+|caret=on
+|taille=550px
+|titre=Dernières Nouvelles
+|texte= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit condimentum libero, sed mollis orci ultricies ac. Aenean hendrerit lacus sit amet dictum aliquet. Morbi posuere posuere ullamcorper. Proin auctor semper pellentesque. Vestibulum varius auctor dignissim. Mauris non pulvinar libero, id fermentum neque. Donec nisi ante, tempor fringilla fermentum sed, accumsan et ipsum. In sollicitudin tellus id finibus ultrices.
+
+Vestibulum a nibh in enim facilisis maximus. Praesent quam ante, finibus sollicitudin suscipit ac, euismod id purus. Sed scelerisque magna in leo tempor, et egestas nunc mattis. Quisque non bibendum ante. Praesent auctor et sapien eu pulvinar. Sed ut rhoncus massa, et dignissim arcu. Sed et nisi et nisl cursus sollicitudin. Nulla orci lectus, tincidunt quis sodales sed, tristique nec mauris. Morbi maximus accumsan leo, eu fringilla erat. Fusce convallis erat in dui condimentum euismod. Vivamus aliquet finibus mi, id aliquam nisl luctus sit amet. Maecenas vel mi ut eros bibendum congue in et mi. Donec bibendum malesuada gravida. Etiam quis magna eget velit consectetur iaculis. Donec diam arcu, eleifend non ante nec, facilisis tempus ante.
+
+Pellentesque scelerisque mi at elit interdum finibus. Etiam consectetur nunc vel volutpat varius. Nulla tincidunt ultrices bibendum. Integer ut tortor ac ipsum tincidunt mattis. Quisque a sapien eleifend urna sagittis aliquam. Nullam in leo urna. Etiam dictum laoreet elit nec rhoncus. Nunc aliquam nibh nec feugiat feugiat. Aliquam erat volutpat. Cras vitae odio eu eros auctor volutpat et a nibh. Suspendisse viverra suscipit eros sit amet auctor. Quisque sagittis nibh id leo imperdiet, ut dapibus velit ullamcorper. Suspendisse tempus dictum quam, nec feugiat tortor scelerisque quis. Vivamus ultrices in dui eget bibendum. 
+}}
+</pre>
+
+'''Rendu :'''
+
+{{Terminal
+|caret=on
+|taille=550px
+|titre=Dernières Nouvelles
+|texte= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit condimentum libero, sed mollis orci ultricies ac. Aenean hendrerit lacus sit amet dictum aliquet. Morbi posuere posuere ullamcorper. Proin auctor semper pellentesque. Vestibulum varius auctor dignissim. Mauris non pulvinar libero, id fermentum neque. Donec nisi ante, tempor fringilla fermentum sed, accumsan et ipsum. In sollicitudin tellus id finibus ultrices.
+
+Vestibulum a nibh in enim facilisis maximus. Praesent quam ante, finibus sollicitudin suscipit ac, euismod id purus. Sed scelerisque magna in leo tempor, et egestas nunc mattis. Quisque non bibendum ante. Praesent auctor et sapien eu pulvinar. Sed ut rhoncus massa, et dignissim arcu. Sed et nisi et nisl cursus sollicitudin. Nulla orci lectus, tincidunt quis sodales sed, tristique nec mauris. Morbi maximus accumsan leo, eu fringilla erat. Fusce convallis erat in dui condimentum euismod. Vivamus aliquet finibus mi, id aliquam nisl luctus sit amet. Maecenas vel mi ut eros bibendum congue in et mi. Donec bibendum malesuada gravida. Etiam quis magna eget velit consectetur iaculis. Donec diam arcu, eleifend non ante nec, facilisis tempus ante.
+
+Pellentesque scelerisque mi at elit interdum finibus. Etiam consectetur nunc vel volutpat varius. Nulla tincidunt ultrices bibendum. Integer ut tortor ac ipsum tincidunt mattis. Quisque a sapien eleifend urna sagittis aliquam. Nullam in leo urna. Etiam dictum laoreet elit nec rhoncus. Nunc aliquam nibh nec feugiat feugiat. Aliquam erat volutpat. Cras vitae odio eu eros auctor volutpat et a nibh. Suspendisse viverra suscipit eros sit amet auctor. Quisque sagittis nibh id leo imperdiet, ut dapibus velit ullamcorper. Suspendisse tempus dictum quam, nec feugiat tortor scelerisque quis. Vivamus ultrices in dui eget bibendum. 
+}}
+
+
+
+---------------
+
+
+
+'''Code :'''
+
+<pre>
+{{Terminal
+|caret=on
+|theme=necromunda
+|taille=550px
+|titre=Dernières Nouvelles
+|texte= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit condimentum libero, sed mollis orci ultricies ac. Aenean hendrerit lacus sit amet dictum aliquet. Morbi posuere posuere ullamcorper. Proin auctor semper pellentesque. Vestibulum varius auctor dignissim. Mauris non pulvinar libero, id fermentum neque. Donec nisi ante, tempor fringilla fermentum sed, accumsan et ipsum. In sollicitudin tellus id finibus ultrices.
+
+Vestibulum a nibh in enim facilisis maximus. Praesent quam ante, finibus sollicitudin suscipit ac, euismod id purus. Sed scelerisque magna in leo tempor, et egestas nunc mattis. Quisque non bibendum ante. Praesent auctor et sapien eu pulvinar. Sed ut rhoncus massa, et dignissim arcu. Sed et nisi et nisl cursus sollicitudin. Nulla orci lectus, tincidunt quis sodales sed, tristique nec mauris. Morbi maximus accumsan leo, eu fringilla erat. Fusce convallis erat in dui condimentum euismod. Vivamus aliquet finibus mi, id aliquam nisl luctus sit amet. Maecenas vel mi ut eros bibendum congue in et mi. Donec bibendum malesuada gravida. Etiam quis magna eget velit consectetur iaculis. Donec diam arcu, eleifend non ante nec, facilisis tempus ante.
+
+Pellentesque scelerisque mi at elit interdum finibus. Etiam consectetur nunc vel volutpat varius. Nulla tincidunt ultrices bibendum. Integer ut tortor ac ipsum tincidunt mattis. Quisque a sapien eleifend urna sagittis aliquam. Nullam in leo urna. Etiam dictum laoreet elit nec rhoncus. Nunc aliquam nibh nec feugiat feugiat. Aliquam erat volutpat. Cras vitae odio eu eros auctor volutpat et a nibh. Suspendisse viverra suscipit eros sit amet auctor. Quisque sagittis nibh id leo imperdiet, ut dapibus velit ullamcorper. Suspendisse tempus dictum quam, nec feugiat tortor scelerisque quis. Vivamus ultrices in dui eget bibendum. 
+}}
+</pre>
+
+'''Rendu :'''
+
+{{Terminal
+|caret=on
+|theme=necromunda
+|taille=550px
+|titre=Dernières Nouvelles
+|texte= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit condimentum libero, sed mollis orci ultricies ac. Aenean hendrerit lacus sit amet dictum aliquet. Morbi posuere posuere ullamcorper. Proin auctor semper pellentesque. Vestibulum varius auctor dignissim. Mauris non pulvinar libero, id fermentum neque. Donec nisi ante, tempor fringilla fermentum sed, accumsan et ipsum. In sollicitudin tellus id finibus ultrices.
+
+Vestibulum a nibh in enim facilisis maximus. Praesent quam ante, finibus sollicitudin suscipit ac, euismod id purus. Sed scelerisque magna in leo tempor, et egestas nunc mattis. Quisque non bibendum ante. Praesent auctor et sapien eu pulvinar. Sed ut rhoncus massa, et dignissim arcu. Sed et nisi et nisl cursus sollicitudin. Nulla orci lectus, tincidunt quis sodales sed, tristique nec mauris. Morbi maximus accumsan leo, eu fringilla erat. Fusce convallis erat in dui condimentum euismod. Vivamus aliquet finibus mi, id aliquam nisl luctus sit amet. Maecenas vel mi ut eros bibendum congue in et mi. Donec bibendum malesuada gravida. Etiam quis magna eget velit consectetur iaculis. Donec diam arcu, eleifend non ante nec, facilisis tempus ante.
+
+Pellentesque scelerisque mi at elit interdum finibus. Etiam consectetur nunc vel volutpat varius. Nulla tincidunt ultrices bibendum. Integer ut tortor ac ipsum tincidunt mattis. Quisque a sapien eleifend urna sagittis aliquam. Nullam in leo urna. Etiam dictum laoreet elit nec rhoncus. Nunc aliquam nibh nec feugiat feugiat. Aliquam erat volutpat. Cras vitae odio eu eros auctor volutpat et a nibh. Suspendisse viverra suscipit eros sit amet auctor. Quisque sagittis nibh id leo imperdiet, ut dapibus velit ullamcorper. Suspendisse tempus dictum quam, nec feugiat tortor scelerisque quis. Vivamus ultrices in dui eget bibendum. 
+}}
+
+
+
+---------------
+
+
+
+'''Code :'''
+
+<pre>
+{{Terminal
+|caret=on
+|theme=OB
+|taille=550px
+|titre=Dernières Nouvelles
+|texte= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit condimentum libero, sed mollis orci ultricies ac. Aenean hendrerit lacus sit amet dictum aliquet. Morbi posuere posuere ullamcorper. Proin auctor semper pellentesque. Vestibulum varius auctor dignissim. Mauris non pulvinar libero, id fermentum neque. Donec nisi ante, tempor fringilla fermentum sed, accumsan et ipsum. In sollicitudin tellus id finibus ultrices.
+
+Vestibulum a nibh in enim facilisis maximus. Praesent quam ante, finibus sollicitudin suscipit ac, euismod id purus. Sed scelerisque magna in leo tempor, et egestas nunc mattis. Quisque non bibendum ante. Praesent auctor et sapien eu pulvinar. Sed ut rhoncus massa, et dignissim arcu. Sed et nisi et nisl cursus sollicitudin. Nulla orci lectus, tincidunt quis sodales sed, tristique nec mauris. Morbi maximus accumsan leo, eu fringilla erat. Fusce convallis erat in dui condimentum euismod. Vivamus aliquet finibus mi, id aliquam nisl luctus sit amet. Maecenas vel mi ut eros bibendum congue in et mi. Donec bibendum malesuada gravida. Etiam quis magna eget velit consectetur iaculis. Donec diam arcu, eleifend non ante nec, facilisis tempus ante.
+
+Pellentesque scelerisque mi at elit interdum finibus. Etiam consectetur nunc vel volutpat varius. Nulla tincidunt ultrices bibendum. Integer ut tortor ac ipsum tincidunt mattis. Quisque a sapien eleifend urna sagittis aliquam. Nullam in leo urna. Etiam dictum laoreet elit nec rhoncus. Nunc aliquam nibh nec feugiat feugiat. Aliquam erat volutpat. Cras vitae odio eu eros auctor volutpat et a nibh. Suspendisse viverra suscipit eros sit amet auctor. Quisque sagittis nibh id leo imperdiet, ut dapibus velit ullamcorper. Suspendisse tempus dictum quam, nec feugiat tortor scelerisque quis. Vivamus ultrices in dui eget bibendum. 
+}}
+</pre>
+
+'''Rendu :'''
+
+{{Terminal
+|caret=on
+|theme=OB
+|taille=550px
+|titre=Dernières Nouvelles
+|texte= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit condimentum libero, sed mollis orci ultricies ac. Aenean hendrerit lacus sit amet dictum aliquet. Morbi posuere posuere ullamcorper. Proin auctor semper pellentesque. Vestibulum varius auctor dignissim. Mauris non pulvinar libero, id fermentum neque. Donec nisi ante, tempor fringilla fermentum sed, accumsan et ipsum. In sollicitudin tellus id finibus ultrices.
+
+Vestibulum a nibh in enim facilisis maximus. Praesent quam ante, finibus sollicitudin suscipit ac, euismod id purus. Sed scelerisque magna in leo tempor, et egestas nunc mattis. Quisque non bibendum ante. Praesent auctor et sapien eu pulvinar. Sed ut rhoncus massa, et dignissim arcu. Sed et nisi et nisl cursus sollicitudin. Nulla orci lectus, tincidunt quis sodales sed, tristique nec mauris. Morbi maximus accumsan leo, eu fringilla erat. Fusce convallis erat in dui condimentum euismod. Vivamus aliquet finibus mi, id aliquam nisl luctus sit amet. Maecenas vel mi ut eros bibendum congue in et mi. Donec bibendum malesuada gravida. Etiam quis magna eget velit consectetur iaculis. Donec diam arcu, eleifend non ante nec, facilisis tempus ante.
+
+Pellentesque scelerisque mi at elit interdum finibus. Etiam consectetur nunc vel volutpat varius. Nulla tincidunt ultrices bibendum. Integer ut tortor ac ipsum tincidunt mattis. Quisque a sapien eleifend urna sagittis aliquam. Nullam in leo urna. Etiam dictum laoreet elit nec rhoncus. Nunc aliquam nibh nec feugiat feugiat. Aliquam erat volutpat. Cras vitae odio eu eros auctor volutpat et a nibh. Suspendisse viverra suscipit eros sit amet auctor. Quisque sagittis nibh id leo imperdiet, ut dapibus velit ullamcorper. Suspendisse tempus dictum quam, nec feugiat tortor scelerisque quis. Vivamus ultrices in dui eget bibendum. 
+}}
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

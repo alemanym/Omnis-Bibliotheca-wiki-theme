@@ -1,0 +1,12 @@
+::{| style="background-color: #999999; color: black; padding: 0.2em 1em; border-radius: 5px; margin-bottom: 1em; text-align: left;"
+|style="vertical-align:middle;"|[[Fichier:Unknown.png|30px]]
+|L’Omnis Bibliotheca est vaste, peut-être vouliez-vous aller voir quelque chose qui porte le même nom : [[{{{homonyme}}}]]
+|}
+<noinclude>
+{{Page OB}}
+==Code==
+{|
+<nowiki>{{Voir homonyme|homonyme=Titre de la page d'homonymie}}</nowiki>
+
+[[Catégorie:Modèles de mise en page|global]]
+|}</noinclude>

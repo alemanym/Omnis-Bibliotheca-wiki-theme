@@ -1,0 +1,69 @@
+<includeonly>{{#css:
+
+.portrait-scifi-entry:not(:hover) .portrait-scifi-overlay-1 {
+	box-shadow: inset 0 -30px 50px 0 transparent, inset 0 0 50px transparent, inset 0 -100px 50px -50px transparent, 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #000, inset 25px 0 50px #ffffff5c, inset 5px 5px 2px -5px #ffffffba !important;
+}
+.portrait-scifi-entry:hover .portrait-scifi-overlay-1 {
+	transition: 0s background ease-in-out !important;
+}
+.portrait-scifi-entry.frame > .portrait-scifi-overlay-1 {
+	background: radial-gradient(transparent, transparent 70%, black), linear-gradient(90deg, black, transparent 10px, transparent calc(100% - 10px), black), linear-gradient(black, transparent 10px, transparent calc(100% - 10px), black);
+}
+.portrait-scifi-entry:hover .portrait-scifi-overlay-2 {
+	background-position: 0 110%, 0 10%!important;
+	transition: 0.7s all ease-in-out !important;
+}
+.portrait-scifi-avatar > .image {
+	overflow: hidden;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+.portrait-scifi-avatar.top > .image {
+	align-items: baseline;
+}
+.portrait-scifi-avatar.bottom > .image {
+	align-items: end;
+}
+.portrait-scifi-entry:not(:hover) > .portrait-scifi-name {
+	text-shadow: 0 0 3px transparent, 0 0 3px transparent, 0 0 3px transparent, 0 0 3px black, 0 0 5px transparent, 0 0 10px transparent !important;
+}
+.portrait-scifi-logo {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px 0 10px 20px;
+	width: 100%;
+	text-align: center;
+	opacity: 0.7;
+	z-index: 20;
+	pointer-events: none;
+}
+.portrait-scifi-logo img {
+	background: radial-gradient(#000000ba, transparent 80%);
+}
+.portrait-scifi-entry > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 30px);
+	z-index: 100;
+	opacity: 0;
+	transform: translateY(-30px);
+	clip-path: polygon(0 0%, calc(100% - 20px) 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
+}
+
+}}</includeonly><noinclude>
+{{Page OB}}
+
+==Fonctionnalité==
+
+A utiliser sur une page utilisant le [[Modèle:Portrait SciFi]] afin de définir les règles d'affichage.
+Ces règles ont été décolérées afin de ne pas les redéfinir à utilisation du Modèle:Portrait SciFi.
+
+
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

@@ -1,0 +1,381 @@
+<includeonly>{{#css:
+.titre-parchemin a,
+.citation-parchemin a,
+.signature-parchemin a {
+	color: black;
+}
+}}<div class="custom-citation" style="
+{{#switch: {{{position|}}} 
+| gauche | left = float: left; clear: left; {{#if: {{{margin|}}} | | margin: 0 1em 1em 0; }} 
+| droite | right = float: right; clear: right; {{#if: {{{margin|}}} | | margin: 0 0 1em 1em; }}
+| centre | center = margin-left: auto; margin-right: auto;
+}}
+{{#if: {{{margin|}}} | margin: {{{margin}}}; }}
+{{#if: {{{clip|}}} | clip-path: {{{clip}}}; }}
+{{#if: {{{taille|}}} 
+ | {{#ifeq: {{{taille}}} | 100% | display:block; | display: table; width:{{{taille}}}; max-width: 100%; }}
+ | display: table;
+}}
+"><div style="flex: 1; display: flex; min-width: 200px;">
+<div style="{{#if: {{{taille|}}} | width:100%; box-sizing: border-box; }}
+margin: {{{taille_bordure|{{#if: {{{couleur_bordure|}}} |10px|0px}}}}} {{{taille_bordure|{{#if: {{{couleur_bordure|}}} |10px|0px}}}}};
+position: relative;
+padding: 20px;
+font-family: 'courier new',monospace;
+display: flex;
+flex;: 1;">
+<!--BACKGROUND & OMBRE-->
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;
+background: {{{background|{{{background-image|linear-gradient(135deg, #9d928c, #918882)}}}}}};
+box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba{{#if:{{{taille_bordure|{{{couleur_bordure|}}}}}}| ,0 0 0 {{{taille_bordure|10px}}} {{{couleur_bordure|#3c4444}}}, 0 0 5px {{{taille_bordure|10px}}} #000, 0 0 3px {{{taille_bordure|10px}}} #1b1b1b }};"></div>
+<!--BACKGROUND-IMAGE-->
+{{#switch: {{{background-image|}}}
+ | parchemin
+ | parchemin-clair = <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; overflow: hidden; flex-flow: column;z-index: 0;">
+<div style="position: absolute; top: 0; left: 0; display: flex; overflow: hidden; flex-wrap: nowrap;">
+<div>[[Fichier:{{{background-image}}}.jpg|x750px]]</div>
+<div>[[Fichier:{{{background-image}}}.jpg|x750px]]</div>
+<div>[[Fichier:{{{background-image}}}.jpg|x750px]]</div>
+</div>
+<div style="position: absolute; top: 750px; left: 0; display: flex; overflow: hidden; flex-wrap: nowrap;">
+<div>[[Fichier:{{{background-image}}}.jpg|x750px]]</div>
+<div>[[Fichier:{{{background-image}}}.jpg|x750px]]</div>
+<div>[[Fichier:{{{background-image}}}.jpg|x750px]]</div>
+</div>
+</div>
+ | moniteur =<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; overflow: hidden; flex-flow: column;z-index: 3; background: linear-gradient(rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0.4) 2px, rgba(128, 128, 128, 0.4) 2px, rgba(128, 128, 128, 0.4) 4px);background-size: auto 4px;opacity: 0.2;"></div>
+}}
+<!--LISERET-->
+<div style="color: #353030; box-shadow: 0 0 0 {{{taille_liseret|4px}}} {{{couleur_liseret|#3430302e}}};padding: {{{padding_liseret|1em 2em}}};{{{css_additionnel_liseret|}}} width: 100%; z-index: 5; position: relative; ">
+<!--IMAGE-->
+{{#if: {{{image|}}} 
+| <div style="float: {{{position_image|right}}}; {{#switch: {{{position_image|right}}} | right = margin-left:2em; | left = margin-right:2em;}}">
+<div style={{{css_image|""}}}>
+<div style="display: inline-block; box-shadow: 0 0 5px {{{ombre_image|transparent}}};border-radius: 5px;overflow: hidden;">[[Fichier:{{{image}}}|{{{taille_image}}}]]</div></div></div>
+}}<div style="display: contents;">
+<!--TITRE-->{{#if: {{{titre|}}} 
+| <div class="titre-{{{background-image|standard}}}" style="font-size: larger;text-shadow: 0 0 5px #504b4a; color: #373232; margin-bottom: 5px;"><div style={{{css_titre|""}}}>{{{titre}}}</div></div>
+}}<!--TEXTE-->
+<div class="citation-{{{background-image|standard}}}" style={{{css_texte|""}}}>{{{texte}}}</div>
+<!--SIGNATURE-->{{#if: {{{signature|}}} 
+| <div class="signature-{{{background-image|standard}}}" style="padding-left: 20px; font-weight: bold; color: #373232; display: inline-block; margin: 0.5em 0 0 0;"><div style={{{css_signature|""}}}>{{{signature}}}</div></div>
+}}
+</div></div></div></div></div></includeonly><noinclude>
+{{Page OB}}
+==Fonctionnalité==
+
+Permet d'afficher un cadre stylisé contenant une citation.
+Il est possible d'y ajouter une image et une signature.
+
+==Paramètres==
+
+===Paramètres obligatoires: ===
+
+*'''texte''' = contenu textuel principal
+
+===Paramètres optionnels: ===
+
+*'''taille''' = taille du cadre
+*'''position''' = permet de gérer le positionnement en fonction de la valeur :
+** ''left'' ou ''gauche'' : positionnement flottant à gauche
+** ''right'' ou ''droite'': positionnement flottant à droite
+** ''center'' ou ''centre'': positionnement aligné au centre (il faut que '''taille''' soit défini pour cela)
+* '''margin''' : permet de redéfinir l'espace de marge autour du cadre
+* '''clip''' : permet de définir un masque
+
+*'''background''' = Background CSS
+*'''background-image''' = Image de fond (valeurs possibles : parchemin, parchemin-clair, moniteur)
+N.B: lorsque '''background-image''' ET '''background''' sont donné, '''background''' s'affiche par dessus '''background-image''' (voir exemple plus bas "parchemin clair avec background custom").
+
+
+*'''couleur_bordure''' = Couleur du contour
+*'''taille_bordure''' = Epaisseur du contour (valeur par défaut : 10px si '''couleur_bordure''' est défini, sinon 0px)
+*'''couleur_liseret''' = Couleur du liseret intérieur
+*'''padding_liseret''' = Padding (marge intérieure) du liseret ; valeur par défaut : 1em 2em
+*'''taille_liseret''' = Epaisseur du liseret ; valeur par défaut : 4px
+*'''css_additionnel_liseret''' = Style CSS additionnel pour le liseret (Attention: la valeur ne dois pas être entre guillemet, et il faut terminer par un ;)
+
+
+*'''signature''' = Signature de la citation
+*'''css_signature''' = Style CSS pour la signature (commencer et terminer par un ")
+*'''titre''' = titre de l'image
+*'''css_titre''' = Style CSS pour le titre (commencer et terminer par un ")
+*'''css_texte''' = Style CSS pour le texte (commencer et terminer par un ")
+
+
+*'''image''' = Fichier image
+*'''taille_image''' = Taille de l'image
+*'''ombre_image'''=couleur de l'ombre de l'image
+*'''css_image''' = Style CSS pour l'image (commencer et terminer par un ")
+
+==Exemples==
+
+===Exemple simple ===
+
+'''Code :'''
+<pre>
+{{Citation
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<br>
+<hr>
+
+===Exemple positionnement flottant à droite ===
+
+'''Code :'''
+<pre>
+{{Citation
+|position=right
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|position=right
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<div style="clear: both;"></div>
+<br>
+<hr>
+
+===Exemple positionnement centré ===
+
+N.B: la taille doit être définie
+'''Code :'''
+<pre>
+{{Citation
+|position=center
+|taille=50%
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|position=center
+|taille=50%
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<div style="clear: both;"></div>
+<br>
+<hr>
+
+===Exemple : parchemin===
+
+'''Code :'''
+<pre>
+{{Citation
+|background-image=parchemin
+|couleur_bordure=#5b4343
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|background-image=parchemin
+|couleur_bordure=#5b4343
+|texte=« L´innocence n´existe pas, il n´y que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<br>
+<hr>
+
+===Exemple : parchemin clair===
+
+'''Code :'''
+<pre>
+{{Citation
+|background-image=parchemin-clair
+|couleur_bordure=#2b3c3c
+|texte=« J’ai entendu parler du retour du Roi Silencieux. Ces rumeurs sont indignes d’un véritable souverain. Ramper dans les ténèbres, manipuler des marionnettes - aucun roi n’agit de la sorte. Et si ces fables sont vraies, il apprendra vite que son temps est révolu. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|background-image=parchemin-clair
+|couleur_bordure=#2b3c3c
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<br>
+<hr>
+
+===Exemple : parchemin clair avec background et taille custom===
+
+'''Code :'''
+<pre>
+{{Citation
+|background-image=parchemin-clair
+|background=linear-gradient(135deg, rgba(33, 71, 130, 0.4), rgba(68, 26, 26, 0.76))
+|taille=800px
+|couleur_bordure=#2b3c3c
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|background-image=parchemin-clair
+|background=linear-gradient(135deg, rgba(33, 71, 130, 0.4), rgba(68, 26, 26, 0.76))
+|taille=800px
+|couleur_bordure=#2b3c3c
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<br>
+<hr>
+
+
+===Exemple : moniteur background centré===
+
+'''Code :'''
+<pre>
+{{Citation
+|position=center
+|taille=500px
+|background-image=moniteur
+|background=radial-gradient( rgba(128, 186, 200, 0.4), rgba(20, 24, 28, 0.76))
+|couleur_liseret=transparent
+|couleur_bordure=#343535
+|taille_bordure=20px
+|css_texte="color: rgba(255, 255, 255, 0.4);text-shadow: 0 0 10px #ffffff70, 0 0 5px #000000bd, 0 0 25px #000000bd;"
+|texte=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet dictum metus, sed elementum odio pretium eu. Nulla euismod arcu ac augue iaculis posuere. Nullam condimentum neque et leo rhoncus varius. Nullam bibendum quam maximus enim fringilla rhoncus. Nam non consequat lorem, eu suscipit sem. Maecenas in lectus consequat, tempus augue ac, dignissim eros. Suspendisse potenti. Cras finibus urna et lectus sagittis, nec mattis diam fermentum. Mauris bibendum augue sed turpis suscipit, eu condimentum magna maximus. Integer bibendum pellentesque turpis.
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|position=center
+|taille=500px
+|background-image=moniteur
+|background=radial-gradient( rgba(128, 186, 200, 0.4), rgba(20, 24, 28, 0.76))
+|couleur_liseret=transparent
+|couleur_bordure=#343535
+|taille_bordure=20px
+|css_texte="color: rgba(255, 255, 255, 0.4);text-shadow: 0 0 10px #ffffff70, 0 0 5px #000000bd, 0 0 25px #000000bd;"
+|texte=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet dictum metus, sed elementum odio pretium eu. Nulla euismod arcu ac augue iaculis posuere. Nullam condimentum neque et leo rhoncus varius. Nullam bibendum quam maximus enim fringilla rhoncus. Nam non consequat lorem, eu suscipit sem. Maecenas in lectus consequat, tempus augue ac, dignissim eros. Suspendisse potenti. Cras finibus urna et lectus sagittis, nec mattis diam fermentum. Mauris bibendum augue sed turpis suscipit, eu condimentum magna maximus. Integer bibendum pellentesque turpis.
+}}
+
+<br>
+<hr>
+
+===Exemple simple ===
+
+'''Code :'''
+<pre>
+{{Citation
+|couleur_bordure=#343535
+|taille_liseret=1px
+|titre=+++ Données Confidentielles +++
+|css_titre="text-align: center;"
+|texte=« L’architecture cyclopéenne de ces lieux, n’a absolument rien d’humain... ses dimensions, sa complexité, ses harmonies, tout semble disproportionné à notre raison mortelle, conçu par un esprit inaccessible, étranger à l’homme. Que l’Empereur nous pardonne de nous être égarés si loin, sur un monde à ce point éloigné de Sa Lumière. Puisses-t-il entendre ces mots de repentir et ces supplications. Puisses-t-il éloigner de nos esprits les fantômes de ces souvenirs qui ne devraient pas être... »
+|signature=- Message Intercepté par la Station de Veil Midael
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation
+|couleur_bordure=#343535
+|taille_bordure=20px
+|taille_liseret=1px
+|titre=+++ Données Confidentielles +++
+|css_titre="text-align: center;"
+|texte=« L’architecture cyclopéenne de ces lieux, n’a absolument rien d’humain... ses dimensions, sa complexité, ses harmonies, tout semble disproportionné à notre raison mortelle, conçu par un esprit inaccessible, étranger à l’homme. Que l’Empereur nous pardonne de nous être égarés si loin, sur un monde à ce point éloigné de Sa Lumière. Puisses-t-il entendre ces mots de repentir et ces supplications. Puisses-t-il éloigner de nos esprits les fantômes de ces souvenirs qui ne devraient pas être... »
+|signature=- Message Intercepté par la Station de Veil Midael
+}}
+<br>
+<hr>
+
+===Exemple avancé===
+
+'''Code :'''
+<pre>
+{{Citation
+|taille=820px
+|position=right
+|background-image=parchemin
+|background=radial-gradient(rgba(225, 184, 184, 0), rgba(157, 49, 49, 0.32))
+|couleur_bordure=#482816
+|couleur_liseret=#bfb2921c
+|image=Space marine mantra.jpg
+|taille_image=290px
+|position_image=left
+|css_image="scale: -1 1;"
+|ombre_image=#201d1d
+|titre=Liturgie de Bataille
+|css_titre="color: #482816; text-shadow: 0 0 1px #590303;"
+|texte=« Dans l’obscurité, je serai la lumière.
+
+Dans les moments de doute, je garderai la foi.
+
+Dans les déchaînements de rage, j'affinerai mon talent.
+
+Dans la vengeance, je n'aurai nulle pitié.
+
+Au cœur de la bataille, je n'aurai nulle peur.
+
+Devant la mort, je n'aurai aucun regret... »
+|signature=- Mikelus, Chapelain des Blood Ravens
+|css_signature="color: #d0cecd;text-shadow: 0 0 5px #590303;"
+}}
+
+</pre>
+
+'''Rendu :'''
+{{Citation
+|taille=820px
+|position=right
+|background-image=parchemin
+|background=radial-gradient(rgba(225, 184, 184, 0), rgba(157, 49, 49, 0.32))
+|couleur_bordure=#482816
+|couleur_liseret=#bfb2921c
+|image=Space marine mantra.jpg
+|taille_image=290px
+|position_image=left
+|css_image="scale: -1 1;"
+|ombre_image=#201d1d
+|titre=Liturgie de Bataille
+|css_titre="color: #482816; text-shadow: 0 0 1px #590303;"
+|texte=« Dans l’obscurité, je serai la lumière.
+
+Dans les moments de doute, je garderai la foi.
+
+Dans les déchaînements de rage, j'affinerai mon talent.
+
+Dans la vengeance, je n'aurai nulle pitié.
+
+Au cœur de la bataille, je n'aurai nulle peur.
+
+Devant la mort, je n'aurai aucun regret... »
+|signature=- Mikelus, Chapelain des Blood Ravens
+|css_signature="color: #d0cecd;text-shadow: 0 0 5px #590303;"
+}}
+
+<div style="clear: both;">
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

@@ -1,0 +1,36 @@
+<includeonly>{{#switch: {{{1}}}
+| dark angels | dark angel = Symbol-da.png
+| blood angels | blood angel = Deco-blood-angel-10.png
+| space wolves | space wolf = Symbol-sw.png
+}}</includeonly><noinclude>
+{{Page OB}}
+==Fonctionnalité==
+
+Retourne le nom du fichier du logo demandé.
+
+
+<div style="display: flex; flex-flow: row;flex-wrap: wrap;white-space: nowrap;">
+
+<div style="display: flex; flex-direction: column; padding: 10px;">
+<div style="padding: 5px 10px;text-align: center;">'''dark angels :'''</div>
+<div>[[Fichier:{{logo|dark angels}}|center]]</div>
+<div style="padding: 5px 10px;text-align: center;">''{{logo|dark angels}}''</div>
+</div>
+
+<div style="display: flex; flex-direction: column; padding: 10px;">
+<div style="padding: 5px 10px;text-align: center;">'''blood angels :'''</div>
+<div>[[Fichier:{{logo|blood angels}}|center]]</div>
+<div style="padding: 5px 10px;text-align: center;">''{{logo|blood angels}}''</div>
+</div>
+
+<div style="display: flex; flex-direction: column; padding: 10px;">
+<div style="padding: 5px 10px;text-align: center;">'''space wolves :'''</div>
+<div>[[Fichier:{{logo|space wolves}}|center]]</div>
+<div style="padding: 5px 10px;text-align: center;">''{{logo|space wolves}}''</div>
+</div>
+
+</div>
+
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

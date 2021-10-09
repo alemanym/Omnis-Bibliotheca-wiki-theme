@@ -1,0 +1,18 @@
+<includeonly><div style="margin: 1em 0; padding: 1.5em;background: linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) !important;box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black !important;background-color: #000 !important;display: flex;position: relative;overflow: clip;">
+<div style="width: 100px;background: linear-gradient(90deg, #682119, #3708086b);display: flex;justify-content: center;align-items: center;margin-right: 1.5em;position: absolute;top: 0;left: 0;transform: translateX(-50%) rotateZ(-45deg) translateY(15px);transform-origin: center top;padding: 2px;letter-spacing: 1px;text-shadow: 0px 0 4px black;">JDR</div>
+<div style="background: #00000061;padding: 1em;flex: 1;color: grey;">{{{1|null}}}</div>
+</div></includeonly><noinclude>
+{{Page OB}}
+'''Code:'''
+
+<pre>
+<nowiki>{{Note JDR | Hello world}}</nowiki>
+</pre>
+
+
+'''Rendu :'''
+{{Note JDR | Hello world}}
+
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

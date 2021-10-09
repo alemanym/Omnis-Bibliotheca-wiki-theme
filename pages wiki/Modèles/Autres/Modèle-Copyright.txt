@@ -1,0 +1,24 @@
+===Français===
+Armageddon, Blood Bowl, Citadel, le logo Citadel, Dark Angels, Dark Future, Deathwing, 'Eavy Metal, Eldar, Epic, Games Workshop, le logo Games Workshop, Genestealer, Space Hulk, Space Marine, Talisman, Warhammer et Warmaster. 
+
+Les termes suivants sont des marques de Games Workshop Ltd. 
+
+Adepta Sororitas, Adeptus Astartes, Adeptus Mechanicus, Amon 'Chakai, Arbaal, Archaon, Attila, Avatar, Azazel, Battlefleet Gothic, Black Library, Blood Angels, Cadian, Catachan, Chapter Approved (service mark - sm - propriété de Games Workshop, Ltd.), Codex, Culexus, Dechala, Digganob, Dungeonquest, Egrimm van Horstmann, Eversor, Falcon, Flagellant, Gargant, Golden Demon, Gorkamorka, Gorthor, Gretchin, Grot, Immolator, Inferno, Journal, Khorne, Leman Russ, Man O' War, Marauder, Melkhior, Mordheim, Mordian, Necromunda, Necron, Nob, Nurgle, Nurgling, Obliterator, Ogryn, Ork, Predator, Psyker, Raider, Raptor, Ratling, Rat Ogre, Ravenwing, Scyla, Skaven, Slaanesh, Slann, Snot, Snotling, Space Wolves, Squat, Squig, Sybarite, Tallarn, Terminator, Tzeentch, Ultramarines, Valhalla, Vyper, Warhammer Quest, Warhound, White Dwarf, le logo White Dwarf, World Eaters et Zoanthrope. 
+
+Les droits de certaines illustrations ou photographies de l’Omnis Bibliotheca sont la propriété exclusive de Games Workshop Limited. © Copyright Games Workshop Limited 2000 - 2010. Tous droits réservés. 
+
+http://fr.games-workshop.com/communaute/legal/copyright.asp
+
+===International===
+40k, Adeptus Astartes, Battlefleet Gothic, Black Flame, Black Library, the Black Library logo, BL Publishing, Blood Angels, Bloodquest, Blood Bowl, the Blood Bowl logo, The Blood Bowl Spike Device, Cadian, Catachan, Chaos, the Chaos device, the Chaos logo, Citadel, Citadel Device, Cityfight, City of the Damned, Codex, Daemonhunters, Dark Angels, Darkblade, Dark Eldar, Dark Future, Dawn of War, the Double-Headed/Imperial Eagle device, 'Eavy Metal, Eldar, Eldar symbol devices, Epic, Eye of Terror, Fanatic, the Fanatic logo, the Fanatic II logo, Fire Warrior, the Fire Warrior logo, Forge World, Games Workshop, Games Workshop logo, Genestealer, Golden Demon, Gorkamorka, Great Unclean One, GW, GWI, the GWI logo, the Hammer of Sigmar logo, Horned Rat logo, Inferno, Inquisitor, the Inquisitor logo, the Inquisitor device, Inquisitor:Conspiracies, Keeper of Secrets, Khemri, Khorne, the Khorne logo, Kroot, Lord of Change, Marauder, Mordheim, the Mordheim logo, Necromunda, Necromunda stencil logo, Necromunda Plate logo, Necron, Nurgle, the Nurgle logo, Ork, Ork skull devices, Sisters of Battle, Skaven, the Skaven symbol devices, Slaanesh, the Slaanesh logo, Space Hulk, Space Marine, Space Marine chapters, Space Marine chapter logos, Talisman, Tau, the Tau caste designations, Tomb Kings, Trio of Warriors, Twin Tailed Comet Logo, Tyranid, Tyrannid, Tzeentch, the Tzeentch logo, Ultramarines, Warhammer, Warhammer Historical, Warhammer Online, Warhammer 40k Device, Warhammer World logo, Warmaster, White Dwarf, the White Dwarf logo, and all associated marks, names, races, race insignia, characters, vehicles, locations, units, illustrations and images from the Blood Bowl game, the Warhammer world, the Talisaman world, and the Warhammer 40,000 universe are either ®, TM and/or © Copyright Games Workshop Ltd 2000-2010, variably registered in the UK and other countries around the world. Used without permission. No challenge to their status intended. All Rights Reserved to their respective owners.
+
+
+<noinclude>
+{{Page OB}}
+==Code==
+{|
+|<nowiki>{{Copyright}}</nowiki>
+|}
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

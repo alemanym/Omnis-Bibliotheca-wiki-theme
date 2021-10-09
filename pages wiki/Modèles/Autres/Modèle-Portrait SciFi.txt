@@ -1,0 +1,339 @@
+<includeonly>{{#ifeq: {{{load|}}} | style | {{Portait SciFi style}} }}
+<div style="{{#if: {{{margin|}}} | margin:{{{margin}}};}} 
+{{#switch: {{{position|}}} 
+| right= float: right;
+| left= float: left;
+| center= margin: auto; display: table;
+}}">
+<div class="portrait-scifi-entry" 
+style="
+display: inline-flex;
+position: relative;
+transition: 0.3s all ease-in-out;
+box-shadow: 0 20px 20px -20px #0000007d, 0 40px 40px -40px #0000002e;
+justify-content: center;
+align-items: center;
+{{#if: {{{titre|}}} | {{#ifeq: {{{position_titre|}}} | bottom | margin-bottom:{{{hauteur_titre|30px}}}; | margin-top:{{{hauteur_titre|30px}}};}} }}
+{{#if: {{{hauteur|}}} | height:{{{hauteur}}} !important; }}
+{{#if: {{{largeur|}}} | width:{{{largeur}}} !important; }}">{{#if: {{{link|}}} | {{{link}}} }}
+<div class="portrait-scifi-avatar" style="
+	{{#ifeq: {{{cut}}}| none | 
+        |clip-path: polygon({{{cut|20px}}} 0%, calc(100% - {{{cut|20px}}}) 0%, 100% {{{cut|20px}}}, 100% calc(100% - {{{cut|20px}}}), calc(100% - {{{cut|20px}}}) 100%, {{{cut|20px}}} 100%, 0% calc(100% - {{{cut|20px}}}), 0% {{{cut|20px}}});}}
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+"><div 
+class="portrait-scifi-overlay-1"
+style="	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s all ease-in-out;
+	box-shadow: inset 0 -30px 50px 0 {{{hexcolor|#6af1f8}}}32, inset 0 0 50px {{{hexcolor|#6af1f8}}}0f, inset 0 -100px 50px -50px {{{hexcolor|#6af1f8}}}39, 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #000, inset 25px 0 50px #ffffff5c, inset 5px 5px 2px -5px #ffffffba;
+	z-index: 20;
+	pointer-events: none;
+"></div><div 
+class="portrait-scifi-overlay-2"
+style="	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(transparent, transparent 6px, {{{hexcolor|#6af1f8}}}4d 20px, #ffffff8b 13px, {{{hexcolor|#6af1f8}}}4d 16px, transparent), linear-gradient(rgba(0,0,0,0.1) 0px,rgba(0,0,0,0.1) 2px,rgba(128,128,128,0.1) 2px,rgba(128,128,128,0.1) 4px);
+	z-index: 30;
+	background-size: 100% 20px, auto 4px;
+	pointer-events: none;
+	opacity: 0.5;
+	transition: 0s all ease-in-out;
+	background-position: 0 -30px, center center;
+	background-repeat: no-repeat, repeat;
+"></div><div style="
+transform: {{#if: {{{decalage_image_horizontal|}}} | translateX({{{decalage_image_horizontal}}})}}{{#if: {{{decalage_image_vertical|}}} | translateY({{{decalage_image_vertical}}})}};"
+>{{#if: {{{taille_image|}}} 
+| [[Fichier:{{{image}}}|{{{taille_image}}}]]
+| [[Fichier:{{{image}}}]]
+}}</div></div>{{#if: {{{logo|}}} | <div class="portrait-scifi-logo">[[Fichier:{{{logo}}}|{{{taille_logo|x50px}}}]]</div>}}
+{{#if: {{{titre|}}} | <div class="portrait-scifi-name" style="
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	display: flex;
+	align-items: {{#ifeq: {{{position_titre|}}} | bottom | end | start}};
+	justify-content: center;
+	color: #fff !important;
+	background: #131313;
+	width: 100%;
+	box-shadow: inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d;
+	z-index: 0;
+	transform: translateX(-50%) translateY({{#ifeq: {{{position_titre|}}} | bottom | {{{hauteur_titre|30px}}} | -{{{hauteur_titre|30px}}}}});
+	padding: 6px 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	text-shadow: 0 0 3px {{{hexcolor|#6af1f8}}}50, 0 0 3px {{{hexcolor|#6af1f8}}}50, 0 0 3px {{{hexcolor|#6af1f8}}}50, 0 0 3px black, 0 0 5px {{{hexcolor|#6af1f8}}}90 , 0 0 10px {{{hexcolor|#6af1f8}}}90;">{{{titre}}}</div>}}</div></div></includeonly><noinclude>
+{{Page OB}}
+
+==Fonctionnalité==
+
+Permet d'afficher une image dans un style futuriste.
+
+Peut intégrer un titre et un sigle.
+
+Attention : Il faut utiliser le Modèle:Portait SciFi style afin de  charger les règle d'affichage du portait (afin de ne pas les redéfinit à chaque utilisation du modèle.
+Autrement il aussi possible d'utiliser le paramètre '''load=style'''.
+
+== Exemples ==
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+}}
+
+|}
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|position=center
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|position=center
+}}
+
+|}
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|position=right
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|position=right
+}}
+
+|}
+
+
+<br><hr><br>
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|cut=none
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|cut=none
+}}
+
+|}
+
+
+<br><hr><br>
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|margin=20px
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|margin=20px
+}}
+
+|}
+
+
+<br><hr><br>
+
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=100px
+|hexcolor=#ff0000
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=100px
+|hexcolor=#ff0000
+}}
+
+|}
+
+
+<br><hr><br>
+
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=x200px
+|hexcolor=#00ff00
+|titre=Mathias
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=x200px
+|hexcolor=#00ff00
+|titre=Mathias
+}}
+
+|}
+
+
+<br><hr><br>
+
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=x200px
+|hexcolor=#ff7700
+|titre=Mathias
+|hauteur_titre=50px
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=x200px
+|hexcolor=#ff7700
+|titre=Mathias
+|hauteur_titre=50px
+}}
+
+|}
+
+
+<br><hr><br>
+
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=x200px
+|hexcolor=#ffffff
+|titre=Mathias
+|position_titre=bottom
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|taille_image=x200px
+|hexcolor=#ffffff
+|titre=Mathias
+|position_titre=bottom
+}}
+
+|}
+
+
+<br><hr><br>
+
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|hauteur=100px
+|largeur=100px
+|hexcolor=#cc68ff
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|hauteur=100px
+|largeur=100px
+|hexcolor=#cc68ff
+}}
+
+|}
+
+
+<br><hr><br>
+
+
+{| style="width: 100%;"
+|- style="font-weight: bold;"
+| Code :
+| Rendu :
+|- style="vertical-align: top; width: 100%;"
+| style="background: #262626;padding: 20px;box-shadow: inset 0 0 40px 0px black; width: 400px;" | <pre>{{Portrait SciFi
+|image=Mathias portrait.jpg
+|hauteur=100px
+|largeur=100px
+|hexcolor=#000000
+|decalage_image_vertical=30px
+|decalage_image_horizontal=-20px
+}}</pre>
+
+| style="width: calc(100% - 400px);" | {{Portrait SciFi
+|image=Mathias portrait.jpg
+|hauteur=100px
+|largeur=100px
+|hexcolor=#000000
+|decalage_image_vertical=30px
+|decalage_image_horizontal=-20px
+}}
+
+|}
+
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

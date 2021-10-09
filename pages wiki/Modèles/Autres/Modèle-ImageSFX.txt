@@ -1,0 +1,243 @@
+<includeonly>{{#if: {{{image|{{{taille|}}}}}} 
+| <div style="display: table;
+{{#switch: {{{position|}}}
+ | left | gauche = float: left; margin: 0 1em 1em 0;
+ | right | droite = float: right; margin: 0 0 1em 1em;
+ | center | centre = margin: 0 auto 1em auto;
+}}
+{{#if: {{{margin|}}} | margin: {{{margin}}}; }}
+{{#if: {{{arrondis}}} | overflow: hidden; border-radius: {{{arrondis}}}; }}
+{{#if: {{{ombre_couleur}}}
+| box-shadow: 0 0 {{{ombre_min|4px}}} {{{ombre_couleur}}}, 0 0 {{{ombre_min|4px}}} {{{ombre_couleur}}}, 0 0 {{{ombre_max|{{{ombre_min|4px}}}}}} {{{ombre_couleur|black}}}, 0 0 {{{ombre_max|{{{ombre_min|4px}}}}}} {{{ombre_couleur|black}}}
+}}
+">{{#if: {{{link}}}
+| [[Fichier:{{{image}}}|{{{taille}}}|link={{{link}}}]]
+| [[Fichier:{{{image}}}|{{{taille}}}]]
+}}</div>
+| --Erreur-- : ImageSFX nécessite les paramètres obligatoires suivants : sfx, image, taille
+}}</includeonly><noinclude>
+{{Page OB}}
+== Fonctionnalités ==
+Modèle permettant d'appliquer des effets sur des images et de gérer leur positionnement.
+
+== Paramètres ==
+
+=== Parmètre Obligatoires ===
+*'''image''' : nom du fichier image
+*'''taille''' : taille de l'image
+
+=== Paramètres Optionnels===
+*'''position''' : permet de positionner l'image (center, left, right)
+*'''link''' : lien externe associé au clic sur l'image
+*'''margin''' : valeur de marge autour de l'image (si '''position''' a été spécifié au préalable une marge par défaut est positionnée)
+*'''arrondis''' : valeur exprimées en pixels (px) ou pourcentage (%) qui applique un arrondis dans les angles de l'image (par défaut : 0)
+*'''ombre_couleur''' : couleur de l'ombre autour de l'image (par défaut : transparent)
+*'''ombre_min''' : taille approximative de l'étendue de l'ombre (par défaut : 4px si '''ombre_couleur''' est définie)
+*'''ombre_max''' : extension de l'étendue de l'ombre (par défaut : '''ombre_min''')
+''N.B : jouer avec les valeurs '''ombre_min''' et '''ombre_max''' permet d'améliorer l'effet de fondu.
+
+== Exemples ==
+
+=== Exemple : Simple ===
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|taille=100px
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|taille=100px
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+=== Exemples : Positionnements ===
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=right
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=right
+|taille=100px
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+=== Exemples : Arrondis ===
+
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|arrondis=20px
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|arrondis=20px
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|arrondis=50%
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|arrondis=50%
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|ombre_couleur=#ff0000
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|ombre_couleur=#ff0000
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+|arrondis=30px
+|ombre_couleur={{couleur|mordian blue}}
+|ombre_min=30px
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+|arrondis=30px
+|ombre_couleur={{couleur|mordian blue}}
+|ombre_min=15px
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+|arrondis=30px
+|ombre_couleur={{couleur|mordian blue}}
+|ombre_min=15px
+|ombre_max=30px
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+|arrondis=30px
+|ombre_couleur={{couleur|mordian blue}}
+|ombre_min=15px
+|ombre_max=30px
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+'''Code :'''
+<pre>
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+|arrondis=50%
+|ombre_couleur=#000000
+|ombre_min=25px
+|ombre_max=35px
+}}
+</pre>
+
+
+'''Rendu :'''
+{{ImageSFX
+|image=Deco necron 1.jpg
+|position=center
+|arrondis=50%
+|ombre_couleur=#000000
+|ombre_min=25px
+|ombre_max=35px
+}}
+
+
+<div style="clear: both;"><br><hr>
+
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

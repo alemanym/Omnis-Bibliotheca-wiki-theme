@@ -1,0 +1,12 @@
+::{| style="width: 450px; background-color: #999999; color: black; text-align:center;"
+|style="vertical-align:middle;"|[[Fichier:Unknown.png|60px]]
+|'''''Ceci est une page d’homonymie.'''<br />Cette aide à la navigation dresse la liste des différents articles partageant le même nom ou la même expression.''
+|}
+<noinclude>
+{{Page OB}}
+==Code==
+{|
+|<nowiki>{{Homonymie}}</nowiki>
+
+[[Catégorie:Modèles de mise en page|global]]
+|}</noinclude>

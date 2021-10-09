@@ -1,0 +1,368 @@
+<includeonly><div class="credo" style="clear: both;
+{{#if: {{{taille|}}} | width: {{{taille|}}};}}
+{{#switch: {{{1|}}}
+|left = float:left; margin: 0 2em 1em 0;max-width: 30%;
+|right = float:right; margin: 0 0 1em 2em;max-width: 30%;
+|center = margin: auto;
+}}
+padding: 1em;background: linear-gradient(135deg, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248, #71797848, #41444448, #575b5b48, #23262548, #3c424048, #1f232248) !important; box-shadow: inset 1px 1px #ffffff1f, inset 0 0 0 1px #272727, 0 4px 10px black, inset 0 0 20px #ff00006b !important;background-color: #000 !important;display: table;position: relative;">
+<div style="background: #00000061;padding: 1.5em;flex: 1;color: grey;box-shadow: 0 0 0 1px #c6a46266, 0 0 0 3px black, 0 0 0 4px #d29c6369, -5px -5px 20px;">
+Pensée du Jour : ''« {{{texte|{{#switch: {{#expr: {{formatnum:{{CURRENTTIMESTAMP}}|R}} mod 260}}
+| 0 = N’oublie pas ton devoir.
+| 1 = Le devoir inclut sa récompense.
+| 2 = Le savoir c'est le pouvoir. Cachez-le bien.
+| 3 = Une vie passée sans Le servir est doublement gaspillée, dans ce monde et dans celui d’après.
+| 4 = Si ton sacrifice ne t’apporte aucune gloire, cela n’a pas d’importance : l’Empereur voit tout.
+| 5 = Mieux vaut un corps brisé qu’un esprit corrompu.
+| 6 = Étudie le Xenos pour mieux le tuer.
+| 7 = Il n'y a pas de paix parmi les étoiles.
+| 8 = Persévérance et Silence sont les plus Hautes Vertus.
+| 9 = Il n’y a pas de miséricorde parmi les étoiles, seulement une éternité de guerre.
+| 10 = Pourvu que nous portions Son flambeau, la lumière de l’Empereur pourra illuminer jusqu’au moindre recoin de cette galaxie.
+| 11 = Celui qui perd un membre peut survivre, pas celui qui perd sa tête.
+| 12 = Les Orks sont un fléau pour la galaxie, un fléau que nous nous réjouissons de combattre, par le Bolter, par la lame et au nom de l’Empereur.
+| 13 = Ne craignez pas d’utiliser le plus gros canon.
+| 14 = Ne craignez pas d’utiliser l’arme la plus grosse qui soit.
+| 15 = Le temps des Aeldaris est révolu. Si seulement ils pouvaient avoir la bonne grâce d’accepter leur disparition avec dignité.
+| 16 = La justice de l’Imperium se trouve à la pointe du Bolt.
+| 17 = Admettre la défaite est un blasphème envers l’Empereur.
+| 18 = Nous gagnons notre salut par la destruction de nos ennemis.
+| 19 = Ne pleurez pas les martyrs, encensez-les pour leur sacrifice.
+| 20 = La Mort d’un Hérétique sert l’Empereur.
+| 21 = La Raison engendre le Doute : le Doute engendre l’Hérésie.
+| 22 = Un Esprit libre est un havre pour la Trahison.
+| 23 = L’Innocence ne prouve rien.
+| 24 = Craignez ce que vous ne connaissez point. Tuez tout ce que vous craignez.  
+| 25 = Ne cherchez d’autre récompense que la satisfaction de votre Maître !
+| 26 = Méfiez vous de l’ennemi tapi en votre sein !
+| 27 = La foi aveugle est une juste cause.
+| 28 = Ne laissez pas le Mutant partager votre pain et vivre auprès de vous.
+| 29 = Nous confions notre Destin à la Volonté de l’Empereur.
+| 30 = Remettre en question, c’est douter.
+| 31 = Les Martyrs portent l’Humanité sur leurs épaules.
+| 32 = Le sang des martyrs est la semence de l’Imperium.
+| 33 = Le Savoir est le Pouvoir, mais le Pouvoir corrompt.
+| 34 = La Foi véritable est aveugle et justifiée.
+| 35 = Braves en vérité sont ceux qui savent tout et ne craignent rien.
+| 36 = Le vrai Sage vit dans la Peur.
+| 37 = Le Vainqueur vit dans la gloire, le Vaincu vit dans la honte.
+| 38 = Il n’existe que l’Empereur et il est notre guide et notre bouclier.
+| 39 = Vous ne devez pas penser. Contentez-vous d'agir.
+| 40 = Nul n’est innocent, car il n’existe que divers degrés de culpabilité.
+| 41 = Seule la Mort met fin au Devoir.
+| 42 = Ne point mépriser, c’est capituler.
+| 43 = Tous nos Actes obéissent aux Ordres de l’Empereur.  
+| 44 = Nous ne devons offrir que la Mort et le Devoir.  
+| 45 = La Prière purifie l’Âme et la Douleur purifie le corps.
+| 46 = Chercher des réponses mène à la damnation.
+| 47 = Soyez forts dans votre ignorance.
+| 48 = Les Instruments de votre Salut sont la foi et les balles.
+| 49 = Ne cherchez d’autre récompense que la satisfaction de votre Maître !
+| 50 = Un argument logique doit être balayé par une conviction absolue !  
+| 51 = L’Innocence ne prouve rien.
+| 52 = Un Esprit libre est un havre pour la Trahison.
+| 53 = La Raison engendre le Doute : le Doute engendre l’Hérésie.
+| 54 = Offrez le salut par l’annihilation.
+| 55 = Douter de son maître est trahir l’Empereur.
+| 56 = Un servant qui se questionne est plus dangereux qu’un hérétique ignorant.
+| 57 = La prière purifie l’esprit mais la douleur purifie le corps.
+| 58 = Une bonne vie est une vie au service de l’Empereur.
+| 59 = Puisse la colère de l’Empereur purifier nos âmes.
+| 60 = Le manque de conviction appelle la défaite.
+| 61 = La tolérance n’est qu’un signe de faiblesse.
+| 62 = La mort épargne à l’innocent une corruption inévitable.
+| 63 = Néglige ton arme et elle te fera défaut.
+| 64 = Le prométhéum est le salut des corrompus : dispensez généreusement sa miséricordieuse caresse.
+| 65 = Ne vous dressez pas entre l’Inquisiteur et l’hérétique.
+| 66 = Le choix est un poids dont vous n’avez pas à souffrir.
+| 67 = Tous les pêcheurs doivent craindre la colère de l’Empereur.
+| 68 = L’espoir est le premier pas vers la déception.
+| 69 = Il est de notre devoir d’oblitérer les ennemis de l’Empereur, mais cela seul ne suffit pas.
+| 70 = Mourir pour quelque chose est bien plus important que de vivre pour rien.
+| 71 = La victoire n’appelle pas d’explication. La défaite n’en permet aucune.
+| 72 = Mieux vaut être à jamais un martyr qu’être un lâche ne serait-ce qu’un instant.
+| 73 = Ne demandez pas pourquoi vous servez. Demandez comment.
+| 74 = Ceux qui prétendent ne rien craindre et tout savoir sont des idiots.
+| 75 = Diplomate, conciliateur, ambassadeur, ce ne sont que des mots pour désigner un traître.
+| 76 = La mort n’apporte pas la paix aux infidèles.
+| 77 = Le salut vient sur les ailes d’une flamme purificatrice.
+| 78 = Nous sommes déjà vaincus si notre maître est la peur.
+| 79 = Remettre en cause ton devoir, c’est manquer à ton devoir.
+| 80 = Les courageux marcheront toujours dans la lumière de l’Empereur.
+| 81 = La belligérance alliée à la foi peut déplacer des montagnes.
+| 82 = Les instruments de notre salut sont la foi et les balles.
+| 83 = Révérez l’Omnimessie, source de toute force.
+| 84 = L’intellect est le masque des Traîtres.
+| 85 = L’espoir est un luxe.
+| 86 = La Victoire est simplement une plus grande persévérance.
+| 87 = Un homme n’aura jamais rien de mieux à faire de sa vie que de la sacrifier au nom de l’Empereur.
+| 88 = Un homme brave choisit toujours le chemin périlleux.
+| 89 = Que reste-t-il quand on perd courage ?
+| 90 = Attaquez, attaquez ! Pas de prisonniers !
+| 91 = Le fût d’un canon est source d’inspiration.
+| 92 = Ce même marteau qui fracasse le verre, façonne l’acier.
+| 93 = Un esprit étroit n’a de place que pour la foi.
+| 94 = L’esclave loyal apprend à aimer le fouet.
+| 95 = Sois juste et ne crains rien.
+| 96 = La blessure d’une balle est pure extase comparée à la damnation.
+| 97 = Seuls les imbéciles écoutent les mensonges de l’Hérétique.
+| 98 = Le pardon est signe de faiblesse.
+| 99 = Celui qui sert doit obéir sans discussion.
+| 100 = Le sage apprend de la mort d’autrui.
+| 101 = Ceux qui embrassent les Ténèbres deviennent les esclaves du désespoir.
+| 102 = Une âme sans protection ne peut pas d’avantage affronter les tempêtes du Warp qu’un hérétique n’est capable de supporter les foudres de l’Inquisition.
+| 103 = L’imbécile questionne, le fou demande une deuxième fois.
+| 104 = Les forts sont plus forts seuls.
+| 105 = Échouer au service de l’Empereur est le plus grand des péchés.
+| 106 = L’espoir est un péché.
+| 107 = La volonté est insuffisante. Agissez.
+| 108 = Sage est celui qui ne pose pas de question. Béni est celui qui ne pense pas.
+| 109 = La victoire se mesure dans le sang versé : le vôtre ou celui de l’ennemi.
+| 110 = Sachez que le Warp s’insinue partout : dans l’humain, dans la bête et dans la machine.
+| 111 = Il est néfaste d'entretenir des rêves de grandeur au sein du Credo Impérial.
+| 112 = Ne faites confiance qu’à l’Empereur, car tous les autres sont suspects.
+| 113 = Méprisez l’hérétique : sa voie le mènera à la damnation éternelle.
+| 114 = Mieux vaut mourir pour l’Empereur que vivre pour soi-même.
+| 115 = Les péchés dissimulés au fond d’un cœur font pourrir tout le reste.
+| 116 = Servez l’Empereur aujourd’hui, car demain verra peut-être votre mort.
+| 117 = Le salut exige des sacrifices.
+| 118 = Le savoir, c’est le pouvoir. Ne le gaspillez pas inutilement sur les masses.
+| 119 = Meurs si tu le dois, mais que ton âme reste invaincue.
+| 120 = La fin justifie les moyens.
+| 121 = Le zèle excuse tout.
+| 122 = Toute vie mortelle est une folie qui ne nourrit pas l’esprit.
+| 123 = Le cœur de l’univers est impitoyable et glacial ; il n’a cure de la vie humaine.
+| 124 = Dans le doute, détourne ton regard.
+| 125 = Pur de Corps, Pur de Cœur.
+| 126 = La foi efface toute couardise.
+| 127 = Ceux qui n’ont rien peuvent toujours offrir leur vie.
+| 128 = La vie est une prison, la mort une délivrance.
+| 129 = La marche à travers l’enfer est le chemin qui mène à la gloire.
+| 130 = La Foi grandit depuis le fût d’un canon.
+| 131 = L’obéissance est aveugle.
+| 132 = L’obéissance ne suffit pas.
+| 133 = Il n’y aura pas de victoire sans ton sacrifice.
+| 134 = L’Empereur est la force de l’Humanité.
+| 135 = "Paix" ne fait pas partie de notre vocabulaire.
+| 136 = Comme nos rangs avancent, il en va de même pour notre dévotion.
+| 137 = La récompense de la tolérance est la félonie et la trahison.
+| 138 = L’arme préférée d’un Catachan est la jungle.
+| 139 = La question n’est pas quand, mais comment vais-je mourir.
+| 140 = La loyauté est sa propre récompense.<br />La trahison est sa propre punition.
+| 141 = Une mort honorable célèbre la vie d’un héros. Une mort indigne ne fait que mettre fin à une vie gâchée.
+| 142 = C’est dans les moments les plus sombres que la lumière de l’Empereur brille le plus fort.
+| 143 = C’est la grandeur de l’humain, et non de son équipement de guerre, qui compte aux yeux de l’Empereur.
+| 144 = Seuls, nous sommes de puissants bastions, mais lorsque nous nous battons côte à côte, nous sommes une forteresse de foi qu’aucun ennemi ne peut surpasser.
+| 145 = Une pensée perfide est aussi dangereuse qu’une centaine de munitions.
+| 146 = La pensée engendre l’hérésie : l’hérésie engendre le châtiment.
+| 147 = L’Empereur seul est notre bouclier et notre protection.
+| 148 = Une arme ne peut se substituer à la ferveur.
+| 149 = Le Xenos périt car il ne peut étreindre l’Empereur.
+| 150 = Le véritable bonheur ne peut naître que de la dévotion.
+| 151 = Un esprit faible est un esprit clair.
+| 152 = Aucune armée n’est assez puissante pour conquérir la galaxie mais la foi peut renverser l’univers.
+| 153 = L’argent des proscrits a peu de valeur, mais les âmes qu’il peut acheter sont innombrables.
+| 154 = Les pires ennemis sont ceux que nous engendrons nous-mêmes.
+| 155 = La mort n’est qu’une porte.
+| 156 = Ceux qui se vautrent dans le péché ne méritent pas la miséricorde du bûcher.
+| 157 = Celui qui ne possède rien à toujours sa vie à offrir.
+| 158 = Pour chaque honneur de bataille meurent un millier de héros anonymes.
+| 159 = L’hérésie doit être accueillie par la haine.
+| 160 = Le succès se mesure à l’aune du sang versé : celui de l’ennemi ou le vôtre.
+| 161 = La haine mutuelle est tout ce que l’on doit attendre lorsqu’on traite avec le Xenos.
+| 162 = Porteurs du Jugement, Anges de la Mort : on les appelle les Space Marines.
+| 163 = Celui qui n’est pas avec l’Empereur est contre Lui.
+| 164 = Les véritables héros comptent sur la foi aveugle.
+| 165 = Nous vivons l’heure la plus sombre de l’Humanité.
+| 166 = La victoire n’appelle pas d’explications ; la défaite n’en permet aucune.
+| 167 = Tout les coups sont permis contre le Xenos et le Traître.
+| 168 = Prenez soin de votre équipement !
+| 169 = Un esprit naïf ne peut pas plus traverser les mers du Warp qu’un hérétique ne peut soutenir le regard d’un Inquisiteur.
+| 170 = Nul ne peut survivre au Warp. Il est notre Némésis. Y pénétrer est une condamnation à mort.
+| 171 = Célébrez les martyrs ! Leur sang oint les fondations de l’Imperium, et leur souvenir nous glorifie.
+| 172 = C’est en les voyant mourir que nous connaîtrons leur valeur.
+| 173 = Le Traître et le Xenos ne sont pas dignes d’un combat à la loyale.
+| 174 = Le succès est commémoré ; l’échec, simplement archivé.
+| 175 = Il n’est de gloire plus grande qu’une vie de services dévoués.
+| 176 = L’excuse est le refuge du faible.
+| 177 = Associée à la foi, l’impétuosité peut soulever des montagnes.
+| 178 = Un esprit ouvert est une citadelle sans portes et désertée par ses gardes.
+| 179 = Le Chaos corrompt tout.
+| 180 = Ceux qui succombent à l’ombre deviennent esclaves des ténèbres, serfs du désespoir.
+| 181 = Le Traître ne doit attendre aucun salut.
+| 182 = Hérésie et trahison sont des péchés au-delà du repentir.
+| 183 = Quiconque dédaigne la bénédiction de l’Empereur renonce à tout espoir.
+| 184 = La Volonté de l’Empereur est irrécusable !
+| 185 = L’esprit d’un Xenos ne peut recevoir la bénédiction de l’Empereur.
+| 186 = Nous ne craignons pas la mort.
+| 187 = Entre l’Empereur et l’abîme, il n’existe aucun choix possible.
+| 188 = Le misérable esprit Xenos ne saurait se mesurer au regard des standards humains.
+| 189 = La pitié est une faiblesse.
+| 190 = Le savoir est à redouter !
+| 191 = La mort est une récompense.
+| 192 = Un esprit sans but erre dans les ténèbres.
+| 193 = Béni soit l’ignorant qui ne connait pas le doute.
+| 194 = L’épée qu’on aiguise peut se retourner contre soi.
+| 195 = L’innocence cache parfois la quintessence de l’horreur.
+| 196 = L’ignorance est une bénédiction que le sage aurait tort d’ignorer.
+| 197 = Toute tolérance n’est que trahison.
+| 198 = La douleur est une illusion des sens, le désespoir une illusion de l’esprit.
+| 199 = L’innocence n’existe pas, il n’y que des degrés de culpabilité.
+| 200 = La vie est une prison, la mort, une délivrance.
+| 201 = Brûlez l’hérétique. Tuez le mutant. Purgez l’impur.
+| 202 = La peur assure la loyauté.
+| 203 = Si vous ne savez pas vous battre, vous servirez de chair à canon.
+| 204 = Que la mort soit votre guide.
+| 205 = Que la volonté de l’Empereur soit votre flambeau pour terrasser les ombres.
+| 206 = Béni est l’esprit trop limité pour souffrir du doute.
+| 207 = Admettre la défaite est un blasphème envers l’Empereur.
+| 208 = Ceux qui recherchent la perfection ne connaîtront nul repos avant la mort.
+| 209 = La différence entre l’hérésie et la trahison est l’ignorance.
+| 210 = Un esprit limité est un esprit ordonné.
+| 211 = Le sage apprend beaucoup de la mort des autres.
+| 212 = Le zèle est une excuse qui se suffit à elle-même.
+| 213 = Connaissez les mutants ; tuez les mutants.
+| 214 = Le mépris est mon armure.
+| 215 = L’ignorance est une vertu.
+| 216 = Tuez, tuez, tuez !
+| 217 = Sans Lui, rien n’est plus.
+| 218 = La damnation est éternelle.
+| 219 = Cessez et repentez-vous.
+| 220 = Soumettez-vous dès maintenant à sa volonté.
+| 221 = Maudissez maintenant l’affront d’une mort vaine.
+| 222 = Que Sa volonté soit faite.
+| 223 = Nul homme tombé pendant Son service ne connaît de mort vaine.
+| 224 = Rien n’est à craindre, hormis la défaite.
+| 225 = Commencer une réforme signifie débuter une révolution.
+| 226 = La Haine est le plus beau don de l’Empereur à l’Humanité.
+| 227 = Celui qui ne possède plus rien peut encore avoir la foi.
+| 228 = L’Empereur sait, l’Empereur observe.
+| 229 = La vérité engendre la haine.
+| 230 = Le travail est une prière.
+| 231 = Être impitoyable est preuve de bonté pour le sage.
+| 232 = Le servir signifie le vénérer.
+| 233 = Mieux vaut un homme craintif qu’heureux.
+| 234 = La peur renie la foi.
+| 235 = Au-delà de l’Imperium n’existent que les ténèbres et l’hérésie.
+| 236 = La chair est le miroir de l’âme. Leur apparence difforme te révélera leur hérésie.
+| 237 = Haine, haine, haine ! C’est notre mantra.
+| 238 = Avant d’affuter ton épée, consolide ton bouclier.
+| 239 = L’Arme ne saurait se substituer au zèle.
+| 240 = Le Brave ne doute pas, il agit.
+| 241 = Les justes sont les forts.
+| 242 = Béni soit celui qui meurt comme il a vécu - dans l’Ignorance.
+| 243 = Dans le doute, avancez vers le bruit des détonations.
+| 244 = L’Innocent doit être sacrifié afin de punir le Coupable.
+| 245 = Un esprit curieux dénonce une âme traîtresse.
+| 246 = La paix est la seule arme du lâche.
+| 247 = La Maison Helmawr est Necromunda.
+| 248 = Le progrès est un poison pour l’Omnimessie.
+| 249 = La foi est la nourriture de l’Imperium.
+| 250 = La vérité est un autre mensonge raconté par les ignorants.
+| 251 = Fausse est la vérité arrachée à l’hérétique, véridique est le mensonge énoncé au nom de l’Empereur.
+| 252 = Il est toujours en train de regarder.
+| 253 = Une mutation du corps cache une âme de mutant.
+| 254 = Un serviteur curieux est plus dangereux qu’un hérétique ignorant.
+| 255 = Légitime est le meurtre commis au nom de l’Empereur.
+| 256 = Le sot se défend avec la connaissance, le pieux se protège avec l’ignorance.
+| 257 = Celui qui est protégé par la foi n’a pas à craindre l’hérésie.
+| 258 = L’hérésie naît de l’oisiveté.
+| 259 = Age of Sigmar est une hérésie ! Béni celui resté fidèle à Battle !.
+}}}}}'' »</div>
+</div></includeonly><noinclude>
+{{Page OB}}
+'''Code:'''
+
+<pre>
+{{Credo}}
+</pre>
+
+'''Rendu :'''
+
+{{Credo}}
+
+<div style="clear: both;"></div>
+
+
+<hr>
+
+
+'''Code:'''
+
+<pre>
+{{Credo|right}}
+</pre>
+
+'''Rendu :'''
+
+{{Credo|right}}
+
+<div style="clear: both;"></div>
+
+<hr >
+
+
+'''Code:'''
+
+<pre>
+{{Credo|left}}
+</pre>
+
+'''Rendu :'''
+
+{{Credo|left}}
+
+<div style="clear: both;"></div>
+
+
+<hr>
+
+
+'''Code:'''
+
+<pre>
+{{Credo|center}}
+</pre>
+
+'''Rendu :'''
+
+{{Credo|center}}
+
+<div style="clear: both;"></div>
+
+
+<hr>
+
+
+'''Code:'''
+
+<pre>
+{{Credo|texte=Le Prométhéum est le salut des corrompus : dispensez généreusement sa miséricordieuse caresse.}}
+</pre>
+
+'''Rendu :'''
+
+{{Credo|texte=Le Prométhéum est le salut des corrompus : dispensez généreusement sa miséricordieuse caresse.}}
+
+<div style="clear: both;"></div>
+
+
+<hr>
+
+
+'''Code:'''
+
+<pre>
+{{Credo|taille=300px|texte=Le Prométhéum est le salut des corrompus : dispensez généreusement sa miséricordieuse caresse.}}
+</pre>
+
+'''Rendu :'''
+
+{{Credo|right|taille=300px|texte=Le Prométhéum est le salut des corrompus : dispensez généreusement sa miséricordieuse caresse.}}
+
+<div style="clear: both;"></div>
+
+
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

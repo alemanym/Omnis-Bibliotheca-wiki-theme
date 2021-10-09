@@ -1,0 +1,115 @@
+<includeonly>
+{{#if: {{{1|}}} | <div class="carriere-pane-content imperium">
+{{#ifeq: {{{2|none}}} | none 
+| <div class="carriere-pane-image"></div>
+| <div class="carriere-pane-image {{#ifeq: {{{fit|vertical}}}|vertical|fit-vertical|fit-horizontal}}">[[Fichier:{{{2|}}}|center|{{#ifeq: {{{fit|vertical}}}|vertical|x236px|156px}}]]</div>
+}}
+<div class="carriere-pane-title">[[{{{link|{{{1}}}}}}|{{{1}}}]]</div>
+<div class="carriere-pane-label">{{{label|}}}</div>
+{{#ifeq: {{{3|TODO}}} 
+| TODO| <div class="carriere-pane-infos"><div class="carriere-pane-infos-handler"></div></div>
+|  <div class="carriere-pane-infos"><div class="carriere-pane-infos-handler">...</div><div class="carriere-pane-infos-data">
+{{{3}}}
+[[{{{link|{{{1}}}}}}|En savoir plus...]]
+</div></div>
+}}</div>
+| <div><b>Modèle:Cadre Carrière Imperium<b> ERREUR : paramètres manquants</div>
+}}</includeonly><noinclude>{{Page Theme
+|menu-title=Modèles
+|menu-category=Modèles de mise en page
+}}
+
+==Fonctionnalité==
+Permet d'afficher la fiche d'une carrière de l'imperium avec illustration, nom, lien.
+
+==Paramètres==
+* ''premier paramètre'' : Nom de carrière / nom du lien si '''link''' n'est pas défini.
+* ''deuxième paramètre'' : Nom du fichier image
+* ''troisième paramètre'' : descriptif succint
+* '''link''' : nom de la page de lien
+* '''class''' : associe un type spécifique ''(exemple : Deathwatch)''
+
+==Exemples==
+
+===Exemple 1===
+
+'''Code :'''
+<pre>
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|ApothicaireDeathwatch.jpg|
+YYYYYYYYYYYYY
+|label=Deathwatch
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|ApothicaireDeathwatch.jpg|
+YYYYYYYYYYYYY
+|label=Deathwatch
+}}
+
+<br>
+<hr>
+
+
+===Exemple 2===
+
+'''Code :'''
+<pre>
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|ApothicaireDeathwatch.jpg|
+YYYYYYYYYYYYY
+|label=Deathwatch
+|fit=horizontal
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|ApothicaireDeathwatch.jpg|
+YYYYYYYYYYYYY
+|label=Deathwatch
+|fit=horizontal
+}}
+
+<br>
+<hr>
+
+
+===Exemple 3===
+
+'''Code :'''
+<pre>
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|none|
+XXXXXXXXXXXXX
+|label=Deathwatch
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|none|
+XXXXXXXXXX
+|label=Deathwatch
+|fit=horizontal}}
+
+<br>
+<hr>
+
+===Exemple 4===
+
+'''Code :'''
+<pre>
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|ApothicaireDeathwatch.jpg|
+TODO
+|label=Deathwatch
+}}
+</pre>
+
+'''Rendu :'''
+{{Cadre Carrière Imperium|Apothicaire de la Deathwatch|ApothicaireDeathwatch.jpg|
+TODO
+|label=Deathwatch
+}}
+
+<br>
+<hr>
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

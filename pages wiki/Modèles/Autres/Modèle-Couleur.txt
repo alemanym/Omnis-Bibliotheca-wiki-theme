@@ -1,0 +1,206 @@
+<includeonly>{{#switch: {{{1}}}
+ | chaos black = <nowiki>#</nowiki>001522
+ | blazing orange = <nowiki>#</nowiki>e65925
+ | camo green  = <nowiki>#</nowiki>878d52
+ | codex grey = <nowiki>#</nowiki>808285
+ | fiery orange = <nowiki>#</nowiki>f47920
+ | commando khaki = <nowiki>#</nowiki>9a8c7b
+ | fortress grey = <nowiki>#</nowiki>bcbdc0
+ | golden yellow = <nowiki>#</nowiki>ffc20e
+ | dark flesh = <nowiki>#</nowiki>683631
+ | skull white = <nowiki>#</nowiki>ffffff
+ | sunburst yellow = <nowiki>#</nowiki>ffd400
+ | terracotta = <nowiki>#</nowiki>793721
+ | shadow grey = <nowiki>#</nowiki>106993
+ | badmoon yellow = <nowiki>#</nowiki>fff200
+ | vermin fur = <nowiki>#</nowiki>904f2e
+ | space wolf grey = <nowiki>#</nowiki>91bfdc
+ | scorched brown = <nowiki>#</nowiki>5a422f
+ | tanned flesh = <nowiki>#</nowiki>a95c3e
+ | liche purple = <nowiki>#</nowiki>2c2d8b
+ | graveyard earth = <nowiki>#</nowiki>665238
+ | dwarf flesh = <nowiki>#</nowiki>da9382
+ | warlock purple = <nowiki>#</nowiki>a43e8b
+ | bestial brown = <nowiki>#</nowiki>7b4a39
+ | bronzed flesh = <nowiki>#</nowiki>ec9a36
+ | tentacle pink = <nowiki>#</nowiki>dc9dc6
+ | snakebite leather = <nowiki>#</nowiki>8c6c40
+ | elf flesh = <nowiki>#</nowiki>edae74
+ | midnight blue = <nowiki>#</nowiki>002561
+ | desert yellow = <nowiki>#</nowiki>9c8855
+ | rotting flesh = <nowiki>#</nowiki>b8c39e
+ | regal blue = <nowiki>#</nowiki>003f70
+ | bubonic brown = <nowiki>#</nowiki>b89142
+ | boltgun metal = <nowiki>#</nowiki>888791
+ | ultramarine blue = <nowiki>#</nowiki>0066b3
+ | vomit brown = <nowiki>#</nowiki>ce8b3c
+ | chainmail = <nowiki>#</nowiki>8e8c91
+ | enchanted blue = <nowiki>#</nowiki>0071b7
+ | bleached bone = <nowiki>#</nowiki>eed5ac
+ | mithril silver = <nowiki>#</nowiki>b7bec5
+ | ice blue = <nowiki>#</nowiki>81d3eb
+ | catachan green = <nowiki>#</nowiki>455440
+ | tin bitz = <nowiki>#</nowiki>473f39
+ | hawk turquoise = <nowiki>#</nowiki>008194
+ | dark angel green = <nowiki>#</nowiki>19553c
+ | brazen brass = <nowiki>#</nowiki>966747
+ | scab red = <nowiki>#</nowiki>90263d
+ | snot green = <nowiki>#</nowiki>006f45
+ | shining gold = <nowiki>#</nowiki>efb736
+ | red gore = <nowiki>#</nowiki>9d2b3f
+ | scorpion green = <nowiki>#</nowiki>65b345
+ | burnished gold = <nowiki>#</nowiki>e0c068
+ | blood red = <nowiki>#</nowiki>d2223e
+ | scaly green = <nowiki>#</nowiki>006063
+ | dwarf bronze = <nowiki>#</nowiki>a26840
+ | goblin green = <nowiki>#</nowiki>3d9353
+ | knarloc green = <nowiki>#</nowiki>48563c
+ | astronomican grey = <nowiki>#</nowiki>93abaf
+ | mechrite red = <nowiki>#</nowiki>a82014
+ | tallarn flesh = <nowiki>#</nowiki>b27b67
+ | dheneb stone = <nowiki>#</nowiki>b8aca0
+ | hormagaunt purple = <nowiki>#</nowiki>54496b
+ | khemri brown = <nowiki>#</nowiki>73614d
+ | tausept ochre = <nowiki>#</nowiki>a06e3b
+ | mordian blue = <nowiki>#</nowiki>244882
+ | calthan brown = <nowiki>#</nowiki>7a4231
+ | macharius solar orange = <nowiki>#</nowiki>b94023
+ | necron abyss = <nowiki>#</nowiki>1a213d
+ | charadon granite = <nowiki>#</nowiki>463f39
+ | fenris grey = <nowiki>#</nowiki>2c4363
+ | orkhide shade = <nowiki>#</nowiki>26372d
+ | iyanden darksun = <nowiki>#</nowiki>ad852e
+ | adeptus battlegrey = <nowiki>#</nowiki>4a4c58
+ | gretchin green = <nowiki>#</nowiki>7e6930
+}}</includeonly><noinclude>
+{{Page OB}}
+==Fonctionnalité==
+
+Retourne la valeur de couleur correspondant au paramètre comme indiqué dans la table ci-dessous.
+
+
+<span style="color: RED;padding: 6px 12px;background: #f791a3;border-radius: 3px;box-shadow: 1px 1px 5px #313131;">'''ATTENTION''' : ne pas écrire avec des majuscules le nom des couleurs&nbsp;!!!</span>
+
+<div style="display: flex; flex-flow: row;flex-wrap: wrap;white-space: nowrap;">
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|adeptus battlegrey}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">adeptus battlegrey</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|astronomican grey}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">astronomican grey</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|badmoon yellow}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">badmoon yellow</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|bestial brown}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">bestial brown</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|blazing orange}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">blazing orange</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|bleached bone}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">bleached bone</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|blood red}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">blood red</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|boltgun metal}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">boltgun metal</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|bronzed flesh}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">bronzed flesh</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|bubonic brown}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">bubonic brown</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|burnished gold}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">burnished gold</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|brazen brass}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">brazen brass</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|dark angel green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">dark angel green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|dheneb stone}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">dheneb stone</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|dwarf flesh}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">dwarf flesh</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|camo green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">camo green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|calthan brown}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">calthan brown</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|catachan green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">catachan green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|chainmail}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">chainmail</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|chaos black}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">chaos black</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|charadon granite}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">charadon granite</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|codex grey}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">codex grey</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|commando khaki}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">commando khaki</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|desert yellow}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">desert yellow</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|dark flesh}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">dark flesh</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|dwarf bronze}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">dwarf bronze</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|elf flesh}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">elf flesh</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|enchanted blue}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">enchanted blue</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|fenris grey}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">fenris grey</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|fiery orange}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">fiery orange</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|fortress grey}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">fortress grey</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|goblin green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">goblin green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|golden yellow}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">golden yellow</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|graveyard earth}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">graveyard earth</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|gretchin green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">gretchin green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|hormagaunt purple}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">hormagaunt purple</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|hawk turquoise}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">hawk turquoise</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|ice blue}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">ice blue</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|iyanden darksun}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">iyanden darksun</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|khemri brown}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">khemri brown</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|knarloc green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">knarloc green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|liche purple}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">liche purple</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|macharius solar orange}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">macharius solar orange</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|mechrite red}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">mechrite red</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|midnight blue}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">midnight blue</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|mordian blue}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">mordian blue</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|necron abyss}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">necron abyss</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|orkhide shade}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">orkhide shade</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|rotting flesh}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">rotting flesh</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|regal blue}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">regal blue</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|red gore}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">red gore</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|scab red}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">scab red</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|scaly green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">scaly green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|scorched brown}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">scorched brown</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|scorpion green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">scorpion green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|shadow grey}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">shadow grey</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|shining gold}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">shining gold</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|skull white}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">skull white</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|snakebite leather}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">snakebite leather</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|snot green}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">snot green</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|sunburst yellow}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">sunburst yellow</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|space wolf grey}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">space wolf grey</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|tallarn flesh}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">tallarn flesh</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|tanned flesh}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">tanned flesh</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|tausept ochre}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">tausept ochre</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|tentacle pink}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">tentacle pink</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|terracotta}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">terracotta</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|tin bitz}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">tin bitz</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|ultramarine blue}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">ultramarine blue</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|vermin fur}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">vermin fur</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|vomit brown}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">vomit brown</div></div>
+<div style="display: flex; padding: 10px; min-width: 230px;"><div style="height: 40px; width: 40px; box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.4); border-radius: 50%; background:{{couleur|warlock purple}}"></div><div style="padding: 5px 10px;display: flex;align-items: center;">warlock purple</div></div>
+</div>
+
+
+==Exemples==
+
+===Exemple simple===
+
+'''Code:'''
+
+<pre>
+{{couleur|vermin fur}}
+</pre>
+
+
+'''Rendu:'''
+
+{{couleur|vermin fur}}
+
+<br><hr>
+
+===Exemple d'utilisation===
+
+'''Code:'''
+
+<pre>
+<div style="background: {{couleur|mordian blue}}; border: 4px solid {{couleur|space wolf grey}}; color: {{couleur|hawk turquoise}}; padding: 20px;">TOTO</div>
+</pre>
+
+
+'''Rendu:'''
+
+<div style="background: {{couleur|mordian blue}}; border: 4px solid {{couleur|space wolf grey}}; color: {{couleur|hawk turquoise}}; padding: 20px;">TOTO</div>
+
+<br><hr>
+
+===Exemple d'utilisation===
+
+'''Code:'''
+
+<pre>
+<div style="background: linear-gradient(90deg, {{couleur|midnight blue}}, {{couleur|mordian blue}}, {{couleur|shadow grey}}); box-shadow: inset 5px 5px 15px {{couleur|hawk turquoise}}; padding: 20px;">TOTO</div>
+</pre>
+
+
+'''Rendu:'''
+
+<div style="background: linear-gradient(90deg, {{couleur|midnight blue}}, {{couleur|mordian blue}}, {{couleur|shadow grey}}); box-shadow: inset 5px 5px 15px {{couleur|hawk turquoise}}; padding: 20px;">TOTO</div>
+
+[[Catégorie:Modèles de mise en page|global]]
+</noinclude>

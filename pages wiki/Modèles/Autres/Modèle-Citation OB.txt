@@ -1,0 +1,223 @@
+<includeonly>{{#css:
+@media screen and (max-width: 1299px) {
+  .citation-OB {
+	float: unset !important;
+	display: table;
+	margin: 0 auto 2em auto !important;
+  }
+}
+}}
+<div class="citation-OB" style="font-weight: bold;
+font-family: sans-serif;
+font-style: italic;
+letter-spacing: 2px;
+font-size: 12px;
+color: #717978;
+margin-bottom: 2em;
+text-align: justify;
+padding: 1em 2em;
+overflow: hidden;
+position: relative;
+box-sizing: border-box;
+background: linear-gradient(135deg, #71797848 0, #41444448 25%, #575b5b48 40%, #23262548 55%, #3c424048 75%, #1f232248 85%) #000 !important;
+box-shadow: inset 1px 1px #ffffff1f, inset -1px -1px #ffffff10, inset 2px 2px 1px #ffffff1f, inset 0 0 10px #000, 0 4px 10px black !important;
+text-shadow: 0 0 5px black, 0 0 15px black;
+{{#switch: {{{position|center}}} 
+| gauche | left = float: left; clear: left; {{#if: {{{margin|}}} | | margin: 0 1em 1em 0; }} 
+| droite | right = float: right; clear: right; {{#if: {{{margin|}}} | | margin: 0 0 1em 1em; }}
+| centre | center = margin-left: auto; margin-right: auto;
+}}
+{{#if: {{{margin|}}} | margin: {{{margin}}}; }}
+{{#if: {{{taille|}}} 
+ | {{#ifeq: {{{taille}}} | 100% | display:block; | display: table; width:{{{taille}}}; }}
+ | display: table;
+}}">
+<div style="position: absolute;
+top: 0;
+left: 0;
+width: 250%;
+height: 100%;
+border-radius: 50%;
+transform: translateX(-50%) translateY(-50%);
+pointer-events: none;
+background: radial-gradient(#27b3c821, transparent 50%);
+clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);"></div>
+<div style="position: absolute;
+bottom: 0;
+right: 0;
+width: 150%;
+height: 250%;
+border-radius: 50%;
+background: radial-gradient(#24323473, transparent 50%);
+transform: translateX(50%) translateY(50%);
+pointer-events: none;
+clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);"></div>
+<!--TITRE-->{{#if: {{{titre|}}} 
+| <div class="citation-titre titre-{{{background-image|standard}}}" style="font-size: larger; margin-bottom: 5px; text-align: center;"><div style={{{css_titre|""}}}>{{{titre}}}</div></div>
+}}<!--TEXTE-->
+<div class="citation-texte citation-{{{background-image|standard}}}" style={{{css_texte|""}}}>{{{texte}}}</div>
+<!--SIGNATURE-->{{#if: {{{signature|}}} 
+| <div class="citation-signature signature-{{{background-image|standard}}}" style="padding-left: 20px; font-weight: bold; display: inline-block; margin: 0.5em 0 0 0;"><div style={{{css_signature|""}}}>{{{signature}}}</div></div>
+}}
+</div></includeonly><noinclude>
+{{Page OB}}
+==Fonctionnalité==
+
+Permet d'afficher un cadre stylisé contenant une citation.
+Il est possible d'y ajouter une image et une signature.
+
+==Paramètres==
+
+===Paramètres obligatoires: ===
+
+*'''texte''' = contenu textuel principal
+
+===Paramètres optionnels: ===
+
+*'''taille''' = taille du cadre
+*'''position''' = permet de gérer le positionnement en fonction de la valeur :
+** ''left'' ou ''gauche'' : positionnement flottant à gauche
+** ''right'' ou ''droite'': positionnement flottant à droite
+** ''center'' ou ''centre'': positionnement aligné au centre (il faut que '''taille''' soit défini pour cela)
+* '''margin''' : permet de redéfinir l'espace de marge autour du cadre
+
+
+*'''couleur_bordure''' = Couleur du contour
+*'''taille_bordure''' = Epaisseur du contour (valeur par défaut : 10px si '''couleur_bordure''' est défini, sinon 0px)
+*'''couleur_liseret''' = Couleur du liseret intérieur
+*'''padding_liseret''' = Padding (marge intérieure) du liseret ; valeur par défaut : 1em 2em
+*'''taille_liseret''' = Epaisseur du liseret ; valeur par défaut : 4px
+*'''css_additionnel_liseret''' = Style CSS additionnel pour le liseret (Attention: la valeur ne dois pas être entre guillemet, et il faut terminer par un ;)
+
+
+*'''signature''' = Signature de la citation
+*'''css_signature''' = Style CSS pour la signature (commencer et terminer par un ")
+*'''titre''' = titre de l'image
+*'''css_titre''' = Style CSS pour le titre (commencer et terminer par un ")
+*'''css_texte''' = Style CSS pour le texte (commencer et terminer par un ")
+
+
+*'''image''' = Fichier image
+*'''taille_image''' = Taille de l'image
+*'''ombre_image'''=couleur de l'ombre de l'image
+*'''css_image''' = Style CSS pour l'image (commencer et terminer par un ")
+
+==Exemples==
+
+===Exemple simple ===
+
+'''Code :'''
+<pre>
+{{Citation OB
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation OB
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<br>
+<hr>
+
+===Exemple positionnement flottant à droite ===
+
+'''Code :'''
+<pre>
+{{Citation OB
+|position=right
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation OB
+|position=right
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<div style="clear: both;"></div>
+<br>
+<hr>
+
+===Exemple positionnement centré ===
+
+N.B: la taille doit être définie
+'''Code :'''
+<pre>
+{{Citation OB
+|position=center
+|taille=50%
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation OB
+|position=center
+|taille=50%
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<div style="clear: both;"></div>
+<br>
+<hr>
+
+===Exemple : taille custom===
+
+'''Code :'''
+<pre>
+{{Citation OB
+|background=linear-gradient(135deg, rgba(33, 71, 130, 0.4), rgba(68, 26, 26, 0.76))
+|taille=800px
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation OB
+|background=linear-gradient(135deg, rgba(33, 71, 130, 0.4), rgba(68, 26, 26, 0.76))
+|taille=800px
+|texte=« L´innocence n´existe pas, il n´y a que des degrés de culpabilité. »
+|signature=- Mikelus, Chapelain des Blood Ravens
+}}
+
+<br>
+<hr>
+
+===Exemple ===
+
+'''Code :'''
+<pre>
+{{Citation OB
+|couleur_bordure=#343535
+|taille_liseret=1px
+|titre=+++ Données Confidentielles +++
+|css_titre="text-align: center;"
+|texte=« L’architecture cyclopéenne de ces lieux, n’a absolument rien d’humain... ses dimensions, sa complexité, ses harmonies, tout semble disproportionné à notre raison mortelle, conçu par un esprit inaccessible, étranger à l’homme. Que l’Empereur nous pardonne de nous être égarés si loin, sur un monde à ce point éloigné de Sa Lumière. Puisses-t-il entendre ces mots de repentir et ces supplications. Puisses-t-il éloigner de nos esprits les fantômes de ces souvenirs qui ne devraient pas être... »
+|signature=- Message Intercepté par la Station de Veil Midael
+}}
+</pre>
+
+'''Rendu :'''
+{{Citation OB
+|titre=+++ Données Confidentielles +++
+|css_titre="text-align: center;"
+|texte=« L’architecture cyclopéenne de ces lieux, n’a absolument rien d’humain... ses dimensions, sa complexité, ses harmonies, tout semble disproportionné à notre raison mortelle, conçu par un esprit inaccessible, étranger à l’homme. Que l’Empereur nous pardonne de nous être égarés si loin, sur un monde à ce point éloigné de Sa Lumière. Puisses-t-il entendre ces mots de repentir et ces supplications. Puisses-t-il éloigner de nos esprits les fantômes de ces souvenirs qui ne devraient pas être... »
+|signature=- Message Intercepté par la Station de Veil Midael
+}}
+<br>
+<hr>
+
+<div style="clear: both;">
+
+[[Catégorie:Modèles de mise en page|globale]]
+</noinclude>
