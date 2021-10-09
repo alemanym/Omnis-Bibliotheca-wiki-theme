@@ -1,0 +1,342 @@
+body.tyranide div#content {
+	background: linear-gradient(90deg, #50334f, black 10px, black 30%, #170a17, black 70%, black calc(100% - 10px), #50334f) !important;
+	background-color: black !important;
+}
+body.tyranide #firstHeading,
+body.tyranide #content h1,
+body.tyranide #content h2,
+body.tyranide #content h3,
+body.tyranide #content h4,
+body.tyranide #content h5 {
+	color: #bfb0af !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #fd77fbba, 0 0 10px #ec77fd7a;
+	border-bottom: 1px solid #44313b;
+	background: inherit;
+	display: block;
+}
+body.tyranide div#content h1,
+body.tyranide div#content :not(.toctitle) > h2 {
+	border: none;
+	background: linear-gradient(#f0c5ff40, transparent 10px), linear-gradient(90deg, black, transparent 10px), linear-gradient(135deg, #fb4b4b1c, #d7458924, #ff5bfc17, #ff5bed17, #00000047), linear-gradient(#00000029, black), url('images/Free-metal-texture1.jpg') !important;
+	background-position: center top, center bottom, center bottom, center bottom !important;
+	background-repeat: repeat-x !important;
+	padding: 6px 8px 12px 8px !important;
+	box-shadow: inset 10px 10px 20px -10px #000, inset 25px 0 25px -25px #8d418c, inset 5px 5px 2px -5px #ff00fbbf, 0 0 3px #443c3d, 0 0 3px black, 0 -4px #a9a59a, 0 -15px 15px black !important;
+	background-color: #1e1d1a !important;
+	background-size: auto !important;
+	position: relative;
+	overflow: visible;
+	margin-top: 20px !important;
+	justify-content: center !important;
+	text-align: center;
+	display: flow-root;
+	border-radius: 20px;
+}
+body.tyranide #content h1 {
+	box-shadow: inset 10px 10px 20px -10px #000, inset 25px 0 25px -25px #bf4a97, inset 5px 5px 2px -5px #ff00d7ba, 0 0 3px #443c3d, 0 0 3px black, 0 5px 2px -2px, 0 -15px 15px black;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	background-color: black !important;
+	background: linear-gradient(135deg, #000, #35242f, #281a27, #2b1325, #382740, #331830, #352634, #240f1b, #332035, #331e29, #140d14);
+}
+body.tyranide #content h1 .mw-editsection,
+body.tyranide #content :not(.toctitle) > h2 .mw-editsection {
+	float: right;
+	padding-right: 20PX;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+body.tyranide #content :not(.toctitle) > h2 {
+	z-index: 20;
+	margin: 20px 10px;
+}
+body.tyranide #content h1::before,
+body.tyranide #content :not(.toctitle) > h2::before {
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 14px;
+	width: 100px;
+	height: calc(100% + 40px);
+	pointer-events: none;
+	background: url('images/Deco_tyranide_5.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	transform: scaleX(-1) translateX(27px) translateY(-33px);
+}
+body.tyranide #content h1::after,
+body.tyranide #content :not(.toctitle) > h2::after {
+	position: absolute;
+	content: '';
+	top: 7px;
+	right: 14px;
+	width: 100px;
+	height: calc(100% + 40px);
+	pointer-events: none;
+	background: url('images/Deco_tyranide_5.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	transform: translateX(27px) translateY(-33px);
+}
+body.tyranide #content h1 ~ h2,
+body.tyranide #content h1 ~ h2 {
+	border-radius: 2px !important;
+	box-shadow: inset -1px -1px 50px #000, 0 0 1px #3e3e3e !important;
+	background: #131213 !important;
+}
+body.tyranide #content h1 ~ h2::before,
+body.tyranide #content h1 ~ h2::after {
+	content: none !important;
+}
+body.tyranide #catlinks {
+	border-radius: 0;
+	border: none;
+	margin: 2em;
+	padding: 2em;
+	box-shadow: inset 1px 1px 0 #ffffff0d, inset -1px -1px 0 #ffffff0d, inset 0 0 20px #000, inset 25px 0 25px -25px #67418d, inset 5px 5px 2px -5px #eb00ffba, 0 0 3px #443c3d, 0 0 3px black;
+	background-color: black !important;
+	background: linear-gradient(135deg, #000, #35242f, #281a27, #2b1325, #382740, #331830, #352634, #240f1b, #332035, #331e29, #140d14);
+}
+body.tyranide #catlinks a {
+	color: #bfb0af !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #fd77fbba, 0 0 10px #ec77fd7a;
+}
+body.tyranide .thumb {
+	position: relative;
+	margin: 2em 2em 2.5em 2em !important;
+}
+body.tyranide .thumb.tright {
+	margin: 2em 2em 2.5em 3em !important;
+}
+body.tyranide .thumb.tleft {
+	margin: 2em 3em 2.5em 2em !important;
+}
+body.tyranide .thumbinner::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% + 44px);
+	height: calc(100% + 50px);
+	transform: translateX(-22px) translateY(-25px);
+	background-image: url('images/Deco_tyranide_3.png'), url('images/Deco_tyranide_2.png');
+	background-repeat: no-repeat;
+	background-position: left top, calc(100% - 2px) calc(100% - 3px);
+	pointer-events: none;
+	z-index: 20;
+}
+body.tyranide .thumbinner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% + 44px);
+	height: calc(100% + 50px);
+	background-image: url('images/Deco_tyranide_3.png'), url('images/Deco_tyranide_2.png');
+	background-repeat: no-repeat;
+	background-position: left top, calc(100% - 2px) calc(100% - 3px);
+	pointer-events: none;
+	z-index: 20;
+	transform: translateX(-22px) translateY(-25px) scaleX(-1);
+}
+body.tyranide .thumbinner {
+	position: relative;
+	box-shadow: 5px 5px 5px -5px #212326, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px #ff4176, inset 5px 5px 5px -5px #ffa3e8ba, 0 0 0 6px #232124, 0 0 5px 4px #090909, 0 0 3px 6px #1b1b1b, 0 4px 6px 4px black, 0 0 0 8px #0000004f, 0 0 0 10px #bf9cb0, 0 0 0 12px #251d266e, 0 0 8px 12px #ff8ac178, 0 0 5px 24px #23202370, 0 0 0 24px black, -1px 0 0 24px #313131, 0 -1px 0 24px #313131, 1px 1px 5px 25px #222;
+	border: none !important;
+	overflow: visible !important;
+	padding: 0 !important;
+}
+body.tyranide .thumbimage {
+	border: none !important;
+}
+body.tyranide .thumbcaption {
+	position: relative;
+	margin-top: 9px;
+	z-index: 1;
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	color: #b78998;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #fd77c9ba, 0 0 10px #fd77cf7a;
+	padding: 6px 20px !important;
+	box-sizing: border-box;
+	background: linear-gradient(135deg, #000, #240419, #4d1b39, #4d3544, #4d1b39, #240419, #4d1b39, #4d3544, #4d1b39, #240419, #000);
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba,0 0 0 6px black, 0 0 5px 6px #000, 0 0 3px 6px #1b1b1b, 0 -9px #1f2623;
+	transform: translateY(-2px); #ffffffba,0 0 0 8px black, 0 0 5px 8px #000, 0 0 3px 8px #1b1b1b, 0 -9px #1f2623;
+}
+body.tyranide .thumbcaption .magnify {
+	display: none;
+}
+body.tyranide #p-cactions li a {
+	color: #d0a6b2 !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #fd77dcba, 0 0 10px #f377fd7a !important;
+	box-sizing: border-box !important;
+	background: linear-gradient(135deg, #000, #240418, #000, #000, #000, #240418, #000, #000, #000, #240418, #000) !important;
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black,0 0 0 3px black, 0 0 5px 3px #000, 0 0 3px 3px #1b1b1b;
+	padding: 3px 20px;
+	font-size: 12px;
+}
+body.tyranide #p-cactions li a:hover {
+	color: white ! important;
+}
+body.tyranide #p-cactions li.selected a {
+	clip-path: polygon(-20px -20px, -20px 92%, calc(100% + 20px) 92%, 100% -20px);
+}
+body.tyranide table.faction {
+	margin: 10px 10px;
+	position: relative;
+	padding: 20px;
+	font-family: 'courier new',monospace;
+	color: rgb(201, 193, 202);
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 25px #c9c1ca6b, 0 0 40px #ffffff69;
+	background: linear-gradient(135deg, #685266, #2f082a, #220424, #2f082a, #2f082a, #220424, #2f082a, #401c37, #2f082a, #220424, #3f123b);
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba,0 0 0 2px #433d49, 0 0 5px 2px #000, 0 0 3px 2px #1b1b1b;
+	clip-path: polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
+}
+body.tyranide table.faction tbody {
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+	padding: 10px 16px;
+	clip-path: polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
+	display: table-cell;
+}
+body.tyranide #custom-page-top {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	margin-bottom: 20px;
+	user-select: none;
+}
+body.tyranide #page-menu-top {
+	top: 0;
+	left: 0;
+	height: 31px;
+	z-index: 1000;
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	position: relative;
+	box-shadow: inset 1px 1px 0 #ffffff0d, inset -1px -1px 0 #ffffff0d, inset 0 0 20px #352929, inset 25px 0 25px -25px #67418d, inset 5px 5px 2px -5px #eb00ffba, 0 0 3px #443c3d, 0 0 3px black;
+	background: linear-gradient(#f0c5ff40, transparent 10px), linear-gradient(90deg, black, transparent 10px), linear-gradient(135deg, #fb4b4b1c, #d7458924, #ff5bfc17, #ff5bed17, #00000047), linear-gradient(#00000029, black), url('images/Free-metal-texture1.jpg') !important;
+}
+body.tyranide #page-menu-top .top-menu-item {
+	display: flex;
+	justify-content: center;
+	padding: 0 26px;
+	align-items: center;
+	box-shadow: 2px 0 1px #0000006b;
+	position: relative;
+}
+body.tyranide #page-menu-top .top-menu-item:hover {
+	background: #00000070;
+	box-shadow: inset 0 0 10px black;
+}
+body.tyranide #page-menu-top .top-menu-item:first-child::before {
+	content: '☰';
+	font-size: 20px;
+	padding: 0 8px 2px 0;
+	color: #000000b5;
+}
+body.tyranide #page-menu-top .top-menu-title {
+	color: #bfb0af !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #f977fdba, 0 0 10px #fd77fb7a;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+body.tyranide #page-menu-top #toc,
+body.tyranide #page-menu-top .top-menu-pane {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(calc(100% - 1px));
+	display: block ruby;
+	z-index: 1000;
+	margin: 0;
+	padding: 0.5em 2em;
+	border-radius: 0;
+	border: none;
+	background: linear-gradient(135deg, #fb4b8d47, #d7459036, #d35bff17, #ff5bd62b, #0000);
+	background-color: black !important;
+	background-attachment: local;
+	box-shadow: 0 0 3px #443c3d, 0 0 3px black, inset 0 5px 10px black;
+	max-height: 400px;
+	overflow-y: auto;
+	background: linear-gradient(135deg, #000, #35242f, #281a27, #332630, #3c2131, #331830, #352634, #240f1b, #332035, #331e29, #140d14);
+}
+body.tyranide #page-menu-top :not(:hover) > #toc,
+body.tyranide #page-menu-top :not(:hover) > .top-menu-pane {
+    display: none;
+}
+body.tyranide #toc .toctoggle,
+body.tyranide #toc .toctitle,
+body.tyranide #toc .toclevel-3,
+body.tyranide #toc .toclevel-4,
+body.tyranide #toc .toclevel-5 {
+    display: none;
+}
+body.tyranide .CategoryTreeItem {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+body.tyranide .CategoryTreeChildren {
+	margin-left: 1.25em;
+}
+body.tyranide .CategoryTreeBullet {
+	margin-right: 5px;
+}
+body.tyranide .toctext,
+body.tyranide .CategoryTreeLabel,
+body.tyranide .CategoryTreeToggle {
+	color: #b5909e !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #ec77fdba, 0 0 10px #fd77ee7a;
+}
+body.tyranide .factions-menu .CategoryTreeBullet,
+body.tyranide .CategoryTreeEmptyBullet {
+	display: none !important;
+}
+body.tyranide .factions-menu .CategoryTreeTag > .CategoryTreeSection {
+	box-shadow: 0 1px 1px -1px white;
+	padding: 5px 5px 10px 0;
+}
+body.tyranide .factions-menu .CategoryTreeTag > .CategoryTreeSection:last-child {
+	box-shadow: none;
+}
+body.tyranide .factions-menu .CategoryTreeTag > .CategoryTreeSection > .CategoryTreeItem a {
+	color: #d0d0d0 !important;
+	pointer-events: none;
+	cursor: default;
+	font-weight: initial;
+	font-size: 110%;
+	margin-bottom: 5px;
+}
+body.tyranide .tocnumber {
+	color: #f2fff4d6;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-weight: initial;
+}
+body.tyranide h1 .mw-headline,
+body.tyranide h2 .mw-headline {
+	padding: 50px 0;
+}
+body.tyranide .mw-parser-output > ul:last-of-type{
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba;
+	background: linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 2px, rgba(128, 128, 128, 0.1) 2px, rgba(128, 128, 128, 0.1) 4px), radial-gradient( rgba(128, 186, 200, 0.4), rgba(20, 24, 28, 0.76)), linear-gradient(135deg, #000, #042417, #000, #000, #000, #02150e, #000, #000, #000, #042417, #000);
+	background-size: auto 4px, 100% 100%;
+	padding: 35px 30px 35px 60px;
+	box-sizing: border-box !important;
+	margin: 0 10px;
+}
+body.tyranide #mw-hidden-catlinks {
+	display: none;
+}
+body.tyranide .mw-parser-output p,
+body.tyranide #mw-pages > :not(h2) {
+	margin-left: 1em;
+	margin-right: 1em;
+}

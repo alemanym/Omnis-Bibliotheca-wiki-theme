@@ -1,0 +1,326 @@
+/******************/
+/** Fond de page **/
+/******************/
+body.theme-necron #content {
+	background: linear-gradient(90deg, #5f8d41, black 10px, black 30%, #1b261b, black 70%, black calc(100% - 10px), #5f8d41) !important;
+	background-color: black !important;
+}
+body.theme-necron .mw-parser-output p, body.theme-necron #mw-pages > :not(h2) {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+/************/
+/** Titres **/
+/************/
+body.theme-necron #firstHeading,
+body.theme-necron #content h1,
+body.theme-necron #content h2,
+body.theme-necron #content h3,
+body.theme-necron #content h4,
+body.theme-necron #content h5 {
+	color: #94b789 !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	border-bottom: 1px solid #94b789;
+}
+body.theme-necron #content h1,
+body.theme-necron #content :not(.toctitle) > h2 {
+	border: none;
+	background: url('images/Deco_necron_bar.jpg'), linear-gradient(135deg, #4bfbb13b, #45d7a024, #5bffc917, #5bffd117, transparent), linear-gradient(#00000029, black), url('images/Free-metal-texture1.jpg');
+	background-position: center top, center bottom, center bottom, center bottom;
+	background-repeat: repeat-x;
+	padding: 12px 8px 12px 8px !important;
+	border-radius: 0 0 5px 5px;
+	box-shadow: inset 10px 10px 20px -10px #000, inset 25px 0 25px -25px #418d6d, inset 5px 5px 2px -5px #20ff00ba, 0 0 3px #443c3d, 0 0 3px black, 0 -15px 15px black;
+	background-color: #1e1d1a;
+	background-size: auto;
+	position: relative;
+	overflow: visible;
+	margin-top: 20px !important;
+	justify-content: center;
+	text-align: center;
+	display: flow-root;
+}
+body.theme-necron #content h1 {
+	box-shadow: inset 10px 10px 20px -10px #000, inset 25px 0 25px -25px #418d6d, inset 5px 5px 2px -5px #20ff00ba, 0 0 3px #443c3d, 0 0 3px black, 0 5px 2px -2px, 0 -15px 15px black;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+body.theme-necron #content h1 .mw-editsection,
+body.theme-necron #content :not(.toctitle) > h2 .mw-editsection {
+	float: right;
+	padding-right: 20PX;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+body.theme-necron #content :not(.toctitle) > h2 {
+	z-index: 20;
+	margin: 20px 10px;
+}
+body.theme-necron #content :not(.toctitle) > h2::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 34px);
+	pointer-events: none;
+	background: url('images/Deco_necron_5.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	transform: scaleX(-1) translateX(17px) translateY(-17px);
+}
+body.theme-necron #content :not(.toctitle) > h2::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 34px);
+	pointer-events: none;
+	background: url('images/Deco_necron_5.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	transform: translateX(17px) translateY(-17px);
+}
+body.theme-necron h1 .mw-headline, h2 .mw-headline {
+	padding: 50px 0;
+	pointer-events: none;
+}
+/****************/
+/** Catégories **/
+/****************/
+body.theme-necron #catlinks {
+	border-radius: 0;
+	border: none;
+	margin: 2em;
+	padding: 2em;
+	box-shadow: inset 1px 1px 0 #ffffff0d, inset -1px -1px 0 #ffffff0d, inset 0 0 20px #000, inset 25px 0 25px -25px #418d6d, inset 5px 5px 2px -5px #20ff00ba, 0 0 3px #443c3d, 0 0 3px black;
+	background: linear-gradient(135deg, #4bfbb157, #45d7a036, #5bffc917, #5bffd12b, transparent);
+	background-color: black !important;
+}
+body.theme-necron #catlinks a {
+	color: #94b789;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+}
+body.theme-necron #mw-hidden-catlinks {
+	display: none;
+}
+/************/
+/** Images **/
+/************/
+body.theme-necron .thumb {
+	position: relative;
+	margin: 2em 2em 2.5em 2em !important;
+}
+body.theme-necron .thumb.tright {
+	margin: 2em 2em 2.5em 3em !important;
+}
+body.theme-necron .thumb.tleft {
+	margin: 2em 3em 2.5em 2em !important;
+}
+body.theme-necron .thumbinner::after {
+	content: '';
+	position: absolute;
+	top: -25px;
+	left: -28px;
+	width: calc(100% + 56px);
+	height: calc(100% + 50px);
+	background-image: url('images/Deco_necron_angle.png'), url('images/Deco_necron_angle.png'), url('images/Deco_necron_angle_bas.png'), url('images/Deco_necron_angle_bas.png');
+	background-repeat: no-repeat;
+	background-position: left top, right top, left bottom, right bottom;
+	pointer-events: none;
+	z-index: 20;
+}
+body.theme-necron .thumbinner {
+	position: relative;
+	box-shadow: 5px 5px 5px -5px #212326, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px #8eff41, inset 5px 5px 5px -5px #a6ffa3ba, 0 0 0 6px #222421, 0 0 5px 4px #090909, 0 0 3px 6px #1b1b1b, 0 0 0 8px #0000004f, 0 0 0 10px #99e36a, 0 0 0 12px #21261d6e, 0 0 8px 12px #baff8a78, 0 0 5px 24px #21232070, 0 0 0 24px black, -1px 0 0 24px #313131, 0 -1px 0 24px #313131, 1px 1px 5px 25px #222;
+	border: none !important;
+	overflow: visible !important;
+	padding: 0 !important;
+}
+body.theme-necron .thumbimage {
+	border: none !important;
+}
+body.theme-necron .thumbcaption {
+	position: relative;
+	margin-top: 9px;
+	z-index: 1;
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	color: #94b789;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	padding: 6px 20px !important;
+	box-sizing: border-box;
+	background: linear-gradient(135deg, #000, #042417, #000, #000, #000, #042417, #000, #000, #000, #042417, #000);
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba,0 0 0 8px black, 0 0 5px 8px #000, 0 0 3px 8px #1b1b1b, 0 -9px #1f2623;
+}
+body.theme-necron .thumbcaption .magnify {
+	display: none;
+}
+/******************/
+/** Onglets Wiki **/
+/******************/
+body.theme-necron #p-cactions li a {
+	color: #94b789 ! important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	box-sizing: border-box;
+	background: linear-gradient(135deg, #000, #042417, #000, #000, #000, #042417, #000, #000, #000, #042417, #000);
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black,0 0 0 3px black, 0 0 5px 3px #000, 0 0 3px 3px #1b1b1b;
+	padding: 3px 20px;
+	font-size: 12px;
+}
+body.theme-necron #p-cactions li a:hover {
+	color: white ! important;
+}
+body.theme-necron #p-cactions li.selected a {
+	clip-path: polygon(-20px -20px, -20px 92%, calc(100% + 20px) 92%, 100% -20px);
+}
+/*******************************/
+/** Menu custom de navigation **/
+/*******************************/
+body.theme-necron table.faction {
+	background: linear-gradient(135deg, #000, #042417, #000, #000, #000, #02150e, #000, #000, #000, #042417, #000);
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba,0 0 0 10px black, 0 0 5px 10px #000, 0 0 3px 10px #1b1b1b;
+	margin: 10px 10px;
+	position: relative;
+	padding: 20px;
+	color: #94b789;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-family: 'courier new',monospace;
+}
+body.theme-necron #custom-page-top {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	margin-bottom: 20px;
+	user-select: none;
+}
+body.theme-necron #page-menu-top {
+	top: 0;
+	left: 0;
+	height: 31px;
+	z-index: 1000;
+	box-shadow: inset 10px 10px 20px -10px #000, inset 25px 0 25px -25px #418d6d, inset 5px 5px 2px -5px #20ff00ba, 0 0 3px #443c3d, 0 0 3px black, 0 -15px 15px black;
+	background: linear-gradient(135deg, #4bfbb13b, #45d7a024, #5bffc917, #5bffd117, transparent), linear-gradient(#00000029, black), url('images/Free-metal-texture1.jpg');
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	position: relative;
+        background-color: black;
+}
+body.theme-necron #page-menu-top .top-menu-item {
+	display: flex;
+	justify-content: center;
+	padding: 0 26px;
+	align-items: center;
+	box-shadow: 2px 0 1px #0000006b;
+	position: relative;
+}
+body.theme-necron #page-menu-top .top-menu-item:hover {
+	background: #00000070;
+	box-shadow: inset 0 0 10px black;
+}
+body.theme-necron #page-menu-top .top-menu-item:first-child::before {
+	content: '☰';
+	font-size: 20px;
+	padding: 0 8px 2px 0;
+	color: #000000b5;
+}
+body.theme-necron #page-menu-top .top-menu-title {
+	color: #94b789 !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+/*********************/
+/** Menu + Sommaire **/
+/*********************/
+body.theme-necron #page-menu-top #toc,
+body.theme-necron #page-menu-top .top-menu-pane {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(calc(100% - 1px));
+	display: block ruby;
+	z-index: 1000;
+	margin: 0;
+	padding: 0.5em 2em;
+	border-radius: 0;
+	border: none;
+	background: linear-gradient(135deg, #4bfbb147, #45d7a036, #5bffc917, #5bffd12b, transparent);
+	background-color: black !important;
+	background-attachment: local;
+	box-shadow: 0 0 3px #443c3d, 0 0 3px black, inset 0 5px 10px black;
+	max-height: 400px;
+	overflow-y: auto;
+}
+body.theme-necron #page-menu-top :not(:hover) > #toc,
+body.theme-necron #page-menu-top :not(:hover) > .top-menu-pane {
+    display: none;
+}
+body.theme-necron #toc .toctoggle,
+body.theme-necron #toc .toctitle,
+body.theme-necron #toc .toclevel-3,
+body.theme-necron #toc .toclevel-4,
+body.theme-necron #toc .toclevel-5 {
+    display: none;
+}
+body.theme-necron .CategoryTreeItem {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+body.theme-necron .CategoryTreeChildren {
+	margin-left: 1.25em;
+}
+body.theme-necron .CategoryTreeBullet {
+	margin-right: 5px;
+}
+body.theme-necron .toctext,
+body.theme-necron .CategoryTreeLabel,
+body.theme-necron .CategoryTreeToggle {
+	color: #94b789 !important;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+}
+body.theme-necron .factions-menu .CategoryTreeBullet,
+body.theme-necron .CategoryTreeEmptyBullet {
+	display: none !important;
+}
+body.theme-necron .factions-menu .CategoryTreeTag > .CategoryTreeSection {
+	box-shadow: 0 1px 1px -1px white;
+	padding: 5px 5px 10px 0;
+}
+body.theme-necron .factions-menu .CategoryTreeTag > .CategoryTreeSection:last-child {
+	box-shadow: none;
+}
+body.theme-necron .factions-menu .CategoryTreeTag > .CategoryTreeSection > .CategoryTreeItem a {
+	color: #d0d0d0 !important;
+	pointer-events: none;
+	cursor: default;
+	font-weight: initial;
+	font-size: 110%;
+	margin-bottom: 5px;
+}
+body.theme-necron .tocnumber {
+	color: #f2fff4d6;
+	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 5px #a7fd77ba, 0 0 10px #a7fd777a;
+	font-weight: initial;
+}
+/*************/
+/** Sources **/
+/*************/
+body.theme-necron .mw-parser-output > ul:last-of-type{
+	box-shadow: 5px 5px 5px -5px #0000006e, inset 0 0 50px #000, 0 0 3px #443c3d, 0 0 3px black, inset 25px 0 50px #ffffff4d, inset 5px 5px 2px -5px #ffffffba;
+	background: linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 2px, rgba(128, 128, 128, 0.1) 2px, rgba(128, 128, 128, 0.1) 4px), radial-gradient( rgba(128, 186, 200, 0.4), rgba(20, 24, 28, 0.76)), linear-gradient(135deg, #000, #042417, #000, #000, #000, #02150e, #000, #000, #000, #042417, #000);
+	background-size: auto 4px, 100% 100%;
+	padding: 35px 30px 35px 60px;
+	box-sizing: border-box !important;
+	margin: 0 10px;
+}
